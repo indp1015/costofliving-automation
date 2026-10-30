@@ -6,21 +6,23 @@
     <title>U.S. Cost of Living Data Hub</title>
     <meta name="description" content="Explore county-level cost of living, housing rents, goods, and services indices across the U.S.">
     
-    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
-    
-    <!-- Chart.js 추가 (상세 페이지용) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
         
-        /* Navigation */
-        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
-        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
-        nav .links a:hover { color: white; }
+        /* 🆕 Navigation Bar (하우징 사이트 스타일 적용) */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .nav-left { display: flex; align-items: center; gap: 15px; }
+        .nav-left .logo { color: white; font-size: 1.4em; font-weight: bold; text-decoration: none; }
+        .nav-btn { background: #e67e22; color: white !important; padding: 6px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: bold; display: inline-flex; align-items: center; transition: background 0.2s; }
+        .nav-btn:hover { background: #d35400; }
+        .nav-links { display: flex; gap: 15px; }
+        .nav-links a { color: #ccc; text-decoration: none; font-size: 0.95em; }
+        .nav-links a:hover { color: white; }
         
         /* Footer */
         footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
@@ -42,16 +44,24 @@
         .score { font-weight: bold; color: #27ae60; }
         .card.bad .score { color: #e74c3c; }
         .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        
+        /* 🆕 텍스트 콘텐츠 스타일 */
+        .text-section { background: white; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .text-section h2 { color: #1a3d5c; margin-top: 0; }
+        .text-section p { font-size: 1.05em; color: #444; margin-bottom: 15px; }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- 🆕 수정된 네비게이션 바 -->
     <nav>
-        <a href="/" class="logo">Cost of Living Data</a>
-        <div class="links">
+        <div class="nav-left">
+            <a href="/" class="logo">U.S. Cost of Living Data</a>
+            <a href="https://dataindp.com" class="nav-btn">Go Data in DP ↗</a>
+        </div>
+        <div class="nav-links">
             <a href="/">Home</a>
+            <a href="/blog/">Blog</a>
             <a href="/about.html">About</a>
-            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
         </div>
     </nav>
 
@@ -61,6 +71,13 @@
     <h1>U.S. Cost of Living Data Hub</h1>
     <p style="font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto;">Explore <strong>3220</strong> U.S. counties. Discover where your income goes further based on local housing, goods, and services costs.</p>
 </header>
+
+<!-- 🆕 텍스트 보강 섹션 1 -->
+<div class="text-section">
+    <h2>What is the Purchasing Power Index?</h2>
+    <p>The <strong>Purchasing Power Index</strong> is a unique metric that goes beyond a simple cost of living calculation. While traditional indices only show you how expensive a place is, our index tells you how far your money actually goes. It is calculated by taking the median household income in a county and dividing it by the overall Regional Price Parity (RPP).</p>
+    <p>A score above 100 means that residents in that county have a higher real purchasing power than the national average. In other words, their income is more than enough to cover the local cost of goods, services, and housing. Conversely, a score below 100 indicates that the local cost of living consumes a larger portion of the median income, leaving less disposable income for savings or leisure.</p>
+</div>
 
 <div class="card-grid">
     <!-- Highest Purchasing Power -->
@@ -182,7 +199,14 @@
     </div>
 </div>
 
-<!-- 🆕 Browse by State 섹션 추가 -->
+<!-- 🆕 텍스트 보강 섹션 2 -->
+<div class="text-section">
+    <h2>Why Cost Structure Matters</h2>
+    <p>Understanding the overall cost of living is only half the battle. The <strong>Cost Structure Breakdown</strong> provided on our county detail pages reveals <em>why</em> a region is expensive or affordable. We break down the BEA RPP into four distinct categories: <strong>Overall, Goods, Services, and Housing (Rents)</strong>.</p>
+    <p>For example, a tech hub like Santa Clara County, California, has an extremely high overall cost of living. However, our breakdown shows that this is primarily driven by a massive spike in Housing (Rents), while Goods (like groceries and clothing) might be closer to the national average. In contrast, some rural counties might have affordable housing but suffer from high Service costs (like healthcare or auto repair) due to a lack of competition. This structural analysis empowers you to align your lifestyle with the local economy.</p>
+</div>
+
+<!-- Browse by State 섹션 -->
 <div style="margin-top: 50px;">
     <h2 style="color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px;">Browse Cost of Living by State</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
@@ -400,9 +424,8 @@
 
     </div>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>&copy; 2026 U.S. Cost of Living Data Hub. All rights reserved.</p>
         <p>
             <a href="/about.html">About</a> | 
             <a href="/privacy.html">Privacy Policy</a> | 
