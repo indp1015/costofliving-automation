@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in South Carolina</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in South Carolina.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in South Carolina</h1>
+<p>Below are the counties in South Carolina, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/45013.html">Beaufort County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,819</span>
+                <span class="score">90737.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45019.html">Charleston County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,320</span>
+                <span class="score">90204.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45091.html">York County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,060</span>
+                <span class="score">88856.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45015.html">Berkeley County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,327</span>
+                <span class="score">88071.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45035.html">Dorchester County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,896</span>
+                <span class="score">82261.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45063.html">Lexington County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,014</span>
+                <span class="score">80248.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45057.html">Lancaster County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,751</span>
+                <span class="score">79967.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45045.html">Greenville County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,624</span>
+                <span class="score">79831.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45003.html">Aiken County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,940</span>
+                <span class="score">72681.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45037.html">Edgefield County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,092</span>
+                <span class="score">71773.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45043.html">Georgetown County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,734</span>
+                <span class="score">71390.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45007.html">Anderson County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,683</span>
+                <span class="score">69196.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45051.html">Horry County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,623</span>
+                <span class="score">69132.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45055.html">Kershaw County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,343</span>
+                <span class="score">68833.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45083.html">Spartanburg County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,195</span>
+                <span class="score">68674.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45053.html">Jasper County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,503</span>
+                <span class="score">67934.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45079.html">Richland County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,699</span>
+                <span class="score">66004.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45073.html">Oconee County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,193</span>
+                <span class="score">64393.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45071.html">Newberry County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,670</span>
+                <span class="score">63833.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45077.html">Pickens County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,411</span>
+                <span class="score">63556.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45017.html">Calhoun County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,690</span>
+                <span class="score">60645.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45041.html">Florence County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,650</span>
+                <span class="score">60603.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45085.html">Sumter County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,990</span>
+                <span class="score">59897.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45059.html">Laurens County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,517</span>
+                <span class="score">59391.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45065.html">McCormick County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,344</span>
+                <span class="score">59206.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45081.html">Saluda County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,957</span>
+                <span class="score">56652.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45001.html">Abbeville County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,112</span>
+                <span class="score">55748.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45023.html">Chester County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,216</span>
+                <span class="score">54789.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45047.html">Greenwood County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,635</span>
+                <span class="score">54168.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45021.html">Cherokee County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,047</span>
+                <span class="score">52469.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45027.html">Clarendon County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,887</span>
+                <span class="score">52298.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45029.html">Colleton County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,779</span>
+                <span class="score">52182.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45025.html">Chesterfield County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,620</span>
+                <span class="score">50943.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45031.html">Darlington County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,419</span>
+                <span class="score">50728.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45039.html">Fairfield County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,972</span>
+                <span class="score">50249.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45061.html">Lee County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,145</span>
+                <span class="score">47225.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45033.html">Dillon County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,038</span>
+                <span class="score">47111.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45089.html">Williamsburg County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,471</span>
+                <span class="score">46504.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45075.html">Orangeburg County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,214</span>
+                <span class="score">46229.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45009.html">Bamberg County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,206</span>
+                <span class="score">46221.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45049.html">Hampton County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,059</span>
+                <span class="score">46063.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45011.html">Barnwell County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,800</span>
+                <span class="score">44716.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45087.html">Union County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,200</span>
+                <span class="score">44075.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45069.html">Marlboro County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,293</span>
+                <span class="score">38825.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45067.html">Marion County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $34,501</span>
+                <span class="score">36908.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/45005.html">Allendale County, South Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $31,603</span>
+                <span class="score">33808.3</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

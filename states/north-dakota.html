@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in North Dakota</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in North Dakota.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in North Dakota</h1>
+<p>Below are the counties in North Dakota, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/38013.html">Burke County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,339</span>
+                <span class="score">109260.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38025.html">Dunn County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,688</span>
+                <span class="score">107387.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38105.html">Williams County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,224</span>
+                <span class="score">102324.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38023.html">Divide County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,297</span>
+                <span class="score">101273.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38053.html">McKenzie County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,289</span>
+                <span class="score">100130.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38097.html">Traill County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,289</span>
+                <span class="score">100130.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38015.html">Burleigh County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,948</span>
+                <span class="score">96341.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38011.html">Bowman County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,773</span>
+                <span class="score">95008.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38009.html">Bottineau County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,460</span>
+                <span class="score">94653.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38031.html">Foster County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,412</span>
+                <span class="score">94599.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38055.html">McLean County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,847</span>
+                <span class="score">92824.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38061.html">Mountrail County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,292</span>
+                <span class="score">92195.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38007.html">Billings County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,250</span>
+                <span class="score">92147.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38089.html">Stark County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,744</span>
+                <span class="score">91573.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38049.html">McHenry County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,614</span>
+                <span class="score">91426.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38091.html">Steele County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,313</span>
+                <span class="score">91084.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38059.html">Morton County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,483</span>
+                <span class="score">90143.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38057.html">Mercer County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,405</span>
+                <span class="score">90054.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38101.html">Ward County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,273</span>
+                <span class="score">89905.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38081.html">Sargent County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,697</span>
+                <span class="score">88117.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38065.html">Oliver County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,953</span>
+                <span class="score">87274.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38033.html">Golden Valley County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,528</span>
+                <span class="score">86792.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38075.html">Renville County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,311</span>
+                <span class="score">86545.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38017.html">Cass County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,023</span>
+                <span class="score">85085.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38073.html">Ransom County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,521</span>
+                <span class="score">84515.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38077.html">Richland County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,524</span>
+                <span class="score">82251.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38041.html">Hettinger County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,827</span>
+                <span class="score">80326.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38045.html">LaMoure County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,263</span>
+                <span class="score">79686.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38003.html">Barnes County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,230</span>
+                <span class="score">79649.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38099.html">Walsh County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,976</span>
+                <span class="score">79361.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38035.html">Grand Forks County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,450</span>
+                <span class="score">77630.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38063.html">Nelson County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,051</span>
+                <span class="score">77178.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38005.html">Benson County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,049</span>
+                <span class="score">77175.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38029.html">Emmons County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,368</span>
+                <span class="score">76403.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38083.html">Sheridan County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,361</span>
+                <span class="score">76395.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38019.html">Cavalier County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,064</span>
+                <span class="score">76058.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38067.html">Pembina County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,884</span>
+                <span class="score">75854.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38039.html">Griggs County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,737</span>
+                <span class="score">73419.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38051.html">McIntosh County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,236</span>
+                <span class="score">72851.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38069.html">Pierce County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,214</span>
+                <span class="score">71692.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38021.html">Dickey County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,125</span>
+                <span class="score">71591.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38095.html">Towner County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,017</span>
+                <span class="score">71468.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38087.html">Slope County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,500</span>
+                <span class="score">70882.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38043.html">Kidder County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,850</span>
+                <span class="score">70145.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38103.html">Wells County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,346</span>
+                <span class="score">69573.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38047.html">Logan County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,339</span>
+                <span class="score">69565.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38071.html">Ramsey County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,319</span>
+                <span class="score">69543.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38093.html">Stutsman County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,172</span>
+                <span class="score">68242.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38079.html">Rolette County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,355</span>
+                <span class="score">65047.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38037.html">Grant County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,750</span>
+                <span class="score">64361.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38001.html">Adams County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,417</span>
+                <span class="score">62849.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38027.html">Eddy County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,389</span>
+                <span class="score">62817.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/38085.html">Sioux County, North Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,676</span>
+                <span class="score">47265.6</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

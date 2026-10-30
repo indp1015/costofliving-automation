@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Unknown</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Unknown.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Unknown</h1>
+<p>Below are the counties in Unknown, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/72061.html">Guaynabo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,048</span>
+                <span class="score">46048.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72063.html">Gurabo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,532</span>
+                <span class="score">39532.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72139.html">Trujillo Alto Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,773</span>
+                <span class="score">38773.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72031.html">Carolina Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,126</span>
+                <span class="score">35126.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72051.html">Dorado Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,388</span>
+                <span class="score">33388.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72135.html">Toa Alta Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,349</span>
+                <span class="score">33349.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72021.html">Bayamón Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $30,729</span>
+                <span class="score">30729.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72025.html">Caguas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $30,113</span>
+                <span class="score">30113.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72137.html">Toa Baja Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $29,648</span>
+                <span class="score">29648.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72035.html">Cayey Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $28,461</span>
+                <span class="score">28461.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72077.html">Juncos Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $28,196</span>
+                <span class="score">28196.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72065.html">Hatillo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $28,001</span>
+                <span class="score">28001.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72049.html">Culebra Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $27,614</span>
+                <span class="score">27614.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72029.html">Canóvanas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $27,278</span>
+                <span class="score">27278.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72041.html">Cidra Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $27,149</span>
+                <span class="score">27149.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72127.html">San Juan Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $26,981</span>
+                <span class="score">26981.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72119.html">Río Grande Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $26,745</span>
+                <span class="score">26745.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72027.html">Camuy Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $26,094</span>
+                <span class="score">26094.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72069.html">Humacao Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $26,083</span>
+                <span class="score">26083.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72023.html">Cabo Rojo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $25,720</span>
+                <span class="score">25720.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72085.html">Las Piedras Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $25,697</span>
+                <span class="score">25697.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72143.html">Vega Alta Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $25,235</span>
+                <span class="score">25235.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72117.html">Rincón Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $25,223</span>
+                <span class="score">25223.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72053.html">Fajardo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $25,170</span>
+                <span class="score">25170.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72149.html">Villalba Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $24,882</span>
+                <span class="score">24882.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72067.html">Hormigueros Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $24,862</span>
+                <span class="score">24862.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72033.html">Cataño Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $24,307</span>
+                <span class="score">24307.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72047.html">Corozal Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,933</span>
+                <span class="score">23933.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72145.html">Vega Baja Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,877</span>
+                <span class="score">23877.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72075.html">Juana Díaz Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,823</span>
+                <span class="score">23823.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72089.html">Luquillo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,769</span>
+                <span class="score">23769.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72115.html">Quebradillas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,624</span>
+                <span class="score">23624.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72011.html">Añasco Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,591</span>
+                <span class="score">23591.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72109.html">Patillas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,422</span>
+                <span class="score">23422.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72037.html">Ceiba Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,204</span>
+                <span class="score">23204.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72133.html">Santa Isabel Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,197</span>
+                <span class="score">23197.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72013.html">Arecibo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,175</span>
+                <span class="score">23175.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72101.html">Morovis Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $23,010</span>
+                <span class="score">23010.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72087.html">Loíza Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $22,500</span>
+                <span class="score">22500.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72007.html">Aguas Buenas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $22,361</span>
+                <span class="score">22361.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72019.html">Barranquitas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $22,167</span>
+                <span class="score">22167.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72153.html">Yauco Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,918</span>
+                <span class="score">21918.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72017.html">Barceloneta Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,750</span>
+                <span class="score">21750.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72009.html">Aibonito Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,714</span>
+                <span class="score">21714.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72003.html">Aguada Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,694</span>
+                <span class="score">21694.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72123.html">Salinas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,611</span>
+                <span class="score">21611.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72103.html">Naguabo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,416</span>
+                <span class="score">21416.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72099.html">Moca Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,415</span>
+                <span class="score">21415.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72059.html">Guayanilla Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,400</span>
+                <span class="score">21400.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72105.html">Naranjito Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,399</span>
+                <span class="score">21399.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72129.html">San Lorenzo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,320</span>
+                <span class="score">21320.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72151.html">Yabucoa Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,279</span>
+                <span class="score">21279.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72054.html">Florida Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $21,213</span>
+                <span class="score">21213.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72111.html">Peñuelas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,959</span>
+                <span class="score">20959.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72043.html">Coamo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,797</span>
+                <span class="score">20797.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72039.html">Ciales Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,614</span>
+                <span class="score">20614.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72121.html">Sabana Grande Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,564</span>
+                <span class="score">20564.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72093.html">Maricao Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,541</span>
+                <span class="score">20541.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72071.html">Isabela Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,484</span>
+                <span class="score">20484.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72091.html">Manatí Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,352</span>
+                <span class="score">20352.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72057.html">Guayama Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $20,273</span>
+                <span class="score">20273.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72005.html">Aguadilla Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $19,826</span>
+                <span class="score">19826.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72095.html">Maunabo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $19,363</span>
+                <span class="score">19363.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72081.html">Lares Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $19,323</span>
+                <span class="score">19323.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72107.html">Orocovis Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $19,062</span>
+                <span class="score">19062.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72015.html">Arroyo Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $18,931</span>
+                <span class="score">18931.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72079.html">Lajas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $18,920</span>
+                <span class="score">18920.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72113.html">Ponce Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $18,827</span>
+                <span class="score">18827.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72001.html">Adjuntas Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $18,605</span>
+                <span class="score">18605.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72073.html">Jayuya Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $18,413</span>
+                <span class="score">18413.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72097.html">Mayagüez Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $17,963</span>
+                <span class="score">17963.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72125.html">San Germán Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $17,921</span>
+                <span class="score">17921.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72131.html">San Sebastián Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $17,834</span>
+                <span class="score">17834.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72141.html">Utuado Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $17,624</span>
+                <span class="score">17624.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72147.html">Vieques Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $17,531</span>
+                <span class="score">17531.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72045.html">Comerío Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $17,254</span>
+                <span class="score">17254.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72055.html">Guánica Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $16,210</span>
+                <span class="score">16210.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/72083.html">Las Marías Municipio, Puerto Rico</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $16,170</span>
+                <span class="score">16170.0</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

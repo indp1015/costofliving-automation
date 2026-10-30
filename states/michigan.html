@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Michigan</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Michigan.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Michigan</h1>
+<p>Below are the counties in Michigan, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/26093.html">Livingston County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $101,315</span>
+                <span class="score">107443.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26125.html">Oakland County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,296</span>
+                <span class="score">101060.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26089.html">Leelanau County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,943</span>
+                <span class="score">97504.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26161.html">Washtenaw County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,156</span>
+                <span class="score">92428.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26139.html">Ottawa County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,144</span>
+                <span class="score">92415.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26037.html">Clinton County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,928</span>
+                <span class="score">91125.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26081.html">Kent County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,390</span>
+                <span class="score">85252.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26005.html">Allegan County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,255</span>
+                <span class="score">85109.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26055.html">Grand Traverse County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,486</span>
+                <span class="score">84294.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26045.html">Eaton County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,025</span>
+                <span class="score">82744.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26015.html">Barry County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,873</span>
+                <span class="score">82583.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26111.html">Midland County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,538</span>
+                <span class="score">82228.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26029.html">Charlevoix County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,495</span>
+                <span class="score">81122.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26099.html">Macomb County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,399</span>
+                <span class="score">81020.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26087.html">Lapeer County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,228</span>
+                <span class="score">80839.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26115.html">Monroe County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,272</span>
+                <span class="score">79825.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26047.html">Emmet County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,724</span>
+                <span class="score">78183.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26067.html">Ionia County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,436</span>
+                <span class="score">77878.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26019.html">Benzie County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,603</span>
+                <span class="score">76994.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26009.html">Antrim County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,421</span>
+                <span class="score">75741.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26077.html">Kalamazoo County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,525</span>
+                <span class="score">74791.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26147.html">St. Clair County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,349</span>
+                <span class="score">73543.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26027.html">Cass County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,011</span>
+                <span class="score">72125.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26137.html">Otsego County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,285</span>
+                <span class="score">71355.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26091.html">Lenawee County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,013</span>
+                <span class="score">71066.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26159.html">Van Buren County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,902</span>
+                <span class="score">70948.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26075.html">Jackson County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,004</span>
+                <span class="score">68936.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26117.html">Montcalm County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,892</span>
+                <span class="score">68817.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26149.html">St. Joseph County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,707</span>
+                <span class="score">68621.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26103.html">Marquette County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,675</span>
+                <span class="score">68587.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26155.html">Shiawassee County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,464</span>
+                <span class="score">68363.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26065.html">Ingham County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,354</span>
+                <span class="score">68246.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26127.html">Oceana County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,624</span>
+                <span class="score">67472.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26121.html">Muskegon County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,495</span>
+                <span class="score">67335.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26021.html">Berrien County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,152</span>
+                <span class="score">66972.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26165.html">Wexford County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,123</span>
+                <span class="score">66941.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26157.html">Tuscola County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,847</span>
+                <span class="score">66648.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26105.html">Mason County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,296</span>
+                <span class="score">66064.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26023.html">Branch County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,958</span>
+                <span class="score">65705.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26123.html">Newaygo County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,931</span>
+                <span class="score">65677.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26043.html">Dickinson County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,882</span>
+                <span class="score">65625.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26113.html">Missaukee County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,868</span>
+                <span class="score">65610.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26031.html">Cheboygan County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,619</span>
+                <span class="score">65346.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26057.html">Gratiot County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,128</span>
+                <span class="score">64825.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26101.html">Manistee County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,879</span>
+                <span class="score">64561.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26059.html">Hillsdale County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,869</span>
+                <span class="score">64551.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26049.html">Genesee County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,673</span>
+                <span class="score">64343.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26033.html">Chippewa County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,631</span>
+                <span class="score">64298.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26017.html">Bay County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,523</span>
+                <span class="score">64184.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26025.html">Calhoun County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,385</span>
+                <span class="score">64037.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26079.html">Kalkaska County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,365</span>
+                <span class="score">64016.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26163.html">Wayne County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,521</span>
+                <span class="score">63121.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26003.html">Alger County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,406</span>
+                <span class="score">62999.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26151.html">Sanilac County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,074</span>
+                <span class="score">62647.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26039.html">Crawford County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,614</span>
+                <span class="score">62159.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26097.html">Mackinac County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,598</span>
+                <span class="score">62142.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26145.html">Saginaw County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,347</span>
+                <span class="score">61876.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26107.html">Mecosta County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,774</span>
+                <span class="score">61268.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26153.html">Schoolcraft County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,708</span>
+                <span class="score">61198.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26133.html">Osceola County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,050</span>
+                <span class="score">60501.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26011.html">Arenac County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,989</span>
+                <span class="score">60436.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26063.html">Huron County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,963</span>
+                <span class="score">60408.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26141.html">Presque Isle County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,713</span>
+                <span class="score">60143.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26061.html">Houghton County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,573</span>
+                <span class="score">59995.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26109.html">Menominee County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,688</span>
+                <span class="score">59056.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26051.html">Gladwin County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,576</span>
+                <span class="score">58937.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26013.html">Baraga County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,117</span>
+                <span class="score">58451.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26041.html">Delta County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,829</span>
+                <span class="score">58145.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26095.html">Luce County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,338</span>
+                <span class="score">57624.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26143.html">Roscommon County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,106</span>
+                <span class="score">57378.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26083.html">Keweenaw County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,893</span>
+                <span class="score">57153.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26073.html">Isabella County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,759</span>
+                <span class="score">57010.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26071.html">Iron County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,614</span>
+                <span class="score">56857.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26001.html">Alcona County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,568</span>
+                <span class="score">56808.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26129.html">Ogemaw County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,983</span>
+                <span class="score">55127.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26007.html">Alpena County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,909</span>
+                <span class="score">55049.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26131.html">Ontonagon County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,844</span>
+                <span class="score">54980.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26135.html">Oscoda County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,581</span>
+                <span class="score">53640.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26035.html">Clare County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,805</span>
+                <span class="score">52817.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26085.html">Lake County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,680</span>
+                <span class="score">52685.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26053.html">Gogebic County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,672</span>
+                <span class="score">52676.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26119.html">Montmorency County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,803</span>
+                <span class="score">50694.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/26069.html">Iosco County, Michigan</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,777</span>
+                <span class="score">50667.0</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

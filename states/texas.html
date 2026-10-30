@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Texas</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Texas.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Texas</h1>
+<p>Below are the counties in Texas, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/48397.html">Rockwall County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $124,917</span>
+                <span class="score">128594.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48085.html">Collin County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $117,588</span>
+                <span class="score">121050.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48157.html">Fort Bend County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $113,409</span>
+                <span class="score">116748.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48259.html">Kendall County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $110,498</span>
+                <span class="score">113751.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48491.html">Williamson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,309</span>
+                <span class="score">111497.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48121.html">Denton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,185</span>
+                <span class="score">111370.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48071.html">Chambers County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,114</span>
+                <span class="score">111297.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48173.html">Glasscock County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $106,806</span>
+                <span class="score">109950.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48367.html">Parker County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,099</span>
+                <span class="score">105105.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48091.html">Comal County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $99,015</span>
+                <span class="score">101930.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48339.html">Montgomery County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $97,266</span>
+                <span class="score">100129.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48453.html">Travis County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $97,169</span>
+                <span class="score">100029.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48139.html">Ellis County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,898</span>
+                <span class="score">98721.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48039.html">Brazoria County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,155</span>
+                <span class="score">97956.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48329.html">Midland County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,984</span>
+                <span class="score">96751.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48187.html">Guadalupe County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,776</span>
+                <span class="score">96537.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48493.html">Wilson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $92,461</span>
+                <span class="score">95183.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48495.html">Winkler County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,898</span>
+                <span class="score">94603.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48413.html">Schleicher County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,141</span>
+                <span class="score">92794.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48497.html">Wise County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,897</span>
+                <span class="score">92543.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48257.html">Kaufman County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,606</span>
+                <span class="score">91214.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48031.html">Blanco County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,564</span>
+                <span class="score">90142.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48221.html">Hood County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,802</span>
+                <span class="score">89357.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48209.html">Hays County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,827</span>
+                <span class="score">88353.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48167.html">Galveston County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,348</span>
+                <span class="score">87860.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48065.html">Carson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,583</span>
+                <span class="score">87073.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48425.html">Somervell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,382</span>
+                <span class="score">85836.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48021.html">Bastrop County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,730</span>
+                <span class="score">85165.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48501.html">Yoakum County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,261</span>
+                <span class="score">84682.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48205.html">Hartley County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,122</span>
+                <span class="score">84539.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48439.html">Tarrant County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,905</span>
+                <span class="score">84316.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48251.html">Johnson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,826</span>
+                <span class="score">84235.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48105.html">Crockett County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,739</span>
+                <span class="score">84145.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48381.html">Randall County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,905</span>
+                <span class="score">83287.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48431.html">Sterling County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,750</span>
+                <span class="score">81068.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48077.html">Clay County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,355</span>
+                <span class="score">79632.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48053.html">Burnet County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,158</span>
+                <span class="score">79429.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48317.html">Martin County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,083</span>
+                <span class="score">79352.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48281.html">Lampasas County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,919</span>
+                <span class="score">79183.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48003.html">Andrews County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,902</span>
+                <span class="score">79166.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48165.html">Gaines County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,605</span>
+                <span class="score">78860.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48149.html">Fayette County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,541</span>
+                <span class="score">78794.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48359.html">Oldham County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,402</span>
+                <span class="score">78651.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48473.html">Waller County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,135</span>
+                <span class="score">78376.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48015.html">Austin County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,994</span>
+                <span class="score">78231.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48477.html">Washington County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,085</span>
+                <span class="score">77295.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48435.html">Sutton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,000</span>
+                <span class="score">77208.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48421.html">Sherman County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,167</span>
+                <span class="score">76350.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48113.html">Dallas County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,149</span>
+                <span class="score">76332.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48325.html">Medina County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,462</span>
+                <span class="score">75624.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48361.html">Orange County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,372</span>
+                <span class="score">75532.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48201.html">Harris County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,104</span>
+                <span class="score">75256.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48051.html">Burleson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,888</span>
+                <span class="score">75034.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48199.html">Hardin County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,532</span>
+                <span class="score">74667.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48097.html">Cooke County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,472</span>
+                <span class="score">74605.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48111.html">Dallam County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,332</span>
+                <span class="score">74461.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48211.html">Hemphill County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,052</span>
+                <span class="score">74173.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48009.html">Archer County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,958</span>
+                <span class="score">74076.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48423.html">Smith County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,923</span>
+                <span class="score">74040.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48057.html">Calhoun County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,870</span>
+                <span class="score">73986.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48475.html">Ward County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,719</span>
+                <span class="score">73830.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48227.html">Howard County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,457</span>
+                <span class="score">73560.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48295.html">Lipscomb County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,442</span>
+                <span class="score">73545.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48263.html">Kent County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,420</span>
+                <span class="score">73522.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48135.html">Ector County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,031</span>
+                <span class="score">73122.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48017.html">Bailey County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,625</span>
+                <span class="score">72704.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48029.html">Bexar County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,571</span>
+                <span class="score">72648.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48181.html">Grayson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,455</span>
+                <span class="score">72529.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48383.html">Reagan County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,288</span>
+                <span class="score">72357.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48269.html">King County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,192</span>
+                <span class="score">72258.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48231.html">Hunt County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,112</span>
+                <span class="score">72176.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48469.html">Victoria County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,101</span>
+                <span class="score">72164.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48019.html">Bandera County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,703</span>
+                <span class="score">71755.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48013.html">Atascosa County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,413</span>
+                <span class="score">71456.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48035.html">Bosque County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,339</span>
+                <span class="score">71380.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48099.html">Coryell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,904</span>
+                <span class="score">70932.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48319.html">Mason County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,750</span>
+                <span class="score">70774.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48089.html">Colorado County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,554</span>
+                <span class="score">70572.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48055.html">Caldwell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,503</span>
+                <span class="score">70519.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48011.html">Armstrong County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,462</span>
+                <span class="score">70477.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48059.html">Callahan County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,455</span>
+                <span class="score">70470.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48147.html">Fannin County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,377</span>
+                <span class="score">70390.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48195.html">Hansford County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,299</span>
+                <span class="score">70309.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48467.html">Van Zandt County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,274</span>
+                <span class="score">70284.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48369.html">Parmer County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,164</span>
+                <span class="score">70170.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48483.html">Wheeler County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,964</span>
+                <span class="score">69965.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48265.html">Kerr County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,927</span>
+                <span class="score">69926.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48171.html">Gillespie County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,799</span>
+                <span class="score">69795.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48371.html">Pecos County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,689</span>
+                <span class="score">69681.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48409.html">San Patricio County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,512</span>
+                <span class="score">69499.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48401.html">Rusk County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,506</span>
+                <span class="score">69493.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48313.html">Madison County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,128</span>
+                <span class="score">69104.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48185.html">Grimes County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,080</span>
+                <span class="score">69055.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48159.html">Franklin County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,800</span>
+                <span class="score">68766.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48441.html">Taylor County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,406</span>
+                <span class="score">68361.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48271.html">Kinney County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,341</span>
+                <span class="score">68294.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48451.html">Tom Green County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,254</span>
+                <span class="score">68204.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48395.html">Robertson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,250</span>
+                <span class="score">68200.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48393.html">Roberts County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,118</span>
+                <span class="score">68064.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48481.html">Wharton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,100</span>
+                <span class="score">68046.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48027.html">Bell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,051</span>
+                <span class="score">67995.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48203.html">Harrison County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,040</span>
+                <span class="score">67984.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48355.html">Nueces County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,021</span>
+                <span class="score">67964.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48287.html">Lee County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,000</span>
+                <span class="score">67943.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48267.html">Kimble County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,703</span>
+                <span class="score">67637.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48237.html">Jack County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,693</span>
+                <span class="score">67627.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48299.html">Llano County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,636</span>
+                <span class="score">67568.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48233.html">Hutchinson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,470</span>
+                <span class="score">67397.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48143.html">Erath County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,351</span>
+                <span class="score">67275.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48357.html">Ochiltree County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,988</span>
+                <span class="score">66901.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48363.html">Palo Pinto County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,972</span>
+                <span class="score">66884.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48379.html">Rains County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,874</span>
+                <span class="score">66784.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48183.html">Gregg County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,809</span>
+                <span class="score">66717.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48291.html">Liberty County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,773</span>
+                <span class="score">66680.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48223.html">Hopkins County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,725</span>
+                <span class="score">66630.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48151.html">Fisher County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,700</span>
+                <span class="score">66604.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48417.html">Shackelford County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,659</span>
+                <span class="score">66562.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48333.html">Mills County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,494</span>
+                <span class="score">66392.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48033.html">Borden County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,250</span>
+                <span class="score">66141.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48123.html">DeWitt County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,014</span>
+                <span class="score">65898.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48213.html">Henderson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,955</span>
+                <span class="score">65838.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48309.html">McLennan County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,888</span>
+                <span class="score">65769.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48503.html">Young County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,723</span>
+                <span class="score">65599.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48399.html">Runnels County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,490</span>
+                <span class="score">65359.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48069.html">Castro County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,485</span>
+                <span class="score">65354.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48253.html">Jones County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,472</span>
+                <span class="score">65340.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48303.html">Lubbock County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,367</span>
+                <span class="score">65232.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48217.html">Hill County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,147</span>
+                <span class="score">65006.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48345.html">Motley County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,857</span>
+                <span class="score">64707.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48119.html">Delta County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,855</span>
+                <span class="score">64705.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48337.html">Montague County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,818</span>
+                <span class="score">64667.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48459.html">Upshur County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,794</span>
+                <span class="score">64642.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48415.html">Scurry County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,689</span>
+                <span class="score">64534.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48365.html">Panola County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,593</span>
+                <span class="score">64435.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48499.html">Wood County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,524</span>
+                <span class="score">64364.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48479.html">Webb County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,506</span>
+                <span class="score">64346.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48485.html">Wichita County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,168</span>
+                <span class="score">63998.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48285.html">Lavaca County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,768</span>
+                <span class="score">63586.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48007.html">Aransas County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,754</span>
+                <span class="score">63572.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48239.html">Jackson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,752</span>
+                <span class="score">63570.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48341.html">Moore County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,325</span>
+                <span class="score">63130.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48433.html">Stonewall County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,250</span>
+                <span class="score">63053.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48197.html">Hardeman County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,179</span>
+                <span class="score">62980.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48277.html">Lamar County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,122</span>
+                <span class="score">62921.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48075.html">Childress County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,333</span>
+                <span class="score">62109.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48087.html">Collingsworth County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,165</span>
+                <span class="score">61936.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48163.html">Frio County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,098</span>
+                <span class="score">61867.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48289.html">Leon County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,975</span>
+                <span class="score">61740.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48093.html">Comanche County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,946</span>
+                <span class="score">61710.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48245.html">Jefferson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,934</span>
+                <span class="score">61698.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48403.html">Sabine County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,924</span>
+                <span class="score">61688.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48103.html">Crane County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,915</span>
+                <span class="score">61679.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48073.html">Cherokee County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,830</span>
+                <span class="score">61591.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48465.html">Val Verde County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,673</span>
+                <span class="score">61429.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48095.html">Concho County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,632</span>
+                <span class="score">61387.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48175.html">Goliad County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,556</span>
+                <span class="score">61309.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48407.html">San Jacinto County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,526</span>
+                <span class="score">61278.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48177.html">Gonzales County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,355</span>
+                <span class="score">61102.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48349.html">Navarro County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,310</span>
+                <span class="score">61056.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48037.html">Bowie County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,295</span>
+                <span class="score">61040.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48449.html">Titus County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,220</span>
+                <span class="score">60963.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48255.html">Karnes County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,103</span>
+                <span class="score">60843.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48331.html">Milam County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,076</span>
+                <span class="score">60815.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48373.html">Polk County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,066</span>
+                <span class="score">60805.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48447.html">Throckmorton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,864</span>
+                <span class="score">60597.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48141.html">El Paso County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,859</span>
+                <span class="score">60591.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48005.html">Angelina County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,847</span>
+                <span class="score">60579.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48001.html">Anderson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,846</span>
+                <span class="score">60578.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48101.html">Cottle County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,819</span>
+                <span class="score">60550.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48161.html">Freestone County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,460</span>
+                <span class="score">60181.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48041.html">Brazos County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,388</span>
+                <span class="score">60107.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48235.html">Irion County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,125</span>
+                <span class="score">59836.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48293.html">Limestone County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,109</span>
+                <span class="score">59819.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48391.html">Refugio County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,016</span>
+                <span class="score">59724.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48463.html">Uvalde County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,849</span>
+                <span class="score">59552.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48273.html">Kleberg County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,612</span>
+                <span class="score">59308.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48305.html">Lynn County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,411</span>
+                <span class="score">59101.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48279.html">Lamb County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,997</span>
+                <span class="score">58675.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48129.html">Donley County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,648</span>
+                <span class="score">58315.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48275.html">Knox County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,304</span>
+                <span class="score">57961.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48179.html">Gray County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,082</span>
+                <span class="score">57733.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48025.html">Bee County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,075</span>
+                <span class="score">57726.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48389.html">Reeves County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,056</span>
+                <span class="score">57706.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48335.html">Mitchell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,033</span>
+                <span class="score">57682.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48115.html">Dawson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,789</span>
+                <span class="score">57431.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48283.html">La Salle County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,469</span>
+                <span class="score">57102.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48153.html">Floyd County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,461</span>
+                <span class="score">57093.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48145.html">Falls County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,372</span>
+                <span class="score">57002.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48193.html">Hamilton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,339</span>
+                <span class="score">56968.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48049.html">Brown County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,305</span>
+                <span class="score">56933.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48321.html">Matagorda County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,174</span>
+                <span class="score">56798.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48343.html">Morris County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,082</span>
+                <span class="score">56703.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48063.html">Camp County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,061</span>
+                <span class="score">56682.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48411.html">San Saba County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,855</span>
+                <span class="score">56470.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48219.html">Hockley County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,810</span>
+                <span class="score">56423.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48429.html">Stephens County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,695</span>
+                <span class="score">56305.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48225.html">Houston County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,563</span>
+                <span class="score">56169.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48067.html">Cass County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,328</span>
+                <span class="score">55927.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48117.html">Deaf Smith County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,114</span>
+                <span class="score">55707.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48207.html">Haskell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,044</span>
+                <span class="score">55635.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48297.html">Live Oak County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,869</span>
+                <span class="score">55455.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48189.html">Hale County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,788</span>
+                <span class="score">54342.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48043.html">Brewster County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,612</span>
+                <span class="score">54161.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48083.html">Coleman County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,364</span>
+                <span class="score">53905.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48461.html">Upton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,321</span>
+                <span class="score">53861.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48215.html">Hidalgo County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,281</span>
+                <span class="score">53820.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48107.html">Crosby County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,197</span>
+                <span class="score">53733.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48307.html">McCulloch County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,919</span>
+                <span class="score">53447.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48133.html">Eastland County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,741</span>
+                <span class="score">53264.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48455.html">Trinity County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,663</span>
+                <span class="score">53184.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48487.html">Wilbarger County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,626</span>
+                <span class="score">53146.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48347.html">Nacogdoches County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,528</span>
+                <span class="score">53045.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48061.html">Cameron County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,334</span>
+                <span class="score">52845.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48323.html">Maverick County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,270</span>
+                <span class="score">52779.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48301.html">Loving County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,087</span>
+                <span class="score">52591.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48457.html">Tyler County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,647</span>
+                <span class="score">52138.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48169.html">Garza County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,545</span>
+                <span class="score">52033.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48375.html">Potter County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,448</span>
+                <span class="score">51933.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48419.html">Shelby County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,436</span>
+                <span class="score">51920.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48125.html">Dickens County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,417</span>
+                <span class="score">51901.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48353.html">Nolan County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,160</span>
+                <span class="score">51636.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48131.html">Duval County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,081</span>
+                <span class="score">51555.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48241.html">Jasper County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,919</span>
+                <span class="score">51388.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48471.html">Walker County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,862</span>
+                <span class="score">51330.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48327.html">Menard County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,191</span>
+                <span class="score">49609.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48249.html">Jim Wells County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,492</span>
+                <span class="score">48890.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48315.html">Marion County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,447</span>
+                <span class="score">48843.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48443.html">Terrell County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,989</span>
+                <span class="score">48372.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48387.html">Red River County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,912</span>
+                <span class="score">48293.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48191.html">Hall County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,728</span>
+                <span class="score">48103.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48081.html">Coke County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,431</span>
+                <span class="score">47798.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48405.html">San Augustine County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,338</span>
+                <span class="score">47702.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48445.html">Terry County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,905</span>
+                <span class="score">47256.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48311.html">McMullen County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,833</span>
+                <span class="score">47182.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48489.html">Willacy County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,645</span>
+                <span class="score">46988.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48385.html">Real County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,417</span>
+                <span class="score">46754.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48109.html">Culberson County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,672</span>
+                <span class="score">43928.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48023.html">Baylor County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,313</span>
+                <span class="score">43558.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48247.html">Jim Hogg County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,230</span>
+                <span class="score">43473.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48155.html">Foard County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,212</span>
+                <span class="score">43454.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48079.html">Cochran County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,137</span>
+                <span class="score">43377.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48507.html">Zavala County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,887</span>
+                <span class="score">43120.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48045.html">Briscoe County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,188</span>
+                <span class="score">42400.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48351.html">Newton County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,044</span>
+                <span class="score">42252.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48229.html">Hudspeth County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,336</span>
+                <span class="score">40494.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48437.html">Swisher County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,031</span>
+                <span class="score">40180.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48137.html">Edwards County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,500</span>
+                <span class="score">39633.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48427.html">Starr County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,182</span>
+                <span class="score">39306.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48505.html">Zapata County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,527</span>
+                <span class="score">37602.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48127.html">Dimmit County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,409</span>
+                <span class="score">34392.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48243.html">Jeff Davis County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $32,625</span>
+                <span class="score">33585.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48047.html">Brooks County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $31,310</span>
+                <span class="score">32231.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48377.html">Presidio County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $29,014</span>
+                <span class="score">29868.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/48261.html">Kenedy County, Texas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $N/A</span>
+                <span class="score">N/A</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

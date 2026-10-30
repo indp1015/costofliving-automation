@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Washington</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Washington.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Washington</h1>
+<p>Below are the counties in Washington, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/53033.html">King County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $122,148</span>
+                <span class="score">112713.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53061.html">Snohomish County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $107,982</span>
+                <span class="score">99642.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53035.html">Kitsap County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,546</span>
+                <span class="score">90934.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53053.html">Pierce County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,632</span>
+                <span class="score">89168.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53011.html">Clark County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,948</span>
+                <span class="score">87614.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53067.html">Thurston County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,985</span>
+                <span class="score">86726.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53059.html">Skamania County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,085</span>
+                <span class="score">83127.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53029.html">Island County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,358</span>
+                <span class="score">81533.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53005.html">Benton County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,316</span>
+                <span class="score">80572.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53057.html">Skagit County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,474</span>
+                <span class="score">78872.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53055.html">San Juan County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,682</span>
+                <span class="score">77218.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53021.html">Franklin County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,755</span>
+                <span class="score">76363.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53073.html">Whatcom County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,989</span>
+                <span class="score">74733.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53017.html">Douglas County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,374</span>
+                <span class="score">74166.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53045.html">Mason County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,359</span>
+                <span class="score">72306.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53007.html">Chelan County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,306</span>
+                <span class="score">72258.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53063.html">Spokane County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,513</span>
+                <span class="score">67835.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53015.html">Cowlitz County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,932</span>
+                <span class="score">67299.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53071.html">Walla Walla County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,212</span>
+                <span class="score">66634.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53013.html">Columbia County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,528</span>
+                <span class="score">66003.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53043.html">Lincoln County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,227</span>
+                <span class="score">65725.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53031.html">Jefferson County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,143</span>
+                <span class="score">65648.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53025.html">Grant County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,115</span>
+                <span class="score">65622.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53039.html">Klickitat County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,400</span>
+                <span class="score">64962.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53037.html">Kittitas County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,928</span>
+                <span class="score">64527.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53041.html">Lewis County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,690</span>
+                <span class="score">64307.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53003.html">Asotin County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,107</span>
+                <span class="score">63769.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53077.html">Yakima County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,015</span>
+                <span class="score">62761.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53009.html">Clallam County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,999</span>
+                <span class="score">62747.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53065.html">Stevens County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,405</span>
+                <span class="score">62198.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53001.html">Adams County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,042</span>
+                <span class="score">60018.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53051.html">Pend Oreille County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,750</span>
+                <span class="score">58826.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53027.html">Grays Harbor County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,539</span>
+                <span class="score">58631.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53023.html">Garfield County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,411</span>
+                <span class="score">57590.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53049.html">Pacific County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,350</span>
+                <span class="score">57534.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53047.html">Okanogan County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,293</span>
+                <span class="score">55636.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53069.html">Wahkiakum County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,091</span>
+                <span class="score">52681.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53019.html">Ferry County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,650</span>
+                <span class="score">50429.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/53075.html">Whitman County, Washington</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,893</span>
+                <span class="score">48807.8</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

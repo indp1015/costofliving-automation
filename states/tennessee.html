@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Tennessee</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Tennessee.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Tennessee</h1>
+<p>Below are the counties in Tennessee, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/47187.html">Williamson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $131,202</span>
+                <span class="score">142465.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47189.html">Wilson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,048</span>
+                <span class="score">102121.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47165.html">Sumner County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,005</span>
+                <span class="score">93388.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47047.html">Fayette County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,764</span>
+                <span class="score">92040.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47149.html">Rutherford County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,588</span>
+                <span class="score">89677.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47021.html">Cheatham County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,015</span>
+                <span class="score">89055.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47105.html">Loudon County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,296</span>
+                <span class="score">87189.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47147.html">Robertson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,439</span>
+                <span class="score">85172.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47037.html">Davidson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,664</span>
+                <span class="score">82159.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47009.html">Blount County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,607</span>
+                <span class="score">81011.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47119.html">Maury County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,162</span>
+                <span class="score">80528.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47043.html">Dickson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,223</span>
+                <span class="score">79509.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47065.html">Hamilton County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,568</span>
+                <span class="score">78797.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47125.html">Montgomery County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,365</span>
+                <span class="score">78577.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47167.html">Tipton County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,736</span>
+                <span class="score">77894.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47093.html">Knox County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,662</span>
+                <span class="score">77814.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47117.html">Marshall County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,829</span>
+                <span class="score">76909.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47127.html">Moore County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,687</span>
+                <span class="score">72411.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47145.html">Roane County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,218</span>
+                <span class="score">71902.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47155.html">Sevier County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,829</span>
+                <span class="score">69308.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47011.html">Bradley County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,789</span>
+                <span class="score">69265.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47169.html">Trousdale County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,190</span>
+                <span class="score">68614.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47001.html">Anderson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,171</span>
+                <span class="score">68594.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47103.html">Lincoln County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,115</span>
+                <span class="score">68533.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47089.html">Jefferson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,084</span>
+                <span class="score">68499.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47159.html">Smith County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,799</span>
+                <span class="score">68190.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47157.html">Shelby County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,337</span>
+                <span class="score">67688.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47003.html">Bedford County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,197</span>
+                <span class="score">67536.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47161.html">Stewart County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,052</span>
+                <span class="score">67379.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47173.html">Union County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,858</span>
+                <span class="score">67168.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47051.html">Franklin County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,553</span>
+                <span class="score">66837.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47055.html">Giles County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,476</span>
+                <span class="score">66753.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47179.html">Washington County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,051</span>
+                <span class="score">66292.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47031.html">Coffee County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,656</span>
+                <span class="score">65863.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47023.html">Chester County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,543</span>
+                <span class="score">65740.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47175.html">Van Buren County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,281</span>
+                <span class="score">65455.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47139.html">Polk County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,227</span>
+                <span class="score">65397.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47107.html">McMinn County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,674</span>
+                <span class="score">64796.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47085.html">Humphreys County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,333</span>
+                <span class="score">64426.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47033.html">Crockett County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,049</span>
+                <span class="score">64118.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47053.html">Gibson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,009</span>
+                <span class="score">64074.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47035.html">Cumberland County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,475</span>
+                <span class="score">63494.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47121.html">Meigs County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,395</span>
+                <span class="score">63408.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47113.html">Madison County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,189</span>
+                <span class="score">63184.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47143.html">Rhea County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,133</span>
+                <span class="score">63123.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47115.html">Marion County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,103</span>
+                <span class="score">63091.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47015.html">Cannon County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,092</span>
+                <span class="score">63079.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47129.html">Morgan County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,408</span>
+                <span class="score">62336.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47081.html">Hickman County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,223</span>
+                <span class="score">62135.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47163.html">Sullivan County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,802</span>
+                <span class="score">61678.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47123.html">Monroe County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,648</span>
+                <span class="score">61511.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47141.html">Putnam County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,537</span>
+                <span class="score">61390.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47111.html">Macon County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,269</span>
+                <span class="score">61099.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47073.html">Hawkins County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,278</span>
+                <span class="score">60023.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47045.html">Dyer County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,973</span>
+                <span class="score">59692.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47083.html">Houston County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,475</span>
+                <span class="score">59151.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47177.html">Warren County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,088</span>
+                <span class="score">58731.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47059.html">Greene County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,071</span>
+                <span class="score">58712.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47077.html">Henderson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,471</span>
+                <span class="score">58061.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47099.html">Lawrence County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,233</span>
+                <span class="score">57802.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47131.html">Obion County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,102</span>
+                <span class="score">57660.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47181.html">Wayne County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,824</span>
+                <span class="score">57358.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47063.html">Hamblen County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,794</span>
+                <span class="score">57326.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47153.html">Sequatchie County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,260</span>
+                <span class="score">56746.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47185.html">White County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,206</span>
+                <span class="score">56687.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47091.html">Johnson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,152</span>
+                <span class="score">56629.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47057.html">Grainger County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,351</span>
+                <span class="score">55759.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47049.html">Fentress County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,865</span>
+                <span class="score">55231.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47109.html">McNairy County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,714</span>
+                <span class="score">55067.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47135.html">Perry County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,489</span>
+                <span class="score">54823.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47005.html">Benton County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,435</span>
+                <span class="score">54764.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47017.html">Carroll County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,391</span>
+                <span class="score">54716.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47171.html">Unicoi County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,381</span>
+                <span class="score">54706.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47013.html">Campbell County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,260</span>
+                <span class="score">54574.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47007.html">Bledsoe County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,655</span>
+                <span class="score">53917.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47183.html">Weakley County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,502</span>
+                <span class="score">53751.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47101.html">Lewis County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,477</span>
+                <span class="score">53724.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47097.html">Lauderdale County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,205</span>
+                <span class="score">53429.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47071.html">Hardin County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,149</span>
+                <span class="score">53368.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47079.html">Henry County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,540</span>
+                <span class="score">52707.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47041.html">DeKalb County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,484</span>
+                <span class="score">52646.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47019.html">Carter County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,435</span>
+                <span class="score">52593.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47029.html">Cocke County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,416</span>
+                <span class="score">52572.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47025.html">Claiborne County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,587</span>
+                <span class="score">50586.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47039.html">Decatur County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,190</span>
+                <span class="score">50155.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47069.html">Hardeman County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,173</span>
+                <span class="score">50136.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47133.html">Overton County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,159</span>
+                <span class="score">50121.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47061.html">Grundy County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,573</span>
+                <span class="score">49485.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47027.html">Clay County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,712</span>
+                <span class="score">48550.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47137.html">Pickett County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,591</span>
+                <span class="score">48419.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47075.html">Haywood County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,513</span>
+                <span class="score">47248.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47151.html">Scott County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,679</span>
+                <span class="score">46342.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47087.html">Jackson County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,475</span>
+                <span class="score">45035.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47067.html">Hancock County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $31,995</span>
+                <span class="score">34741.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/47095.html">Lake County, Tennessee</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $30,500</span>
+                <span class="score">33118.3</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Oregon</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Oregon.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Oregon</h1>
+<p>Below are the counties in Oregon, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/41067.html">Washington County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $104,434</span>
+                <span class="score">99639.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41005.html">Clackamas County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $100,360</span>
+                <span class="score">95752.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41017.html">Deschutes County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,640</span>
+                <span class="score">83616.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41071.html">Yamhill County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,084</span>
+                <span class="score">83085.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41009.html">Columbia County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,359</span>
+                <span class="score">82394.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41051.html">Multnomah County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,247</span>
+                <span class="score">82287.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41027.html">Hood River County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,095</span>
+                <span class="score">78326.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41013.html">Crook County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,675</span>
+                <span class="score">77925.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41053.html">Polk County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,318</span>
+                <span class="score">77584.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41003.html">Benton County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,011</span>
+                <span class="score">72521.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41047.html">Marion County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,624</span>
+                <span class="score">71198.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41043.html">Linn County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,396</span>
+                <span class="score">70026.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41031.html">Jefferson County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,051</span>
+                <span class="score">69697.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41029.html">Jackson County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,443</span>
+                <span class="score">68163.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41049.html">Morrow County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,217</span>
+                <span class="score">66993.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41039.html">Lane County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,311</span>
+                <span class="score">66128.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41059.html">Umatilla County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,958</span>
+                <span class="score">65792.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41007.html">Clatsop County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,705</span>
+                <span class="score">65550.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41057.html">Tillamook County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,551</span>
+                <span class="score">63495.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41063.html">Wallowa County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,559</span>
+                <span class="score">62549.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41015.html">Curry County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,769</span>
+                <span class="score">61795.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41021.html">Gilliam County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,219</span>
+                <span class="score">61270.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41061.html">Union County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,212</span>
+                <span class="score">61264.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41065.html">Wasco County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,602</span>
+                <span class="score">60682.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41041.html">Lincoln County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,314</span>
+                <span class="score">58499.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41037.html">Lake County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,222</span>
+                <span class="score">58411.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41011.html">Coos County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,313</span>
+                <span class="score">57544.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41023.html">Grant County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,800</span>
+                <span class="score">57054.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41055.html">Sherman County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,500</span>
+                <span class="score">56768.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41035.html">Klamath County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,353</span>
+                <span class="score">56628.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41033.html">Josephine County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,097</span>
+                <span class="score">56383.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41019.html">Douglas County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,983</span>
+                <span class="score">56275.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41001.html">Baker County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,844</span>
+                <span class="score">55188.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41069.html">Wheeler County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,250</span>
+                <span class="score">48897.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41045.html">Malheur County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,902</span>
+                <span class="score">47611.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/41025.html">Harney County, Oregon</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,338</span>
+                <span class="score">46118.8</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

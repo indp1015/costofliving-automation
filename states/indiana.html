@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Indiana</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Indiana.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Indiana</h1>
+<p>Below are the counties in Indiana, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/18057.html">Hamilton County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $117,957</span>
+                <span class="score">128079.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18011.html">Boone County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $104,865</span>
+                <span class="score">113863.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18063.html">Hendricks County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $99,988</span>
+                <span class="score">108568.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18173.html">Warrick County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,027</span>
+                <span class="score">103181.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18059.html">Hancock County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,326</span>
+                <span class="score">99162.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18081.html">Johnson County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,227</span>
+                <span class="score">94712.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18127.html">Porter County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,828</span>
+                <span class="score">93193.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18087.html">LaGrange County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,741</span>
+                <span class="score">90927.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18029.html">Dearborn County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,693</span>
+                <span class="score">89789.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18005.html">Bartholomew County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,365</span>
+                <span class="score">87261.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18047.html">Franklin County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,702</span>
+                <span class="score">86541.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18073.html">Jasper County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,634</span>
+                <span class="score">86467.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18161.html">Union County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,500</span>
+                <span class="score">86322.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18129.html">Posey County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,124</span>
+                <span class="score">85913.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18109.html">Morgan County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,088</span>
+                <span class="score">85874.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18159.html">Tipton County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,309</span>
+                <span class="score">85028.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18043.html">Floyd County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,179</span>
+                <span class="score">84887.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18133.html">Putnam County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,182</span>
+                <span class="score">82719.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18183.html">Whitley County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,790</span>
+                <span class="score">82293.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18171.html">Warren County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,635</span>
+                <span class="score">81039.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18031.html">Decatur County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,228</span>
+                <span class="score">80597.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18085.html">Kosciusko County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,922</span>
+                <span class="score">80265.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18013.html">Brown County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,644</span>
+                <span class="score">78877.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18061.html">Harrison County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,468</span>
+                <span class="score">78686.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18019.html">Clark County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,298</span>
+                <span class="score">78502.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18037.html">Dubois County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,918</span>
+                <span class="score">78089.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18151.html">Steuben County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,483</span>
+                <span class="score">77617.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18145.html">Shelby County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,301</span>
+                <span class="score">77419.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18137.html">Ripley County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,084</span>
+                <span class="score">77183.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18113.html">Noble County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,908</span>
+                <span class="score">76992.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18147.html">Spencer County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,890</span>
+                <span class="score">76973.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18091.html">LaPorte County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,452</span>
+                <span class="score">76497.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18071.html">Jackson County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,208</span>
+                <span class="score">76232.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18033.html">DeKalb County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,080</span>
+                <span class="score">76093.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18179.html">Wells County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,741</span>
+                <span class="score">75725.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18089.html">Lake County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,985</span>
+                <span class="score">74904.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18003.html">Allen County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,839</span>
+                <span class="score">74746.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18111.html">Newton County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,596</span>
+                <span class="score">74482.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18027.html">Daviess County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,561</span>
+                <span class="score">74444.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18079.html">Jennings County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,476</span>
+                <span class="score">74352.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18169.html">Wabash County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,414</span>
+                <span class="score">74284.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18099.html">Marshall County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,041</span>
+                <span class="score">73879.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18115.html">Ohio County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,942</span>
+                <span class="score">73772.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18051.html">Gibson County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,763</span>
+                <span class="score">73577.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18021.html">Clay County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,676</span>
+                <span class="score">73483.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18121.html">Parke County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,776</span>
+                <span class="score">72506.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18107.html">Montgomery County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,571</span>
+                <span class="score">72283.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18125.html">Pike County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,250</span>
+                <span class="score">71935.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18181.html">White County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,143</span>
+                <span class="score">71818.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18039.html">Elkhart County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,617</span>
+                <span class="score">71247.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18093.html">Lawrence County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,551</span>
+                <span class="score">71176.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18101.html">Martin County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,345</span>
+                <span class="score">70952.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18155.html">Switzerland County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,148</span>
+                <span class="score">70738.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18141.html">St. Joseph County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,885</span>
+                <span class="score">70452.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18117.html">Orange County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,758</span>
+                <span class="score">70315.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18139.html">Rush County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,393</span>
+                <span class="score">69918.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18015.html">Carroll County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,003</span>
+                <span class="score">69495.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18023.html">Clinton County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,690</span>
+                <span class="score">69155.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18097.html">Marion County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,450</span>
+                <span class="score">68894.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18105.html">Monroe County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,372</span>
+                <span class="score">68810.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18001.html">Adams County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,128</span>
+                <span class="score">68545.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18149.html">Starke County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,933</span>
+                <span class="score">68333.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18049.html">Fulton County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,878</span>
+                <span class="score">68273.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18069.html">Huntington County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,734</span>
+                <span class="score">68117.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18095.html">Madison County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,632</span>
+                <span class="score">68006.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18045.html">Fountain County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,526</span>
+                <span class="score">67891.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18067.html">Howard County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,496</span>
+                <span class="score">67858.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18007.html">Benton County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,811</span>
+                <span class="score">67115.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18175.html">Washington County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,358</span>
+                <span class="score">66623.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18103.html">Miami County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,130</span>
+                <span class="score">66375.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18135.html">Randolph County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,121</span>
+                <span class="score">66365.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18123.html">Perry County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,099</span>
+                <span class="score">66342.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18163.html">Vanderburgh County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,938</span>
+                <span class="score">66167.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18065.html">Henry County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,144</span>
+                <span class="score">65305.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18077.html">Jefferson County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,987</span>
+                <span class="score">65134.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18131.html">Pulaski County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,956</span>
+                <span class="score">65100.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18055.html">Greene County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,753</span>
+                <span class="score">64880.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18119.html">Owen County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,586</span>
+                <span class="score">64699.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18165.html">Vermillion County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,363</span>
+                <span class="score">64457.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18083.html">Knox County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,863</span>
+                <span class="score">63914.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18157.html">Tippecanoe County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,622</span>
+                <span class="score">63652.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18035.html">Delaware County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,932</span>
+                <span class="score">61817.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18041.html">Fayette County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,659</span>
+                <span class="score">61521.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18177.html">Wayne County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,652</span>
+                <span class="score">61513.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18017.html">Cass County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,525</span>
+                <span class="score">61375.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18153.html">Sullivan County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,985</span>
+                <span class="score">59703.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18143.html">Scott County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,583</span>
+                <span class="score">59266.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18075.html">Jay County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,114</span>
+                <span class="score">58757.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18053.html">Grant County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,007</span>
+                <span class="score">58641.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18167.html">Vigo County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,525</span>
+                <span class="score">57032.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18025.html">Crawford County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,993</span>
+                <span class="score">53197.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/18009.html">Blackford County, Indiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,560</span>
+                <span class="score">51641.2</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

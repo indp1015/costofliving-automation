@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Alabama</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Alabama.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Alabama</h1>
+<p>Below are the counties in Alabama, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/01117.html">Shelby County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,543</span>
+                <span class="score">104990.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01083.html">Limestone County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,534</span>
+                <span class="score">93756.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01089.html">Madison County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,528</span>
+                <span class="score">93749.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01115.html">St. Clair County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,993</span>
+                <span class="score">88659.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01051.html">Elmore County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,553</span>
+                <span class="score">84798.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01003.html">Baldwin County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,019</span>
+                <span class="score">84199.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01001.html">Autauga County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,841</span>
+                <span class="score">78387.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01103.html">Morgan County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,858</span>
+                <span class="score">72794.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01031.html">Coffee County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,672</span>
+                <span class="score">72586.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01073.html">Jefferson County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,589</span>
+                <span class="score">72492.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01125.html">Tuscaloosa County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,947</span>
+                <span class="score">71772.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01021.html">Chilton County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,873</span>
+                <span class="score">69444.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01081.html">Lee County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,123</span>
+                <span class="score">68602.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01009.html">Blount County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,096</span>
+                <span class="score">68572.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01095.html">Marshall County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,946</span>
+                <span class="score">68404.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01043.html">Cullman County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,916</span>
+                <span class="score">68370.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01129.html">Washington County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,503</span>
+                <span class="score">67906.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01067.html">Henry County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,135</span>
+                <span class="score">67493.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01079.html">Lawrence County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,040</span>
+                <span class="score">67387.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01077.html">Lauderdale County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,082</span>
+                <span class="score">66312.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01101.html">Montgomery County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,153</span>
+                <span class="score">65269.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01097.html">Mobile County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,119</span>
+                <span class="score">65231.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01069.html">Houston County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,531</span>
+                <span class="score">64571.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01123.html">Tallapoosa County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,185</span>
+                <span class="score">64182.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01037.html">Coosa County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,063</span>
+                <span class="score">64045.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01033.html">Colbert County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,736</span>
+                <span class="score">63678.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01121.html">Talladega County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,249</span>
+                <span class="score">63132.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01015.html">Calhoun County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,826</span>
+                <span class="score">62657.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01127.html">Walker County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,509</span>
+                <span class="score">61179.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01045.html">Dale County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,955</span>
+                <span class="score">60557.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01029.html">Cleburne County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,319</span>
+                <span class="score">59843.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01055.html">Etowah County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,070</span>
+                <span class="score">59564.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01027.html">Clay County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,852</span>
+                <span class="score">58197.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01111.html">Randolph County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,551</span>
+                <span class="score">57859.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01059.html">Franklin County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,493</span>
+                <span class="score">57794.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01007.html">Bibb County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,215</span>
+                <span class="score">57482.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01049.html">DeKalb County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,149</span>
+                <span class="score">57408.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01061.html">Geneva County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,951</span>
+                <span class="score">57186.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01039.html">Covington County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,886</span>
+                <span class="score">57113.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01019.html">Cherokee County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,769</span>
+                <span class="score">56981.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01057.html">Fayette County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,733</span>
+                <span class="score">56941.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01093.html">Marion County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,714</span>
+                <span class="score">56920.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01113.html">Russell County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,046</span>
+                <span class="score">56170.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01071.html">Jackson County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,454</span>
+                <span class="score">55505.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01017.html">Chambers County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,295</span>
+                <span class="score">55327.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01025.html">Clarke County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,167</span>
+                <span class="score">55183.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01041.html">Crenshaw County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,040</span>
+                <span class="score">55041.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01133.html">Winston County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,032</span>
+                <span class="score">53909.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01109.html">Pike County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,961</span>
+                <span class="score">53830.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01075.html">Lamar County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,447</span>
+                <span class="score">53253.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01107.html">Pickens County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,014</span>
+                <span class="score">52767.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01087.html">Macon County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,951</span>
+                <span class="score">51574.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01013.html">Butler County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,881</span>
+                <span class="score">50373.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01023.html">Choctaw County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,483</span>
+                <span class="score">49926.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01053.html">Escambia County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,447</span>
+                <span class="score">49886.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01005.html">Barbour County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,290</span>
+                <span class="score">49709.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01091.html">Marengo County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,205</span>
+                <span class="score">49614.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01035.html">Conecuh County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,266</span>
+                <span class="score">47438.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01131.html">Wilcox County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,236</span>
+                <span class="score">47404.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01065.html">Hale County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,325</span>
+                <span class="score">46382.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01099.html">Monroe County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,225</span>
+                <span class="score">45147.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01119.html">Sumter County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,981</span>
+                <span class="score">42628.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01047.html">Dallas County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,810</span>
+                <span class="score">41314.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01011.html">Bullock County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,723</span>
+                <span class="score">41216.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01085.html">Lowndes County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,160</span>
+                <span class="score">39462.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01105.html">Perry County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $34,368</span>
+                <span class="score">38573.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/01063.html">Greene County, Alabama</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $31,495</span>
+                <span class="score">35349.1</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

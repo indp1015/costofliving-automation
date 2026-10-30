@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in California</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in California.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in California</h1>
+<p>Below are the counties in California, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/06085.html">Santa Clara County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $159,674</span>
+                <span class="score">142318.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06081.html">San Mateo County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $156,000</span>
+                <span class="score">139043.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06041.html">Marin County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $142,785</span>
+                <span class="score">127265.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06075.html">San Francisco County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $141,446</span>
+                <span class="score">126071.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06001.html">Alameda County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $126,240</span>
+                <span class="score">112518.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06013.html">Contra Costa County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $125,727</span>
+                <span class="score">112061.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06061.html">Placer County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $114,678</span>
+                <span class="score">102213.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06059.html">Orange County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $113,702</span>
+                <span class="score">101343.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06003.html">Alpine County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $110,781</span>
+                <span class="score">98739.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06087.html">Santa Cruz County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $109,266</span>
+                <span class="score">97389.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06055.html">Napa County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,970</span>
+                <span class="score">97125.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06069.html">San Benito County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,289</span>
+                <span class="score">96518.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06111.html">Ventura County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $107,327</span>
+                <span class="score">95661.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06017.html">El Dorado County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $106,190</span>
+                <span class="score">94647.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06097.html">Sonoma County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,840</span>
+                <span class="score">91661.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06073.html">San Diego County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,285</span>
+                <span class="score">91167.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06095.html">Solano County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $99,994</span>
+                <span class="score">89125.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06083.html">Santa Barbara County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,977</span>
+                <span class="score">85544.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06053.html">Monterey County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,486</span>
+                <span class="score">84215.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06079.html">San Luis Obispo County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,398</span>
+                <span class="score">83246.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06065.html">Riverside County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,672</span>
+                <span class="score">79925.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06113.html">Yolo County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,818</span>
+                <span class="score">79164.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06067.html">Sacramento County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,724</span>
+                <span class="score">79080.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06077.html">San Joaquin County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,531</span>
+                <span class="score">78908.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06037.html">Los Angeles County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,760</span>
+                <span class="score">78221.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06051.html">Mono County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,953</span>
+                <span class="score">77501.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06057.html">Nevada County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,905</span>
+                <span class="score">75676.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06071.html">San Bernardino County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,184</span>
+                <span class="score">73251.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06005.html">Amador County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,526</span>
+                <span class="score">72664.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06009.html">Calaveras County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,877</span>
+                <span class="score">71194.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06099.html">Stanislaus County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,661</span>
+                <span class="score">71002.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06039.html">Madera County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,496</span>
+                <span class="score">67290.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06101.html">Sutter County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,450</span>
+                <span class="score">67249.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06011.html">Colusa County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,149</span>
+                <span class="score">66980.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06115.html">Yuba County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,313</span>
+                <span class="score">65344.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06027.html">Inyo County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,432</span>
+                <span class="score">64559.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06109.html">Tuolumne County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,259</span>
+                <span class="score">64404.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06089.html">Shasta County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,931</span>
+                <span class="score">64112.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06019.html">Fresno County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,434</span>
+                <span class="score">63669.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06021.html">Glenn County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,487</span>
+                <span class="score">62825.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06107.html">Tulare County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,489</span>
+                <span class="score">61935.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06031.html">Kings County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,750</span>
+                <span class="score">61277.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06007.html">Butte County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,574</span>
+                <span class="score">61120.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06029.html">Kern County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,660</span>
+                <span class="score">60305.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06015.html">Del Norte County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,780</span>
+                <span class="score">59521.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06043.html">Mariposa County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,378</span>
+                <span class="score">58271.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06047.html">Merced County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,044</span>
+                <span class="score">57974.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06063.html">Plumas County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,946</span>
+                <span class="score">57886.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06045.html">Mendocino County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,688</span>
+                <span class="score">57656.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06035.html">Lassen County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,395</span>
+                <span class="score">57395.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06103.html">Tehama County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,834</span>
+                <span class="score">55113.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06023.html">Humboldt County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,135</span>
+                <span class="score">54490.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06091.html">Sierra County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,000</span>
+                <span class="score">53478.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06033.html">Lake County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,738</span>
+                <span class="score">52353.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06049.html">Modoc County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,648</span>
+                <span class="score">50490.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06025.html">Imperial County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,393</span>
+                <span class="score">50263.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06093.html">Siskiyou County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,499</span>
+                <span class="score">49466.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/06105.html">Trinity County, California</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,498</span>
+                <span class="score">47683.1</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

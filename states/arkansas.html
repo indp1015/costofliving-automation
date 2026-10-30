@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Arkansas</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Arkansas.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Arkansas</h1>
+<p>Below are the counties in Arkansas, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/05007.html">Benton County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,879</span>
+                <span class="score">103535.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05125.html">Saline County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,534</span>
+                <span class="score">88162.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05053.html">Grant County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,512</span>
+                <span class="score">83529.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05085.html">Lonoke County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,449</span>
+                <span class="score">82305.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05143.html">Washington County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,426</span>
+                <span class="score">76518.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05045.html">Faulkner County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,071</span>
+                <span class="score">74958.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05013.html">Calhoun County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,654</span>
+                <span class="score">73325.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05001.html">Arkansas County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,831</span>
+                <span class="score">70073.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05119.html">Pulaski County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,385</span>
+                <span class="score">69560.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05033.html">Crawford County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,362</span>
+                <span class="score">69533.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05105.html">Perry County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,078</span>
+                <span class="score">69206.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05149.html">Yell County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,870</span>
+                <span class="score">67814.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05031.html">Craighead County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,615</span>
+                <span class="score">66369.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05055.html">Greene County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,793</span>
+                <span class="score">65422.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05131.html">Sebastian County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,450</span>
+                <span class="score">65027.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05063.html">Independence County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,009</span>
+                <span class="score">64519.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05023.html">Cleburne County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,979</span>
+                <span class="score">64484.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05051.html">Garland County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,409</span>
+                <span class="score">63827.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05015.html">Carroll County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,187</span>
+                <span class="score">63572.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05115.html">Pope County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,606</span>
+                <span class="score">62902.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05035.html">Crittenden County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,271</span>
+                <span class="score">62517.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05083.html">Logan County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,237</span>
+                <span class="score">62477.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05009.html">Boone County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,195</span>
+                <span class="score">62429.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05087.html">Madison County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,888</span>
+                <span class="score">62075.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05145.html">White County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,435</span>
+                <span class="score">61554.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05093.html">Mississippi County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,428</span>
+                <span class="score">61545.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05121.html">Randolph County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,838</span>
+                <span class="score">60866.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05059.html">Hot Spring County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,644</span>
+                <span class="score">60642.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05081.html">Little River County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,241</span>
+                <span class="score">60178.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05047.html">Franklin County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,919</span>
+                <span class="score">59807.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05079.html">Lincoln County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,667</span>
+                <span class="score">59517.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05133.html">Sevier County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,641</span>
+                <span class="score">59487.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05029.html">Conway County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,212</span>
+                <span class="score">58993.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05117.html">Prairie County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,094</span>
+                <span class="score">58857.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05109.html">Pike County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,000</span>
+                <span class="score">58749.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05019.html">Clark County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,985</span>
+                <span class="score">58731.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05025.html">Cleveland County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,509</span>
+                <span class="score">58183.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05139.html">Union County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,221</span>
+                <span class="score">57851.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05091.html">Miller County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,983</span>
+                <span class="score">57577.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05147.html">Woodruff County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,982</span>
+                <span class="score">57576.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05103.html">Ouachita County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,838</span>
+                <span class="score">57410.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05113.html">Polk County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,252</span>
+                <span class="score">56735.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05097.html">Montgomery County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,015</span>
+                <span class="score">56462.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05069.html">Jefferson County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,552</span>
+                <span class="score">55929.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05021.html">Clay County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,500</span>
+                <span class="score">55869.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05005.html">Baxter County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,427</span>
+                <span class="score">55785.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05065.html">Izard County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,728</span>
+                <span class="score">54979.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05057.html">Hempstead County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,654</span>
+                <span class="score">54894.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05101.html">Newton County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,395</span>
+                <span class="score">54596.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05027.html">Columbia County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,363</span>
+                <span class="score">54559.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05141.html">Van Buren County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,266</span>
+                <span class="score">54447.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05111.html">Poinsett County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,188</span>
+                <span class="score">54357.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05037.html">Cross County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,012</span>
+                <span class="score">54155.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05089.html">Marion County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,953</span>
+                <span class="score">54087.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05127.html">Scott County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,955</span>
+                <span class="score">52937.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05071.html">Johnson County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,808</span>
+                <span class="score">51616.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05039.html">Dallas County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,694</span>
+                <span class="score">51484.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05061.html">Howard County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,492</span>
+                <span class="score">51252.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05003.html">Ashley County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,481</span>
+                <span class="score">51239.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05075.html">Lawrence County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,164</span>
+                <span class="score">50874.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05095.html">Monroe County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,955</span>
+                <span class="score">50633.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05135.html">Sharp County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,950</span>
+                <span class="score">49475.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05129.html">Searcy County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,978</span>
+                <span class="score">48356.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05123.html">St. Francis County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,784</span>
+                <span class="score">48132.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05099.html">Nevada County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,761</span>
+                <span class="score">48106.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05067.html">Jackson County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,215</span>
+                <span class="score">47477.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05043.html">Drew County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,071</span>
+                <span class="score">47311.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05017.html">Chicot County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,683</span>
+                <span class="score">45712.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05011.html">Bradley County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,565</span>
+                <span class="score">45576.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05049.html">Fulton County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,941</span>
+                <span class="score">44857.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05107.html">Phillips County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,874</span>
+                <span class="score">44780.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05137.html">Stone County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,531</span>
+                <span class="score">44385.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05073.html">Lafayette County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,237</span>
+                <span class="score">42894.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05077.html">Lee County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,860</span>
+                <span class="score">42460.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/05041.html">Desha County, Arkansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,064</span>
+                <span class="score">41543.6</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

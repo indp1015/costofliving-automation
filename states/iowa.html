@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Iowa</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Iowa.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Iowa</h1>
+<p>Below are the counties in Iowa, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/19049.html">Dallas County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,349</span>
+                <span class="score">115298.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19181.html">Warren County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $92,990</span>
+                <span class="score">104755.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19121.html">Madison County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,542</span>
+                <span class="score">100870.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19129.html">Mills County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,810</span>
+                <span class="score">98919.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19011.html">Benton County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,742</span>
+                <span class="score">95463.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19167.html">Sioux County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,736</span>
+                <span class="score">95456.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19075.html">Grundy County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,617</span>
+                <span class="score">94196.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19017.html">Bremer County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,343</span>
+                <span class="score">93887.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19153.html">Polk County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,621</span>
+                <span class="score">91947.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19149.html">Plymouth County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,600</span>
+                <span class="score">91924.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19115.html">Louisa County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,223</span>
+                <span class="score">90372.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19077.html">Guthrie County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,981</span>
+                <span class="score">90100.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19015.html">Boone County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,741</span>
+                <span class="score">89829.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19051.html">Davis County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,505</span>
+                <span class="score">89563.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19031.html">Cedar County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,080</span>
+                <span class="score">89085.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19019.html">Buchanan County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,430</span>
+                <span class="score">88352.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19125.html">Marion County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,059</span>
+                <span class="score">87935.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19085.html">Harrison County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,027</span>
+                <span class="score">86772.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19195.html">Worth County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,875</span>
+                <span class="score">86601.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19113.html">Linn County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,421</span>
+                <span class="score">86089.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19163.html">Scott County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,363</span>
+                <span class="score">86024.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19055.html">Delaware County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,205</span>
+                <span class="score">85846.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19061.html">Dubuque County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,919</span>
+                <span class="score">85524.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19191.html">Winneshiek County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,652</span>
+                <span class="score">85223.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19103.html">Johnson County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,721</span>
+                <span class="score">84174.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19059.html">Dickinson County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,570</span>
+                <span class="score">84004.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19071.html">Fremont County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,750</span>
+                <span class="score">83080.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19037.html">Chickasaw County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,421</span>
+                <span class="score">82710.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19105.html">Jones County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,071</span>
+                <span class="score">82315.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19119.html">Lyon County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,881</span>
+                <span class="score">82101.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19127.html">Marshall County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,785</span>
+                <span class="score">81993.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19135.html">Monroe County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,518</span>
+                <span class="score">81692.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19095.html">Iowa County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,185</span>
+                <span class="score">81317.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19079.html">Hamilton County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,750</span>
+                <span class="score">80827.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19097.html">Jackson County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,605</span>
+                <span class="score">80664.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19155.html">Pottawattamie County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,446</span>
+                <span class="score">80485.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19183.html">Washington County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,339</span>
+                <span class="score">80364.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19161.html">Sac County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,991</span>
+                <span class="score">79972.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19081.html">Hancock County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,212</span>
+                <span class="score">79095.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19193.html">Woodbury County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,147</span>
+                <span class="score">79022.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19099.html">Jasper County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,128</span>
+                <span class="score">79000.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19159.html">Ringgold County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,821</span>
+                <span class="score">78654.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19023.html">Butler County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,651</span>
+                <span class="score">78463.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19139.html">Muscatine County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,512</span>
+                <span class="score">78306.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19143.html">Osceola County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,138</span>
+                <span class="score">77885.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19123.html">Mahaska County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,019</span>
+                <span class="score">77751.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19169.html">Story County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,006</span>
+                <span class="score">77736.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19147.html">Palo Alto County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,963</span>
+                <span class="score">77688.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19003.html">Adams County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,828</span>
+                <span class="score">77536.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19131.html">Mitchell County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,704</span>
+                <span class="score">77396.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19027.html">Carroll County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,528</span>
+                <span class="score">77198.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19141.html">O'Brien County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,216</span>
+                <span class="score">76846.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19187.html">Webster County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,054</span>
+                <span class="score">76664.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19171.html">Tama County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,955</span>
+                <span class="score">76552.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19117.html">Lucas County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,921</span>
+                <span class="score">76514.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19165.html">Shelby County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,690</span>
+                <span class="score">76254.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19089.html">Howard County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,336</span>
+                <span class="score">75855.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19173.html">Taylor County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,279</span>
+                <span class="score">75791.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19091.html">Humboldt County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,994</span>
+                <span class="score">75470.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19025.html">Calhoun County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,875</span>
+                <span class="score">75336.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19039.html">Clarke County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,821</span>
+                <span class="score">75275.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19021.html">Buena Vista County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,564</span>
+                <span class="score">74985.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19001.html">Adair County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,176</span>
+                <span class="score">74548.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19005.html">Allamakee County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,000</span>
+                <span class="score">74350.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19109.html">Kossuth County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,656</span>
+                <span class="score">73962.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19033.html">Cerro Gordo County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,537</span>
+                <span class="score">73828.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19063.html">Emmet County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,181</span>
+                <span class="score">73427.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19045.html">Clinton County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,177</span>
+                <span class="score">73423.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19047.html">Crawford County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,039</span>
+                <span class="score">73267.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19083.html">Hardin County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,906</span>
+                <span class="score">73117.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19157.html">Poweshiek County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,837</span>
+                <span class="score">73040.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19087.html">Henry County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,604</span>
+                <span class="score">72777.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19013.html">Black Hawk County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,581</span>
+                <span class="score">72751.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19067.html">Floyd County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,500</span>
+                <span class="score">72660.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19035.html">Cherokee County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,478</span>
+                <span class="score">72635.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19041.html">Clay County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,082</span>
+                <span class="score">72189.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19197.html">Wright County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,033</span>
+                <span class="score">72134.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19189.html">Winnebago County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,719</span>
+                <span class="score">71780.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19069.html">Franklin County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,648</span>
+                <span class="score">71700.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19151.html">Pocahontas County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,423</span>
+                <span class="score">71447.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19137.html">Montgomery County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,190</span>
+                <span class="score">71184.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19133.html">Monona County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,944</span>
+                <span class="score">70907.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19093.html">Ida County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,841</span>
+                <span class="score">70791.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19043.html">Clayton County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,326</span>
+                <span class="score">70211.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19029.html">Cass County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,657</span>
+                <span class="score">69457.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19107.html">Keokuk County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,856</span>
+                <span class="score">68555.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19057.html">Des Moines County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,662</span>
+                <span class="score">68336.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19177.html">Van Buren County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,183</span>
+                <span class="score">67797.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19179.html">Wapello County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,034</span>
+                <span class="score">67629.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19111.html">Lee County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,803</span>
+                <span class="score">67369.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19073.html">Greene County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,159</span>
+                <span class="score">66643.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19185.html">Wayne County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,118</span>
+                <span class="score">66597.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19065.html">Fayette County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,764</span>
+                <span class="score">66198.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19145.html">Page County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,752</span>
+                <span class="score">65058.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19053.html">Decatur County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,146</span>
+                <span class="score">64376.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19101.html">Jefferson County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,824</span>
+                <span class="score">64013.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19175.html">Union County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,813</span>
+                <span class="score">64000.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19009.html">Audubon County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,152</span>
+                <span class="score">61003.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/19007.html">Appanoose County, Iowa</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,146</span>
+                <span class="score">57617.0</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Virginia</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Virginia.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Virginia</h1>
+<p>Below are the counties in Virginia, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/51107.html">Loudoun County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $178,707</span>
+                <span class="score">176359.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51610.html">Falls Church city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $154,734</span>
+                <span class="score">152701.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51059.html">Fairfax County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $150,113</span>
+                <span class="score">148141.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51013.html">Arlington County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $140,160</span>
+                <span class="score">138319.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51179.html">Stafford County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $133,792</span>
+                <span class="score">132034.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51600.html">Fairfax city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $132,774</span>
+                <span class="score">131030.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51061.html">Fauquier County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $129,495</span>
+                <span class="score">127794.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51153.html">Prince William County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $128,873</span>
+                <span class="score">127180.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51735.html">Poquoson city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $120,919</span>
+                <span class="score">119330.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51127.html">New Kent County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $120,125</span>
+                <span class="score">118547.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51075.html">Goochland County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $118,695</span>
+                <span class="score">117135.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51683.html">Manassas city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $117,919</span>
+                <span class="score">116370.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51043.html">Clarke County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $114,185</span>
+                <span class="score">112685.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51510.html">Alexandria city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $113,638</span>
+                <span class="score">112145.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51145.html">Powhatan County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $110,667</span>
+                <span class="score">109213.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51099.html">King George County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $110,517</span>
+                <span class="score">109065.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51177.html">Spotsylvania County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $109,576</span>
+                <span class="score">108136.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51085.html">Hanover County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $109,504</span>
+                <span class="score">108065.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51199.html">York County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,326</span>
+                <span class="score">106903.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51095.html">James City County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $107,046</span>
+                <span class="score">105639.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51003.html">Albemarle County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,617</span>
+                <span class="score">101269.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51685.html">Manassas Park city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $100,668</span>
+                <span class="score">99345.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51041.html">Chesterfield County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,910</span>
+                <span class="score">97610.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51157.html">Rappahannock County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,125</span>
+                <span class="score">96836.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51093.html">Isle of Wight County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,118</span>
+                <span class="score">94855.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51047.html">Culpeper County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,098</span>
+                <span class="score">94835.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51069.html">Frederick County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,603</span>
+                <span class="score">94347.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51550.html">Chesapeake city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,189</span>
+                <span class="score">92951.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51137.html">Orange County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,175</span>
+                <span class="score">92938.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51065.html">Fluvanna County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,959</span>
+                <span class="score">90751.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51810.html">Virginia Beach city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,685</span>
+                <span class="score">89493.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51800.html">Suffolk city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,089</span>
+                <span class="score">88905.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51678.html">Lexington city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,598</span>
+                <span class="score">88421.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51149.html">Prince George County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,225</span>
+                <span class="score">87066.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51087.html">Henrico County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,397</span>
+                <span class="score">85262.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51033.html">Caroline County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,267</span>
+                <span class="score">85133.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51630.html">Fredericksburg city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,368</span>
+                <span class="score">84246.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51079.html">Greene County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,268</span>
+                <span class="score">84148.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51101.html">King William County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,212</span>
+                <span class="score">84092.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51187.html">Warren County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,331</span>
+                <span class="score">83223.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51053.html">Dinwiddie County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,898</span>
+                <span class="score">82796.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51073.html">Gloucester County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,689</span>
+                <span class="score">82589.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51113.html">Madison County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,972</span>
+                <span class="score">81882.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51161.html">Roanoke County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,931</span>
+                <span class="score">81841.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51023.html">Botetourt County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,467</span>
+                <span class="score">79410.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51109.html">Louisa County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,343</span>
+                <span class="score">79287.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51015.html">Augusta County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,972</span>
+                <span class="score">78921.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51165.html">Rockingham County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,468</span>
+                <span class="score">77437.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51019.html">Bedford County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,644</span>
+                <span class="score">76624.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51570.html">Colonial Heights city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,250</span>
+                <span class="score">75248.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51115.html">Mathews County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,487</span>
+                <span class="score">74495.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51119.html">Middlesex County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,154</span>
+                <span class="score">73180.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51097.html">King and Queen County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,851</span>
+                <span class="score">71894.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51181.html">Surry County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,458</span>
+                <span class="score">70519.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51121.html">Montgomery County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,769</span>
+                <span class="score">69839.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51036.html">Charles City County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,339</span>
+                <span class="score">69415.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51830.html">Williamsburg city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,206</span>
+                <span class="score">69283.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51540.html">Charlottesville city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,829</span>
+                <span class="score">68911.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51133.html">Northumberland County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,500</span>
+                <span class="score">68587.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51125.html">Nelson County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,525</span>
+                <span class="score">67624.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51175.html">Southampton County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,465</span>
+                <span class="score">67565.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51067.html">Franklin County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,348</span>
+                <span class="score">67450.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51045.html">Craig County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,778</span>
+                <span class="score">66887.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51650.html">Hampton city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,758</span>
+                <span class="score">66868.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51009.html">Amherst County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,298</span>
+                <span class="score">66414.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51103.html">Lancaster County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,169</span>
+                <span class="score">66286.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51700.html">Newport News city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,718</span>
+                <span class="score">65841.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51775.html">Salem city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,716</span>
+                <span class="score">65839.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51007.html">Amelia County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,339</span>
+                <span class="score">65467.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51620.html">Franklin city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,125</span>
+                <span class="score">64269.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51071.html">Giles County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,819</span>
+                <span class="score">63967.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51840.html">Winchester city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,648</span>
+                <span class="score">63798.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51171.html">Shenandoah County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,437</span>
+                <span class="score">63590.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51159.html">Richmond County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,184</span>
+                <span class="score">63340.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51710.html">Norfolk city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,017</span>
+                <span class="score">63176.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51163.html">Rockbridge County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,975</span>
+                <span class="score">63134.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51091.html">Highland County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,946</span>
+                <span class="score">62119.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51183.html">Sussex County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,821</span>
+                <span class="score">61995.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51191.html">Washington County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,774</span>
+                <span class="score">61949.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51760.html">Richmond city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,671</span>
+                <span class="score">61847.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51031.html">Campbell County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,608</span>
+                <span class="score">61785.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51790.html">Staunton city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,586</span>
+                <span class="score">61763.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51011.html">Appomattox County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,337</span>
+                <span class="score">61518.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51135.html">Nottoway County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,161</span>
+                <span class="score">61344.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51017.html">Bath County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,709</span>
+                <span class="score">60898.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51063.html">Floyd County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,401</span>
+                <span class="score">60594.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51021.html">Bland County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,375</span>
+                <span class="score">60568.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51155.html">Pulaski County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,767</span>
+                <span class="score">59968.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51680.html">Lynchburg city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,808</span>
+                <span class="score">59022.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51193.html">Westmoreland County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,766</span>
+                <span class="score">58981.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51660.html">Harrisonburg city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,752</span>
+                <span class="score">58967.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51139.html">Page County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,396</span>
+                <span class="score">58615.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51029.html">Buckingham County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,199</span>
+                <span class="score">58421.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51740.html">Portsmouth city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,972</span>
+                <span class="score">58197.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51001.html">Accomack County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,500</span>
+                <span class="score">56744.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51049.html">Cumberland County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,057</span>
+                <span class="score">56307.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51081.html">Greensville County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,759</span>
+                <span class="score">56013.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51057.html">Essex County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,481</span>
+                <span class="score">55739.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51820.html">Waynesboro city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,364</span>
+                <span class="score">55623.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51131.html">Northampton County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,933</span>
+                <span class="score">55198.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51197.html">Wythe County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,359</span>
+                <span class="score">54631.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51005.html">Alleghany County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,160</span>
+                <span class="score">54435.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51147.html">Prince Edward County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,082</span>
+                <span class="score">54358.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51111.html">Lunenburg County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,460</span>
+                <span class="score">53744.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51530.html">Buena Vista city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,458</span>
+                <span class="score">53742.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51143.html">Pittsylvania County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,115</span>
+                <span class="score">53404.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51025.html">Brunswick County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,978</span>
+                <span class="score">52282.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51750.html">Radford city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,791</span>
+                <span class="score">52097.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51770.html">Roanoke city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,671</span>
+                <span class="score">51979.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51035.html">Carroll County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,575</span>
+                <span class="score">51884.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51117.html">Mecklenburg County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,691</span>
+                <span class="score">51012.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51141.html">Patrick County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,938</span>
+                <span class="score">50268.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51730.html">Petersburg city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,741</span>
+                <span class="score">50074.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51195.html">Wise County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,740</span>
+                <span class="score">50073.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51595.html">Emporia city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,375</span>
+                <span class="score">48726.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51083.html">Halifax County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,244</span>
+                <span class="score">48597.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51167.html">Russell County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,020</span>
+                <span class="score">48376.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51037.html">Charlotte County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,892</span>
+                <span class="score">48249.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51670.html">Hopewell city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,681</span>
+                <span class="score">48041.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51089.html">Henry County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,445</span>
+                <span class="score">47808.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51173.html">Smyth County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,859</span>
+                <span class="score">46243.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51185.html">Tazewell County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,788</span>
+                <span class="score">45186.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51169.html">Scott County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,136</span>
+                <span class="score">44543.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51520.html">Bristol city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,706</span>
+                <span class="score">44118.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51051.html">Dickenson County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,831</span>
+                <span class="score">43255.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51077.html">Grayson County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,864</span>
+                <span class="score">42301.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51590.html">Danville city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,778</span>
+                <span class="score">42216.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51580.html">Covington city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,724</span>
+                <span class="score">42162.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51690.html">Martinsville city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,434</span>
+                <span class="score">41876.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51105.html">Lee County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,269</span>
+                <span class="score">41713.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51027.html">Buchanan County, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,216</span>
+                <span class="score">41661.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51640.html">Galax city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,438</span>
+                <span class="score">40893.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/51720.html">Norton city, Virginia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,497</span>
+                <span class="score">37991.3</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

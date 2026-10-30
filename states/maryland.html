@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Maryland</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Maryland.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Maryland</h1>
+<p>Below are the counties in Maryland, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/24027.html">Howard County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $146,982</span>
+                <span class="score">140515.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24009.html">Calvert County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $132,059</span>
+                <span class="score">126249.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24031.html">Montgomery County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $128,733</span>
+                <span class="score">123069.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24017.html">Charles County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $120,592</span>
+                <span class="score">115286.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24021.html">Frederick County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $120,458</span>
+                <span class="score">115158.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24003.html">Anne Arundel County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $120,324</span>
+                <span class="score">115030.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24013.html">Carroll County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $115,876</span>
+                <span class="score">110778.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24037.html">St. Mary's County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $114,580</span>
+                <span class="score">109539.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24035.html">Queen Anne's County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $113,347</span>
+                <span class="score">108360.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24025.html">Harford County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $111,317</span>
+                <span class="score">106419.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24033.html">Prince George's County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $100,708</span>
+                <span class="score">96277.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24015.html">Cecil County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,146</span>
+                <span class="score">87136.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24005.html">Baltimore County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,904</span>
+                <span class="score">86904.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24041.html">Talbot County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,378</span>
+                <span class="score">80665.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24047.html">Worcester County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,455</span>
+                <span class="score">77871.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24029.html">Kent County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,402</span>
+                <span class="score">71128.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24043.html">Washington County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,157</span>
+                <span class="score">70894.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24045.html">Wicomico County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,861</span>
+                <span class="score">69655.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24023.html">Garrett County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,031</span>
+                <span class="score">65994.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24011.html">Caroline County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,368</span>
+                <span class="score">63448.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24019.html">Dorchester County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,495</span>
+                <span class="score">57833.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24510.html">Baltimore city, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,623</span>
+                <span class="score">56999.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24001.html">Allegany County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,393</span>
+                <span class="score">54868.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/24039.html">Somerset County, Maryland</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,462</span>
+                <span class="score">50153.9</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

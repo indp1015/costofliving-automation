@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Missouri</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Missouri.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Missouri</h1>
+<p>Below are the counties in Missouri, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/29183.html">St. Charles County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,912</span>
+                <span class="score">112961.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29165.html">Platte County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,748</span>
+                <span class="score">105097.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29037.html">Cass County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,413</span>
+                <span class="score">95948.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29047.html">Clay County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,150</span>
+                <span class="score">94562.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29113.html">Lincoln County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,276</span>
+                <span class="score">93602.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29189.html">St. Louis County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,340</span>
+                <span class="score">89282.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29043.html">Christian County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,245</span>
+                <span class="score">89178.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29099.html">Jefferson County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,522</span>
+                <span class="score">88384.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29107.html">Lafayette County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,091</span>
+                <span class="score">86814.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29219.html">Warren County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,989</span>
+                <span class="score">85604.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29151.html">Osage County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,355</span>
+                <span class="score">82713.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29003.html">Andrew County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,007</span>
+                <span class="score">81233.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29051.html">Cole County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,273</span>
+                <span class="score">80427.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29027.html">Callaway County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,645</span>
+                <span class="score">79738.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29177.html">Ray County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,152</span>
+                <span class="score">79197.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29071.html">Franklin County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,973</span>
+                <span class="score">79000.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29049.html">Clinton County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,625</span>
+                <span class="score">77521.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29019.html">Boone County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,913</span>
+                <span class="score">76739.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29225.html">Webster County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,731</span>
+                <span class="score">76540.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29063.html">DeKalb County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,093</span>
+                <span class="score">75839.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29031.html">Cape Girardeau County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,912</span>
+                <span class="score">75641.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29199.html">Scotland County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,568</span>
+                <span class="score">74165.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29053.html">Cooper County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,548</span>
+                <span class="score">74143.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29095.html">Jackson County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,178</span>
+                <span class="score">73737.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29101.html">Johnson County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,123</span>
+                <span class="score">73677.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29169.html">Pulaski County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,435</span>
+                <span class="score">72922.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29135.html">Moniteau County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,161</span>
+                <span class="score">71523.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29073.html">Gasconade County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,096</span>
+                <span class="score">71452.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29145.html">Newton County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,583</span>
+                <span class="score">70889.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29127.html">Marion County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,908</span>
+                <span class="score">70148.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29157.html">Perry County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,356</span>
+                <span class="score">69542.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29041.html">Chariton County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,307</span>
+                <span class="score">69488.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29029.html">Camden County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,927</span>
+                <span class="score">69071.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29089.html">Howard County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,628</span>
+                <span class="score">68743.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29025.html">Caldwell County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,520</span>
+                <span class="score">68624.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29173.html">Ralls County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,054</span>
+                <span class="score">68113.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29115.html">Linn County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,975</span>
+                <span class="score">68026.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29033.html">Carroll County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,712</span>
+                <span class="score">67738.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29125.html">Maries County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,359</span>
+                <span class="score">67350.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29209.html">Stone County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,323</span>
+                <span class="score">67311.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29186.html">Ste. Genevieve County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,310</span>
+                <span class="score">67296.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29139.html">Montgomery County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,042</span>
+                <span class="score">67002.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29061.html">Daviess County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,665</span>
+                <span class="score">66588.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29129.html">Mercer County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,357</span>
+                <span class="score">66250.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29159.html">Pettis County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,232</span>
+                <span class="score">66113.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29117.html">Livingston County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,148</span>
+                <span class="score">66021.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29021.html">Buchanan County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,423</span>
+                <span class="score">65225.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29005.html">Atchison County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,260</span>
+                <span class="score">65046.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29203.html">Shannon County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,000</span>
+                <span class="score">64761.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29201.html">Scott County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,847</span>
+                <span class="score">64593.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29087.html">Holt County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,516</span>
+                <span class="score">64229.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29123.html">Madison County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,435</span>
+                <span class="score">64141.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29121.html">Macon County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,318</span>
+                <span class="score">64012.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29213.html">Taney County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,258</span>
+                <span class="score">63946.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29013.html">Bates County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,914</span>
+                <span class="score">63569.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29163.html">Pike County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,572</span>
+                <span class="score">63193.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29097.html">Jasper County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,525</span>
+                <span class="score">63142.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29077.html">Greene County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,488</span>
+                <span class="score">63101.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29075.html">Gentry County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,458</span>
+                <span class="score">63068.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29017.html">Bollinger County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,286</span>
+                <span class="score">62879.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29171.html">Putnam County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,875</span>
+                <span class="score">62428.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29167.html">Polk County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,686</span>
+                <span class="score">62221.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29083.html">Henry County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,621</span>
+                <span class="score">62149.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29009.html">Barry County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,611</span>
+                <span class="score">62138.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29001.html">Adair County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,583</span>
+                <span class="score">62108.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29195.html">Saline County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,566</span>
+                <span class="score">62089.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29055.html">Crawford County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,345</span>
+                <span class="score">61846.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29007.html">Audrain County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,232</span>
+                <span class="score">61722.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29197.html">Schuyler County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,023</span>
+                <span class="score">61493.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29147.html">Nodaway County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,970</span>
+                <span class="score">61435.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29109.html">Lawrence County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,849</span>
+                <span class="score">61302.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29211.html">Sullivan County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,500</span>
+                <span class="score">60919.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29161.html">Phelps County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,427</span>
+                <span class="score">60839.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29175.html">Randolph County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,310</span>
+                <span class="score">60710.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29510.html">St. Louis city, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,279</span>
+                <span class="score">60676.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29131.html">Miller County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,172</span>
+                <span class="score">60559.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29187.html">St. Francois County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,813</span>
+                <span class="score">60165.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29217.html">Vernon County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,519</span>
+                <span class="score">59842.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29065.html">Dent County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,306</span>
+                <span class="score">59608.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29207.html">Stoddard County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,067</span>
+                <span class="score">59346.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29079.html">Grundy County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,839</span>
+                <span class="score">59096.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29081.html">Harrison County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,364</span>
+                <span class="score">58574.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29103.html">Knox County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,333</span>
+                <span class="score">58540.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29059.html">Dallas County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,177</span>
+                <span class="score">58369.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29111.html">Lewis County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,340</span>
+                <span class="score">57450.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29015.html">Benton County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,200</span>
+                <span class="score">57297.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29205.html">Shelby County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,127</span>
+                <span class="score">57217.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29221.html">Washington County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,886</span>
+                <span class="score">56952.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29045.html">Clark County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,458</span>
+                <span class="score">56482.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29093.html">Iron County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,161</span>
+                <span class="score">56156.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29105.html">Laclede County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,825</span>
+                <span class="score">55787.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29057.html">Dade County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,899</span>
+                <span class="score">54771.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29067.html">Douglas County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,828</span>
+                <span class="score">54693.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29091.html">Howell County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,814</span>
+                <span class="score">54678.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29141.html">Morgan County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,663</span>
+                <span class="score">54512.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29011.html">Barton County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,503</span>
+                <span class="score">54336.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29143.html">New Madrid County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,237</span>
+                <span class="score">54044.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29023.html">Butler County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,213</span>
+                <span class="score">54018.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29137.html">Monroe County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,299</span>
+                <span class="score">53015.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29119.html">McDonald County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,145</span>
+                <span class="score">52846.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29215.html">Texas County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,055</span>
+                <span class="score">52747.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29069.html">Dunklin County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,368</span>
+                <span class="score">51993.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29229.html">Wright County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,304</span>
+                <span class="score">51923.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29185.html">St. Clair County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,731</span>
+                <span class="score">51294.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29133.html">Mississippi County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,258</span>
+                <span class="score">50774.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29227.html">Worth County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,167</span>
+                <span class="score">50675.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29039.html">Cedar County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,577</span>
+                <span class="score">50027.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29035.html">Carter County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,083</span>
+                <span class="score">49485.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29179.html">Reynolds County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,357</span>
+                <span class="score">48688.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29149.html">Oregon County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,259</span>
+                <span class="score">48580.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29181.html">Ripley County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,898</span>
+                <span class="score">48184.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29223.html">Wayne County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,393</span>
+                <span class="score">47630.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29153.html">Ozark County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,329</span>
+                <span class="score">46462.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29155.html">Pemiscot County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,748</span>
+                <span class="score">44726.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/29085.html">Hickory County, Missouri</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,084</span>
+                <span class="score">38509.8</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

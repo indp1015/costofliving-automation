@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Ohio</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Ohio.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Ohio</h1>
+<p>Below are the counties in Ohio, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/39041.html">Delaware County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $130,088</span>
+                <span class="score">141549.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39159.html">Union County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $109,506</span>
+                <span class="score">119153.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39165.html">Warren County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $107,843</span>
+                <span class="score">117344.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39055.html">Geauga County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $100,783</span>
+                <span class="score">109662.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39103.html">Medina County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $92,660</span>
+                <span class="score">100823.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39045.html">Fairfield County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,069</span>
+                <span class="score">94740.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39057.html">Greene County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,218</span>
+                <span class="score">92726.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39097.html">Madison County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,229</span>
+                <span class="score">90561.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39025.html">Clermont County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,178</span>
+                <span class="score">90506.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39137.html">Putnam County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,785</span>
+                <span class="score">90078.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39017.html">Butler County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,194</span>
+                <span class="score">88347.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39089.html">Licking County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,033</span>
+                <span class="score">88172.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39069.html">Henry County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,267</span>
+                <span class="score">86250.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39107.html">Mercer County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,036</span>
+                <span class="score">84911.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39085.html">Lake County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,952</span>
+                <span class="score">84819.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39011.html">Auglaize County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,454</span>
+                <span class="score">83189.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39123.html">Ottawa County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,728</span>
+                <span class="score">82399.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39075.html">Holmes County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,774</span>
+                <span class="score">81361.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39021.html">Champaign County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,239</span>
+                <span class="score">80779.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39109.html">Miami County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,175</span>
+                <span class="score">80710.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39083.html">Knox County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,988</span>
+                <span class="score">80506.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39049.html">Franklin County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,795</span>
+                <span class="score">80296.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39039.html">Defiance County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,615</span>
+                <span class="score">80100.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39173.html">Wood County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,124</span>
+                <span class="score">79566.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39129.html">Pickaway County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,927</span>
+                <span class="score">79352.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39051.html">Fulton County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,866</span>
+                <span class="score">79285.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39133.html">Portage County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,822</span>
+                <span class="score">79237.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39149.html">Shelby County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,822</span>
+                <span class="score">79237.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39175.html">Wyandot County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,878</span>
+                <span class="score">78210.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39169.html">Wayne County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,769</span>
+                <span class="score">78092.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39135.html">Preble County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,237</span>
+                <span class="score">77513.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39117.html">Morrow County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,047</span>
+                <span class="score">77306.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39153.html">Summit County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,016</span>
+                <span class="score">77272.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39061.html">Hamilton County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,816</span>
+                <span class="score">77055.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39093.html">Lorain County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,693</span>
+                <span class="score">76921.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39015.html">Brown County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,990</span>
+                <span class="score">76156.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39063.html">Hancock County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,699</span>
+                <span class="score">75839.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39091.html">Logan County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,183</span>
+                <span class="score">75278.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39043.html">Erie County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,431</span>
+                <span class="score">74460.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39125.html">Paulding County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,167</span>
+                <span class="score">74172.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39027.html">Clinton County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,125</span>
+                <span class="score">74127.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39077.html">Huron County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,972</span>
+                <span class="score">71784.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39151.html">Stark County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,740</span>
+                <span class="score">71531.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39161.html">Van Wert County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,344</span>
+                <span class="score">71101.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39147.html">Seneca County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,020</span>
+                <span class="score">70748.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39005.html">Ashland County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,991</span>
+                <span class="score">70717.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39127.html">Perry County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,737</span>
+                <span class="score">70440.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39019.html">Carroll County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,675</span>
+                <span class="score">70373.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39037.html">Darke County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,654</span>
+                <span class="score">70350.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39157.html">Tuscarawas County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,494</span>
+                <span class="score">70176.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39113.html">Montgomery County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,403</span>
+                <span class="score">70077.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39035.html">Cuyahoga County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,823</span>
+                <span class="score">68357.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39143.html">Sandusky County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,500</span>
+                <span class="score">68006.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39071.html">Highland County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,008</span>
+                <span class="score">67471.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39003.html">Allen County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,001</span>
+                <span class="score">67463.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39171.html">Williams County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,834</span>
+                <span class="score">67281.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39073.html">Hocking County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,366</span>
+                <span class="score">66772.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39167.html">Washington County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,355</span>
+                <span class="score">66760.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39023.html">Clark County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,846</span>
+                <span class="score">66206.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39095.html">Lucas County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,095</span>
+                <span class="score">65389.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39047.html">Fayette County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,047</span>
+                <span class="score">65337.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39141.html">Ross County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,819</span>
+                <span class="score">65089.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39119.html">Muskingum County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,203</span>
+                <span class="score">64419.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39111.html">Monroe County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,962</span>
+                <span class="score">64156.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39029.html">Columbiana County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,474</span>
+                <span class="score">63625.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39013.html">Belmont County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,411</span>
+                <span class="score">63557.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39079.html">Jackson County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,409</span>
+                <span class="score">63555.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39065.html">Hardin County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,001</span>
+                <span class="score">63111.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39139.html">Richland County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,649</span>
+                <span class="score">62728.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39101.html">Marion County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,306</span>
+                <span class="score">62354.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39081.html">Jefferson County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,983</span>
+                <span class="score">62003.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39053.html">Gallia County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,455</span>
+                <span class="score">61428.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39115.html">Morgan County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,971</span>
+                <span class="score">60902.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39059.html">Guernsey County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,756</span>
+                <span class="score">60668.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39099.html">Mahoning County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,576</span>
+                <span class="score">60472.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39007.html">Ashtabula County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,507</span>
+                <span class="score">60397.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39033.html">Crawford County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,477</span>
+                <span class="score">60364.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39121.html">Noble County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,360</span>
+                <span class="score">60237.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39155.html">Trumbull County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,088</span>
+                <span class="score">59941.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39087.html">Lawrence County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,842</span>
+                <span class="score">59673.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39031.html">Coshocton County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,687</span>
+                <span class="score">59505.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39067.html">Harrison County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,851</span>
+                <span class="score">58595.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39009.html">Athens County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,837</span>
+                <span class="score">58580.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39163.html">Vinton County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,813</span>
+                <span class="score">58554.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39145.html">Scioto County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,571</span>
+                <span class="score">53938.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39131.html">Pike County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,552</span>
+                <span class="score">53917.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39001.html">Adams County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,521</span>
+                <span class="score">53884.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/39105.html">Meigs County, Ohio</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,701</span>
+                <span class="score">50815.5</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

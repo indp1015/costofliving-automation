@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Cost of Living Data Hub</title>
+    <meta name="description" content="Explore county-level cost of living, housing rents, goods, and services indices across the U.S.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<header style="text-align: center; margin-bottom: 40px;">
+    <h1>U.S. Cost of Living Data Hub</h1>
+    <p style="font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto;">Explore <strong>3220</strong> U.S. counties. Discover where your income goes further based on local housing, goods, and services costs.</p>
+</header>
+
+<div class="card-grid">
+    <!-- Highest Purchasing Power -->
+    <div class="card">
+        <h2>🏆 Top 10 Counties by Purchasing Power</h2>
+        <p style="font-size: 0.9em; color: #666;">Where your dollar goes the furthest relative to local income.</p>
+        <ul class="county-list">
+            
+            <li>
+                <a href="/county/51107.html">Loudoun County, Virginia</a>
+                <span class="score">176359.7 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/35028.html">Los Alamos County, New Mexico</a>
+                <span class="score">157382.3 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/51610.html">Falls Church city, Virginia</a>
+                <span class="score">152701.5 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/51059.html">Fairfax County, Virginia</a>
+                <span class="score">148141.2 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/49043.html">Summit County, Utah</a>
+                <span class="score">143192.4 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/08035.html">Douglas County, Colorado</a>
+                <span class="score">143081.4 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/13117.html">Forsyth County, Georgia</a>
+                <span class="score">143014.1 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/47187.html">Williamson County, Tennessee</a>
+                <span class="score">142465.3 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/06085.html">Santa Clara County, California</a>
+                <span class="score">142318.3 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/39041.html">Delaware County, Ohio</a>
+                <span class="score">141549.2 Index</span>
+            </li>
+            
+        </ul>
+    </div>
+
+    <!-- Lowest Purchasing Power -->
+    <div class="card bad">
+        <h2>📉 Lowest 10 Counties by Purchasing Power</h2>
+        <p style="font-size: 0.9em; color: #666;">Where the cost of living heavily outpaces local median incomes.</p>
+        <ul class="county-list">
+            
+            <li>
+                <a href="/county/72083.html">Las Marías Municipio, Puerto Rico</a>
+                <span class="score">16170.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72055.html">Guánica Municipio, Puerto Rico</a>
+                <span class="score">16210.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72045.html">Comerío Municipio, Puerto Rico</a>
+                <span class="score">17254.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72147.html">Vieques Municipio, Puerto Rico</a>
+                <span class="score">17531.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72141.html">Utuado Municipio, Puerto Rico</a>
+                <span class="score">17624.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72131.html">San Sebastián Municipio, Puerto Rico</a>
+                <span class="score">17834.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72125.html">San Germán Municipio, Puerto Rico</a>
+                <span class="score">17921.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72097.html">Mayagüez Municipio, Puerto Rico</a>
+                <span class="score">17963.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72073.html">Jayuya Municipio, Puerto Rico</a>
+                <span class="score">18413.0 Index</span>
+            </li>
+            
+            <li>
+                <a href="/county/72001.html">Adjuntas Municipio, Puerto Rico</a>
+                <span class="score">18605.0 Index</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!-- 🆕 Browse by State 섹션 추가 -->
+<div style="margin-top: 50px;">
+    <h2 style="color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px;">Browse Cost of Living by State</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+        
+        <a href="/states/alabama.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Alabama
+        </a>
+        
+        <a href="/states/alaska.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Alaska
+        </a>
+        
+        <a href="/states/arizona.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Arizona
+        </a>
+        
+        <a href="/states/arkansas.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Arkansas
+        </a>
+        
+        <a href="/states/california.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            California
+        </a>
+        
+        <a href="/states/colorado.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Colorado
+        </a>
+        
+        <a href="/states/connecticut.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Connecticut
+        </a>
+        
+        <a href="/states/delaware.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Delaware
+        </a>
+        
+        <a href="/states/district-of-columbia.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            District of Columbia
+        </a>
+        
+        <a href="/states/florida.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Florida
+        </a>
+        
+        <a href="/states/georgia.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Georgia
+        </a>
+        
+        <a href="/states/hawaii.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Hawaii
+        </a>
+        
+        <a href="/states/idaho.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Idaho
+        </a>
+        
+        <a href="/states/illinois.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Illinois
+        </a>
+        
+        <a href="/states/indiana.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Indiana
+        </a>
+        
+        <a href="/states/iowa.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Iowa
+        </a>
+        
+        <a href="/states/kansas.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Kansas
+        </a>
+        
+        <a href="/states/kentucky.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Kentucky
+        </a>
+        
+        <a href="/states/louisiana.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Louisiana
+        </a>
+        
+        <a href="/states/maine.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Maine
+        </a>
+        
+        <a href="/states/maryland.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Maryland
+        </a>
+        
+        <a href="/states/massachusetts.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Massachusetts
+        </a>
+        
+        <a href="/states/michigan.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Michigan
+        </a>
+        
+        <a href="/states/minnesota.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Minnesota
+        </a>
+        
+        <a href="/states/mississippi.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Mississippi
+        </a>
+        
+        <a href="/states/missouri.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Missouri
+        </a>
+        
+        <a href="/states/montana.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Montana
+        </a>
+        
+        <a href="/states/nebraska.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Nebraska
+        </a>
+        
+        <a href="/states/nevada.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Nevada
+        </a>
+        
+        <a href="/states/new-hampshire.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            New Hampshire
+        </a>
+        
+        <a href="/states/new-jersey.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            New Jersey
+        </a>
+        
+        <a href="/states/new-mexico.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            New Mexico
+        </a>
+        
+        <a href="/states/new-york.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            New York
+        </a>
+        
+        <a href="/states/north-carolina.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            North Carolina
+        </a>
+        
+        <a href="/states/north-dakota.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            North Dakota
+        </a>
+        
+        <a href="/states/ohio.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Ohio
+        </a>
+        
+        <a href="/states/oklahoma.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Oklahoma
+        </a>
+        
+        <a href="/states/oregon.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Oregon
+        </a>
+        
+        <a href="/states/pennsylvania.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Pennsylvania
+        </a>
+        
+        <a href="/states/rhode-island.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Rhode Island
+        </a>
+        
+        <a href="/states/south-carolina.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            South Carolina
+        </a>
+        
+        <a href="/states/south-dakota.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            South Dakota
+        </a>
+        
+        <a href="/states/tennessee.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Tennessee
+        </a>
+        
+        <a href="/states/texas.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Texas
+        </a>
+        
+        <a href="/states/unknown.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Unknown
+        </a>
+        
+        <a href="/states/utah.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Utah
+        </a>
+        
+        <a href="/states/vermont.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Vermont
+        </a>
+        
+        <a href="/states/virginia.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Virginia
+        </a>
+        
+        <a href="/states/washington.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Washington
+        </a>
+        
+        <a href="/states/west-virginia.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            West Virginia
+        </a>
+        
+        <a href="/states/wisconsin.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Wisconsin
+        </a>
+        
+        <a href="/states/wyoming.html" style="display: block; padding: 12px 15px; background: white; border: 1px solid #eee; border-radius: 8px; text-decoration: none; color: #1a3d5c; font-weight: bold; text-align: center; transition: background 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+            Wyoming
+        </a>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Idaho</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Idaho.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Idaho</h1>
+<p>Below are the counties in Idaho, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/16081.html">Teton County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,740</span>
+                <span class="score">98378.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16001.html">Ada County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,907</span>
+                <span class="score">96390.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16013.html">Blaine County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,470</span>
+                <span class="score">91580.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16051.html">Jefferson County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,952</span>
+                <span class="score">89934.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16015.html">Boise County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,349</span>
+                <span class="score">83859.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16055.html">Kootenai County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,034</span>
+                <span class="score">83518.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16011.html">Bingham County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,842</span>
+                <span class="score">83310.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16019.html">Bonneville County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,646</span>
+                <span class="score">83097.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16085.html">Valley County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,125</span>
+                <span class="score">82532.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16043.html">Fremont County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,767</span>
+                <span class="score">78892.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16071.html">Oneida County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,563</span>
+                <span class="score">78671.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16027.html">Canyon County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,355</span>
+                <span class="score">78445.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16069.html">Nez Perce County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,466</span>
+                <span class="score">77481.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16067.html">Minidoka County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,060</span>
+                <span class="score">75957.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16053.html">Jerome County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,338</span>
+                <span class="score">75174.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16007.html">Bear Lake County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,304</span>
+                <span class="score">72969.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16031.html">Cassia County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,042</span>
+                <span class="score">72685.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16029.html">Caribou County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,653</span>
+                <span class="score">72263.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16045.html">Gem County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,245</span>
+                <span class="score">71821.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16063.html">Lincoln County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,038</span>
+                <span class="score">71596.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16041.html">Franklin County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,991</span>
+                <span class="score">71545.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16075.html">Payette County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,723</span>
+                <span class="score">71255.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16083.html">Twin Falls County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,338</span>
+                <span class="score">70837.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16057.html">Latah County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,179</span>
+                <span class="score">70665.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16017.html">Bonner County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,168</span>
+                <span class="score">70653.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16005.html">Bannock County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,080</span>
+                <span class="score">69474.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16021.html">Boundary County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,438</span>
+                <span class="score">67693.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16047.html">Gooding County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,395</span>
+                <span class="score">67647.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16049.html">Idaho County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,975</span>
+                <span class="score">66107.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16073.html">Owyhee County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,773</span>
+                <span class="score">64804.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16077.html">Power County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,760</span>
+                <span class="score">64790.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16003.html">Adams County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,286</span>
+                <span class="score">64276.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16039.html">Elmore County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,976</span>
+                <span class="score">63940.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16065.html">Madison County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,259</span>
+                <span class="score">63163.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16035.html">Clearwater County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,961</span>
+                <span class="score">62839.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16037.html">Custer County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,957</span>
+                <span class="score">61751.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16009.html">Benewah County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,553</span>
+                <span class="score">61313.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16025.html">Camas County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,536</span>
+                <span class="score">60210.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16087.html">Washington County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,608</span>
+                <span class="score">58120.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16033.html">Clark County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,083</span>
+                <span class="score">56467.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16059.html">Lemhi County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,057</span>
+                <span class="score">56438.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16079.html">Shoshone County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,975</span>
+                <span class="score">54181.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16061.html">Lewis County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,643</span>
+                <span class="score">53821.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/16023.html">Butte County, Idaho</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,281</span>
+                <span class="score">46924.2</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

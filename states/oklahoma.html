@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Oklahoma</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Oklahoma.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Oklahoma</h1>
+<p>Below are the counties in Oklahoma, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/40017.html">Canadian County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,427</span>
+                <span class="score">96331.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40087.html">McClain County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,778</span>
+                <span class="score">95599.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40083.html">Logan County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,735</span>
+                <span class="score">93296.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40145.html">Wagoner County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,520</span>
+                <span class="score">88543.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40131.html">Rogers County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,688</span>
+                <span class="score">87604.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40051.html">Grady County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,730</span>
+                <span class="score">85396.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40027.html">Cleveland County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,446</span>
+                <span class="score">83949.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40073.html">Kingfisher County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,617</span>
+                <span class="score">79631.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40103.html">Noble County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,071</span>
+                <span class="score">79015.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40093.html">Major County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,229</span>
+                <span class="score">78066.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40003.html">Alfalfa County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,870</span>
+                <span class="score">76533.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40143.html">Tulsa County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,317</span>
+                <span class="score">75910.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40047.html">Garfield County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,302</span>
+                <span class="score">75893.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40109.html">Oklahoma County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,374</span>
+                <span class="score">73719.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40153.html">Woodward County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,060</span>
+                <span class="score">73364.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40007.html">Beaver County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,266</span>
+                <span class="score">72469.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40085.html">Love County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,940</span>
+                <span class="score">70974.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40129.html">Roger Mills County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,721</span>
+                <span class="score">70727.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40123.html">Pontotoc County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,564</span>
+                <span class="score">70550.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40149.html">Washita County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,980</span>
+                <span class="score">69891.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40099.html">Murray County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,904</span>
+                <span class="score">69806.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40037.html">Creek County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,849</span>
+                <span class="score">69744.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40053.html">Grant County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,824</span>
+                <span class="score">69715.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40065.html">Jackson County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,497</span>
+                <span class="score">69347.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40147.html">Washington County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,205</span>
+                <span class="score">69017.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40125.html">Pottawatomie County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,828</span>
+                <span class="score">68592.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40043.html">Dewey County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,550</span>
+                <span class="score">68279.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40113.html">Osage County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,482</span>
+                <span class="score">68202.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40033.html">Cotton County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,313</span>
+                <span class="score">68012.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40137.html">Stephens County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,236</span>
+                <span class="score">67925.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40055.html">Greer County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,183</span>
+                <span class="score">67865.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40081.html">Lincoln County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,425</span>
+                <span class="score">67010.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40011.html">Blaine County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,304</span>
+                <span class="score">66874.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40139.html">Texas County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,275</span>
+                <span class="score">66841.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40059.html">Harper County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,191</span>
+                <span class="score">66746.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40031.html">Comanche County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,000</span>
+                <span class="score">66531.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40019.html">Carter County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,856</span>
+                <span class="score">66369.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40039.html">Custer County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,562</span>
+                <span class="score">64909.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40117.html">Pawnee County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,551</span>
+                <span class="score">64897.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40097.html">Mayes County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,279</span>
+                <span class="score">64590.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40025.html">Cimarron County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,204</span>
+                <span class="score">64506.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40049.html">Garvin County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,127</span>
+                <span class="score">64419.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40045.html">Ellis County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,992</span>
+                <span class="score">64267.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40071.html">Kay County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,673</span>
+                <span class="score">63907.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40095.html">Marshall County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,495</span>
+                <span class="score">63706.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40041.html">Delaware County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,114</span>
+                <span class="score">62149.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40121.html">Pittsburg County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,787</span>
+                <span class="score">61780.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40057.html">Harmon County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,286</span>
+                <span class="score">61215.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40013.html">Bryan County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,280</span>
+                <span class="score">61208.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40021.html">Cherokee County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,668</span>
+                <span class="score">60518.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40111.html">Okmulgee County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,123</span>
+                <span class="score">59904.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40015.html">Caddo County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,817</span>
+                <span class="score">59559.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40105.html">Nowata County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,679</span>
+                <span class="score">59403.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40009.html">Beckham County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,323</span>
+                <span class="score">59002.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40005.html">Atoka County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,034</span>
+                <span class="score">58676.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40101.html">Muskogee County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,999</span>
+                <span class="score">58636.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40069.html">Johnston County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,911</span>
+                <span class="score">57409.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40151.html">Woods County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,512</span>
+                <span class="score">56959.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40035.html">Craig County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,182</span>
+                <span class="score">56587.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40089.html">McCurtain County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,175</span>
+                <span class="score">56579.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40079.html">Le Flore County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,027</span>
+                <span class="score">56412.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40061.html">Haskell County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,930</span>
+                <span class="score">56303.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40135.html">Sequoyah County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,795</span>
+                <span class="score">56151.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40119.html">Payne County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,937</span>
+                <span class="score">55183.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40067.html">Jefferson County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,750</span>
+                <span class="score">54972.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40115.html">Ottawa County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,656</span>
+                <span class="score">54866.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40029.html">Coal County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,162</span>
+                <span class="score">54309.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40001.html">Adair County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,028</span>
+                <span class="score">54158.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40063.html">Hughes County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,923</span>
+                <span class="score">54040.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40141.html">Tillman County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,445</span>
+                <span class="score">53501.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40091.html">McIntosh County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,203</span>
+                <span class="score">52100.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40133.html">Seminole County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,191</span>
+                <span class="score">52087.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40023.html">Choctaw County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,456</span>
+                <span class="score">51258.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40107.html">Okfuskee County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,441</span>
+                <span class="score">51241.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40127.html">Pushmataha County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,634</span>
+                <span class="score">50331.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40075.html">Kiowa County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,063</span>
+                <span class="score">47432.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/40077.html">Latimer County, Oklahoma</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,048</span>
+                <span class="score">46287.8</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

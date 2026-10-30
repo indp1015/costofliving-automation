@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Louisiana</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Louisiana.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Louisiana</h1>
+<p>Below are the counties in Louisiana, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/22005.html">Ascension Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $92,266</span>
+                <span class="score">104020.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22121.html">West Baton Rouge Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,320</span>
+                <span class="score">98444.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22075.html">Plaquemines Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,874</span>
+                <span class="score">93431.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22089.html">St. Charles Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,172</span>
+                <span class="score">92640.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22103.html">St. Tammany Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,277</span>
+                <span class="score">89376.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22063.html">Livingston Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,617</span>
+                <span class="score">88632.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22125.html">West Feliciana Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,277</span>
+                <span class="score">83739.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22037.html">East Feliciana Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,899</span>
+                <span class="score">82186.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22023.html">Cameron Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,500</span>
+                <span class="score">81736.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22019.html">Calcasieu Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,849</span>
+                <span class="score">76492.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22055.html">Lafayette Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,660</span>
+                <span class="score">76279.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22095.html">St. John the Baptist Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,418</span>
+                <span class="score">76006.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22059.html">LaSalle Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,077</span>
+                <span class="score">75622.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22015.html">Bossier Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,336</span>
+                <span class="score">74786.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22051.html">Jefferson Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,246</span>
+                <span class="score">73558.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22011.html">Beauregard Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,995</span>
+                <span class="score">73275.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22109.html">Terrebonne Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,819</span>
+                <span class="score">73076.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22093.html">St. James Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,536</span>
+                <span class="score">72757.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22057.html">Lafourche Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,439</span>
+                <span class="score">71520.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22033.html">East Baton Rouge Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,075</span>
+                <span class="score">71110.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22043.html">Grant Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,112</span>
+                <span class="score">68897.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22077.html">Pointe Coupee Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,351</span>
+                <span class="score">66912.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22115.html">Vernon Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,281</span>
+                <span class="score">65705.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22045.html">Iberia Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,811</span>
+                <span class="score">65175.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22087.html">St. Bernard Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,638</span>
+                <span class="score">64980.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22113.html">Vermilion Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,537</span>
+                <span class="score">64867.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22047.html">Iberville Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,459</span>
+                <span class="score">64779.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22105.html">Tangipahoa Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,256</span>
+                <span class="score">64550.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22053.html">Jefferson Davis Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,500</span>
+                <span class="score">63697.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22079.html">Rapides Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,946</span>
+                <span class="score">63073.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22071.html">Orleans Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,339</span>
+                <span class="score">62389.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22099.html">St. Martin Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,394</span>
+                <span class="score">60196.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22083.html">Richland Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,960</span>
+                <span class="score">59706.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22007.html">Assumption Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,546</span>
+                <span class="score">59240.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22085.html">Sabine Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,047</span>
+                <span class="score">58677.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22101.html">St. Mary Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,768</span>
+                <span class="score">58363.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22073.html">Ouachita Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,241</span>
+                <span class="score">57768.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22003.html">Allen Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,138</span>
+                <span class="score">57652.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22091.html">St. Helena Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,193</span>
+                <span class="score">56587.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22017.html">Caddo Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,067</span>
+                <span class="score">56445.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22123.html">West Carroll Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,514</span>
+                <span class="score">54694.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22025.html">Catahoula Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,753</span>
+                <span class="score">53836.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22069.html">Natchitoches Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,798</span>
+                <span class="score">52759.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22127.html">Winn Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,368</span>
+                <span class="score">52275.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22031.html">De Soto Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,077</span>
+                <span class="score">51947.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22111.html">Union Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,743</span>
+                <span class="score">51570.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22097.html">St. Landry Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,637</span>
+                <span class="score">51451.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22001.html">Acadia Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,266</span>
+                <span class="score">51032.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22021.html">Caldwell Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,957</span>
+                <span class="score">50684.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22081.html">Red River Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,539</span>
+                <span class="score">50213.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22041.html">Franklin Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,103</span>
+                <span class="score">49721.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22049.html">Jackson Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,345</span>
+                <span class="score">48867.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22117.html">Washington Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,776</span>
+                <span class="score">48225.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22039.html">Evangeline Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,273</span>
+                <span class="score">47658.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22009.html">Avoyelles Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,439</span>
+                <span class="score">44463.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22061.html">Lincoln Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,035</span>
+                <span class="score">42880.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22119.html">Webster Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,396</span>
+                <span class="score">42160.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22029.html">Concordia Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,349</span>
+                <span class="score">42107.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22065.html">Madison Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,267</span>
+                <span class="score">42014.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22067.html">Morehouse Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,981</span>
+                <span class="score">41692.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22107.html">Tensas Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,074</span>
+                <span class="score">40669.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22013.html">Bienville Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $34,992</span>
+                <span class="score">39449.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22027.html">Claiborne Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $31,784</span>
+                <span class="score">35833.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/22035.html">East Carroll Parish, Louisiana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $28,321</span>
+                <span class="score">31929.0</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in North Carolina</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in North Carolina.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in North Carolina</h1>
+<p>Below are the counties in North Carolina, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/37183.html">Wake County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $101,763</span>
+                <span class="score">107800.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37179.html">Union County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $99,243</span>
+                <span class="score">105131.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37053.html">Currituck County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,548</span>
+                <span class="score">96979.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37135.html">Orange County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,553</span>
+                <span class="score">93807.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37037.html">Chatham County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,534</span>
+                <span class="score">93787.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37029.html">Camden County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,781</span>
+                <span class="score">92989.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37025.html">Cabarrus County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,084</span>
+                <span class="score">91191.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37119.html">Mecklenburg County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,765</span>
+                <span class="score">88735.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37125.html">Moore County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,837</span>
+                <span class="score">87752.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37055.html">Dare County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,214</span>
+                <span class="score">86032.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37101.html">Johnston County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,838</span>
+                <span class="score">84575.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37063.html">Durham County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,501</span>
+                <span class="score">84218.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37097.html">Iredell County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,678</span>
+                <span class="score">83346.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37109.html">Lincoln County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,490</span>
+                <span class="score">83147.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37141.html">Pender County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,838</span>
+                <span class="score">81397.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37019.html">Brunswick County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,034</span>
+                <span class="score">78426.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37059.html">Davie County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,234</span>
+                <span class="score">77579.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37129.html">New Hanover County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,892</span>
+                <span class="score">77216.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37069.html">Franklin County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,386</span>
+                <span class="score">75621.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37077.html">Granville County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,975</span>
+                <span class="score">75186.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37021.html">Buncombe County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,578</span>
+                <span class="score">74765.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37031.html">Carteret County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,235</span>
+                <span class="score">74402.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37085.html">Harnett County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,012</span>
+                <span class="score">73106.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37089.html">Henderson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,623</span>
+                <span class="score">71635.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37081.html">Guilford County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,027</span>
+                <span class="score">69944.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37067.html">Forsyth County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,541</span>
+                <span class="score">69429.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37071.html">Gaston County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,472</span>
+                <span class="score">69356.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37003.html">Alexander County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,268</span>
+                <span class="score">69140.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37145.html">Person County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,927</span>
+                <span class="score">68779.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37049.html">Craven County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,635</span>
+                <span class="score">68470.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37133.html">Onslow County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,568</span>
+                <span class="score">68399.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37035.html">Catawba County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,544</span>
+                <span class="score">68373.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37175.html">Transylvania County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,523</span>
+                <span class="score">68351.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37001.html">Alamance County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,445</span>
+                <span class="score">68268.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37139.html">Pasquotank County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,912</span>
+                <span class="score">67704.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37159.html">Rowan County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,196</span>
+                <span class="score">66945.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37105.html">Lee County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,060</span>
+                <span class="score">66801.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37057.html">Davidson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,426</span>
+                <span class="score">66129.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37167.html">Stanly County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,631</span>
+                <span class="score">65287.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37137.html">Pamlico County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,624</span>
+                <span class="score">65280.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37073.html">Gates County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,612</span>
+                <span class="score">65267.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37143.html">Perquimans County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,224</span>
+                <span class="score">64856.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37149.html">Polk County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,005</span>
+                <span class="score">64624.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37087.html">Haywood County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,001</span>
+                <span class="score">64620.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37127.html">Nash County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,704</span>
+                <span class="score">64305.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37197.html">Yadkin County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,321</span>
+                <span class="score">63900.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37093.html">Hoke County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,095</span>
+                <span class="score">63660.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37169.html">Stokes County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,039</span>
+                <span class="score">63601.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37033.html">Caswell County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,407</span>
+                <span class="score">62931.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37151.html">Randolph County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,047</span>
+                <span class="score">62550.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37147.html">Pitt County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,851</span>
+                <span class="score">62342.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37051.html">Cumberland County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,780</span>
+                <span class="score">62267.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37115.html">Madison County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,628</span>
+                <span class="score">62106.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37121.html">Mitchell County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,089</span>
+                <span class="score">61535.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37191.html">Wayne County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,082</span>
+                <span class="score">61528.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37013.html">Beaufort County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,997</span>
+                <span class="score">61438.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37011.html">Avery County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,657</span>
+                <span class="score">61078.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37041.html">Chowan County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,982</span>
+                <span class="score">60362.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37171.html">Surry County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,095</span>
+                <span class="score">59423.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37123.html">Montgomery County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,849</span>
+                <span class="score">59162.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37157.html">Rockingham County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,796</span>
+                <span class="score">59106.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37045.html">Cleveland County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,769</span>
+                <span class="score">59078.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37023.html">Burke County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,684</span>
+                <span class="score">58987.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37103.html">Jones County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,659</span>
+                <span class="score">58961.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37111.html">McDowell County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,527</span>
+                <span class="score">58821.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37173.html">Swain County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,429</span>
+                <span class="score">58717.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37027.html">Caldwell County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,401</span>
+                <span class="score">58688.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37199.html">Yancey County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,961</span>
+                <span class="score">58222.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37043.html">Clay County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,645</span>
+                <span class="score">56827.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37099.html">Jackson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,479</span>
+                <span class="score">56652.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37113.html">Macon County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,298</span>
+                <span class="score">56460.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37163.html">Sampson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,159</span>
+                <span class="score">56313.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37061.html">Duplin County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,880</span>
+                <span class="score">54958.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37039.html">Cherokee County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,496</span>
+                <span class="score">54551.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37195.html">Wilson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,381</span>
+                <span class="score">54429.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37189.html">Watauga County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,367</span>
+                <span class="score">54414.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37079.html">Greene County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,904</span>
+                <span class="score">53924.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37009.html">Ashe County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,827</span>
+                <span class="score">53842.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37193.html">Wilkes County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,438</span>
+                <span class="score">53430.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37161.html">Rutherford County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,771</span>
+                <span class="score">52724.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37075.html">Graham County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,038</span>
+                <span class="score">51947.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37065.html">Edgecombe County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,480</span>
+                <span class="score">51356.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37047.html">Columbus County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,184</span>
+                <span class="score">51042.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37131.html">Northampton County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,935</span>
+                <span class="score">50779.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37091.html">Hertford County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,472</span>
+                <span class="score">50288.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37095.html">Hyde County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,338</span>
+                <span class="score">50146.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37181.html">Vance County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,943</span>
+                <span class="score">49728.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37117.html">Martin County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,793</span>
+                <span class="score">49569.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37015.html">Bertie County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,931</span>
+                <span class="score">48656.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37185.html">Warren County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,279</span>
+                <span class="score">47965.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37083.html">Halifax County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,071</span>
+                <span class="score">47745.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37107.html">Lenoir County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,795</span>
+                <span class="score">47452.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37017.html">Bladen County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,528</span>
+                <span class="score">47170.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37005.html">Alleghany County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,272</span>
+                <span class="score">46898.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37007.html">Anson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,245</span>
+                <span class="score">46870.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37177.html">Tyrrell County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,952</span>
+                <span class="score">46559.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37153.html">Richmond County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,626</span>
+                <span class="score">46214.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37165.html">Scotland County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,500</span>
+                <span class="score">46081.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37187.html">Washington County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,750</span>
+                <span class="score">44227.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/37155.html">Robeson County, North Carolina</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,318</span>
+                <span class="score">42710.2</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Georgia</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Georgia.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Georgia</h1>
+<p>Below are the counties in Georgia, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/13117.html">Forsyth County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $138,000</span>
+                <span class="score">143014.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13219.html">Oconee County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $115,925</span>
+                <span class="score">120137.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13113.html">Fayette County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $108,986</span>
+                <span class="score">112945.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13057.html">Cherokee County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $105,442</span>
+                <span class="score">109273.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13067.html">Cobb County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,712</span>
+                <span class="score">102298.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13073.html">Columbia County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,122</span>
+                <span class="score">99614.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13223.html">Paulding County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,557</span>
+                <span class="score">97992.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13029.html">Bryan County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,234</span>
+                <span class="score">97657.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13077.html">Coweta County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,142</span>
+                <span class="score">97562.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13121.html">Fulton County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,490</span>
+                <span class="score">94814.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13145.html">Harris County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,184</span>
+                <span class="score">92424.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13085.html">Dawson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,986</span>
+                <span class="score">92219.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13177.html">Lee County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,024</span>
+                <span class="score">91222.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13211.html">Morgan County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,692</span>
+                <span class="score">88805.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13103.html">Effingham County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,465</span>
+                <span class="score">88570.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13157.html">Jackson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,012</span>
+                <span class="score">88100.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13135.html">Gwinnett County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,823</span>
+                <span class="score">87904.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13133.html">Greene County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,530</span>
+                <span class="score">87601.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13231.html">Pike County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,184</span>
+                <span class="score">87242.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13207.html">Monroe County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,863</span>
+                <span class="score">85873.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13297.html">Walton County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,381</span>
+                <span class="score">85374.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13151.html">Henry County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,612</span>
+                <span class="score">84577.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13097.html">Douglas County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,764</span>
+                <span class="score">83698.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13153.html">Houston County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,743</span>
+                <span class="score">83676.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13015.html">Bartow County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,431</span>
+                <span class="score">82317.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13089.html">DeKalb County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,683</span>
+                <span class="score">80505.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13013.html">Barrow County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,477</span>
+                <span class="score">80292.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13139.html">Hall County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,430</span>
+                <span class="score">80243.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13227.html">Pickens County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,293</span>
+                <span class="score">78028.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13217.html">Newton County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,732</span>
+                <span class="score">76411.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13123.html">Gilmer County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,542</span>
+                <span class="score">75177.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13047.html">Catoosa County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,425</span>
+                <span class="score">75056.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13039.html">Camden County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,399</span>
+                <span class="score">75029.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13187.html">Lumpkin County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,388</span>
+                <span class="score">75018.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13247.html">Rockdale County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,349</span>
+                <span class="score">74977.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13045.html">Carroll County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,327</span>
+                <span class="score">74954.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13221.html">Oglethorpe County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,784</span>
+                <span class="score">72319.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13311.html">White County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,747</span>
+                <span class="score">72281.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13051.html">Chatham County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,575</span>
+                <span class="score">72102.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13011.html">Banks County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,830</span>
+                <span class="score">71330.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13127.html">Glynn County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,546</span>
+                <span class="score">71036.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13171.html">Lamar County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,457</span>
+                <span class="score">70944.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13225.html">Peach County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,365</span>
+                <span class="score">70849.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13169.html">Jones County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,259</span>
+                <span class="score">70739.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13213.html">Murray County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,880</span>
+                <span class="score">70346.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13291.html">Union County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,697</span>
+                <span class="score">68084.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13137.html">Habersham County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,622</span>
+                <span class="score">68006.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13143.html">Haralson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,016</span>
+                <span class="score">67378.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13183.html">Long County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,747</span>
+                <span class="score">67099.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13313.html">Whitfield County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,262</span>
+                <span class="score">66596.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13237.html">Putnam County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,163</span>
+                <span class="score">66494.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13149.html">Heard County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,907</span>
+                <span class="score">65192.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13115.html">Floyd County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,540</span>
+                <span class="score">64812.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13129.html">Gordon County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,997</span>
+                <span class="score">64249.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13101.html">Echols County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,723</span>
+                <span class="score">63965.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13241.html">Rabun County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,466</span>
+                <span class="score">63699.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13079.html">Crawford County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,905</span>
+                <span class="score">63117.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13255.html">Spalding County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,217</span>
+                <span class="score">62404.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13275.html">Thomas County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,140</span>
+                <span class="score">62325.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13249.html">Schley County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,647</span>
+                <span class="score">61814.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13159.html">Jasper County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,574</span>
+                <span class="score">61738.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13035.html">Butts County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,221</span>
+                <span class="score">61372.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13053.html">Chattahoochee County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,221</span>
+                <span class="score">61372.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13179.html">Liberty County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,013</span>
+                <span class="score">61157.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13083.html">Dade County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,936</span>
+                <span class="score">61077.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13195.html">Madison County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,784</span>
+                <span class="score">60919.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13063.html">Clayton County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,507</span>
+                <span class="score">60632.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13201.html">Miller County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,407</span>
+                <span class="score">60529.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13281.html">Towns County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,400</span>
+                <span class="score">60521.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13111.html">Fannin County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,073</span>
+                <span class="score">60183.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13147.html">Hart County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,241</span>
+                <span class="score">59320.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13321.html">Worth County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,201</span>
+                <span class="score">59279.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13031.html">Bulloch County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,832</span>
+                <span class="score">58896.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13229.html">Pierce County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,691</span>
+                <span class="score">58750.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13215.html">Muscogee County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,622</span>
+                <span class="score">58679.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13093.html">Dooly County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,545</span>
+                <span class="score">58599.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13199.html">Meriwether County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,458</span>
+                <span class="score">58509.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13185.html">Lowndes County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,887</span>
+                <span class="score">57917.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13295.html">Walker County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,887</span>
+                <span class="score">57917.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13037.html">Calhoun County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,714</span>
+                <span class="score">57738.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13065.html">Clinch County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,549</span>
+                <span class="score">57567.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13289.html">Twiggs County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,439</span>
+                <span class="score">57453.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13009.html">Baldwin County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,413</span>
+                <span class="score">57426.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13233.html">Polk County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,308</span>
+                <span class="score">57317.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13125.html">Glascock County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,250</span>
+                <span class="score">57257.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13285.html">Troup County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,905</span>
+                <span class="score">56899.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13131.html">Grady County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,312</span>
+                <span class="score">56285.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13167.html">Johnson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,183</span>
+                <span class="score">56151.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13279.html">Toombs County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,130</span>
+                <span class="score">56096.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13189.html">McDuffie County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,058</span>
+                <span class="score">56022.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13155.html">Irwin County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,915</span>
+                <span class="score">55873.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13109.html">Evans County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,908</span>
+                <span class="score">55866.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13099.html">Early County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,750</span>
+                <span class="score">55702.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13245.html">Richmond County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,197</span>
+                <span class="score">55129.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13277.html">Tift County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,165</span>
+                <span class="score">55096.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13251.html">Screven County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,017</span>
+                <span class="score">54943.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13023.html">Bleckley County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,005</span>
+                <span class="score">54930.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13317.html">Wilkes County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,542</span>
+                <span class="score">54451.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13267.html">Tattnall County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,351</span>
+                <span class="score">54253.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13059.html">Clarke County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,267</span>
+                <span class="score">54166.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13119.html">Franklin County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,264</span>
+                <span class="score">54163.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13257.html">Stephens County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,264</span>
+                <span class="score">54163.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13205.html">Mitchell County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,908</span>
+                <span class="score">53794.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13209.html">Montgomery County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,188</span>
+                <span class="score">53047.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13293.html">Upson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,904</span>
+                <span class="score">52753.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13021.html">Bibb County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,747</span>
+                <span class="score">52590.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13033.html">Burke County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,739</span>
+                <span class="score">52582.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13181.html">Lincoln County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,688</span>
+                <span class="score">52529.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13087.html">Decatur County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,485</span>
+                <span class="score">52319.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13197.html">Marion County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,484</span>
+                <span class="score">52318.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13043.html">Candler County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,431</span>
+                <span class="score">52263.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13019.html">Berrien County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,414</span>
+                <span class="score">52245.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13191.html">McIntosh County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,348</span>
+                <span class="score">52177.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13005.html">Bacon County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,310</span>
+                <span class="score">52138.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13069.html">Coffee County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,175</span>
+                <span class="score">51998.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13091.html">Dodge County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,152</span>
+                <span class="score">51974.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13075.html">Cook County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,133</span>
+                <span class="score">51954.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13107.html">Emanuel County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,053</span>
+                <span class="score">51871.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13105.html">Elbert County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,727</span>
+                <span class="score">51533.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13175.html">Laurens County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,705</span>
+                <span class="score">51511.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13071.html">Colquitt County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,691</span>
+                <span class="score">51496.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13305.html">Wayne County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,562</span>
+                <span class="score">51362.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13253.html">Seminole County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,559</span>
+                <span class="score">51359.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13061.html">Clay County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,715</span>
+                <span class="score">50485.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13049.html">Charlton County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,534</span>
+                <span class="score">50297.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13265.html">Taliaferro County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,036</span>
+                <span class="score">49781.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13315.html">Wilcox County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,036</span>
+                <span class="score">49781.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13025.html">Brantley County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,801</span>
+                <span class="score">49537.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13055.html">Chattooga County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,785</span>
+                <span class="score">49521.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13235.html">Pulaski County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,688</span>
+                <span class="score">49420.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13027.html">Brooks County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,656</span>
+                <span class="score">49387.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13095.html">Dougherty County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,784</span>
+                <span class="score">48483.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13301.html">Warren County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,776</span>
+                <span class="score">48475.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13319.html">Wilkinson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,673</span>
+                <span class="score">48368.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13163.html">Jefferson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,561</span>
+                <span class="score">48252.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13309.html">Wheeler County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,262</span>
+                <span class="score">46906.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13263.html">Talbot County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,098</span>
+                <span class="score">46736.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13271.html">Telfair County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,948</span>
+                <span class="score">46581.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13299.html">Ware County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,833</span>
+                <span class="score">46462.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13007.html">Baker County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,405</span>
+                <span class="score">46018.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13173.html">Lanier County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,361</span>
+                <span class="score">45972.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13303.html">Washington County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,009</span>
+                <span class="score">45608.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13273.html">Terrell County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,812</span>
+                <span class="score">45403.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13283.html">Treutlen County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,750</span>
+                <span class="score">45339.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13001.html">Appling County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,728</span>
+                <span class="score">45316.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13081.html">Crisp County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,745</span>
+                <span class="score">44298.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13261.html">Sumter County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,877</span>
+                <span class="score">43398.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13269.html">Taylor County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,743</span>
+                <span class="score">43259.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13161.html">Jeff Davis County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,879</span>
+                <span class="score">42364.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13307.html">Webster County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,764</span>
+                <span class="score">42245.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13287.html">Turner County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,565</span>
+                <span class="score">41002.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13017.html">Ben Hill County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,081</span>
+                <span class="score">40501.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13003.html">Atkinson County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,438</span>
+                <span class="score">39834.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13193.html">Macon County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,177</span>
+                <span class="score">38527.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13165.html">Jenkins County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,906</span>
+                <span class="score">38246.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13239.html">Quitman County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,838</span>
+                <span class="score">38176.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13259.html">Stewart County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,000</span>
+                <span class="score">36271.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13141.html">Hancock County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,182</span>
+                <span class="score">34387.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/13243.html">Randolph County, Georgia</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $25,425</span>
+                <span class="score">26348.8</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Kentucky</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Kentucky.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Kentucky</h1>
+<p>Below are the counties in Kentucky, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/21185.html">Oldham County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $121,491</span>
+                <span class="score">135155.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21215.html">Spencer County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,333</span>
+                <span class="score">109392.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21015.html">Boone County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $94,752</span>
+                <span class="score">105408.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21209.html">Scott County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,660</span>
+                <span class="score">93069.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21211.html">Shelby County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,671</span>
+                <span class="score">91969.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21239.html">Woodford County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,006</span>
+                <span class="score">89004.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21117.html">Kenton County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,421</span>
+                <span class="score">88353.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21029.html">Bullitt County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,640</span>
+                <span class="score">86372.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21037.html">Campbell County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,271</span>
+                <span class="score">85961.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21113.html">Jessamine County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,886</span>
+                <span class="score">83308.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21005.html">Anderson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,747</span>
+                <span class="score">79816.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21149.html">McLean County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,549</span>
+                <span class="score">78483.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21163.html">Meade County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,163</span>
+                <span class="score">78054.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21081.html">Grant County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,940</span>
+                <span class="score">75581.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21179.html">Nelson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,888</span>
+                <span class="score">75523.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21111.html">Jefferson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,849</span>
+                <span class="score">75480.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21049.html">Clark County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,824</span>
+                <span class="score">75452.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21223.html">Trimble County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,813</span>
+                <span class="score">75440.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21123.html">Larue County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,770</span>
+                <span class="score">75392.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21067.html">Fayette County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,631</span>
+                <span class="score">75237.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21093.html">Hardin County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,608</span>
+                <span class="score">75211.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21091.html">Hancock County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,836</span>
+                <span class="score">74353.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21191.html">Pendleton County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,601</span>
+                <span class="score">74091.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21073.html">Franklin County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,470</span>
+                <span class="score">73945.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21059.html">Daviess County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,323</span>
+                <span class="score">72669.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21227.html">Warren County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,801</span>
+                <span class="score">72089.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21007.html">Ballard County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,740</span>
+                <span class="score">72021.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21143.html">Lyon County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,464</span>
+                <span class="score">71714.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21105.html">Hickman County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,750</span>
+                <span class="score">70920.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21157.html">Marshall County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,611</span>
+                <span class="score">70765.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21097.html">Harrison County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,205</span>
+                <span class="score">70313.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21167.html">Mercer County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,115</span>
+                <span class="score">70213.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21079.html">Garrard County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,572</span>
+                <span class="score">69609.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21151.html">Madison County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,407</span>
+                <span class="score">69426.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21145.html">McCracken County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,385</span>
+                <span class="score">69401.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21077.html">Gallatin County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,247</span>
+                <span class="score">69248.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21039.html">Carlisle County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,019</span>
+                <span class="score">68994.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21217.html">Taylor County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,871</span>
+                <span class="score">68829.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21021.html">Boyle County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,635</span>
+                <span class="score">68567.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21141.html">Logan County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,535</span>
+                <span class="score">68455.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21225.html">Union County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,989</span>
+                <span class="score">67848.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21103.html">Henry County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,736</span>
+                <span class="score">67567.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21019.html">Boyd County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,659</span>
+                <span class="score">67481.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21229.html">Washington County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,762</span>
+                <span class="score">66483.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21139.html">Livingston County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,713</span>
+                <span class="score">66429.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21187.html">Owen County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,706</span>
+                <span class="score">66421.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21089.html">Greenup County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,613</span>
+                <span class="score">66317.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21023.html">Bracken County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,521</span>
+                <span class="score">66215.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21003.html">Allen County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,029</span>
+                <span class="score">65668.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21233.html">Webster County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,786</span>
+                <span class="score">65397.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21101.html">Henderson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,239</span>
+                <span class="score">64789.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21219.html">Todd County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,759</span>
+                <span class="score">64255.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21041.html">Carroll County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,753</span>
+                <span class="score">64248.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21033.html">Caldwell County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,618</span>
+                <span class="score">64098.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21107.html">Hopkins County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,610</span>
+                <span class="score">64089.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21173.html">Montgomery County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,468</span>
+                <span class="score">63931.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21213.html">Simpson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,392</span>
+                <span class="score">63846.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21125.html">Laurel County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,999</span>
+                <span class="score">63409.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21017.html">Bourbon County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,322</span>
+                <span class="score">62656.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21155.html">Marion County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,404</span>
+                <span class="score">61635.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21221.html">Trigg County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,630</span>
+                <span class="score">60774.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21061.html">Edmonson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,512</span>
+                <span class="score">60643.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21183.html">Ohio County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,369</span>
+                <span class="score">60483.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21047.html">Christian County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,190</span>
+                <span class="score">60284.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21011.html">Bath County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,128</span>
+                <span class="score">60215.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21027.html">Breckinridge County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,673</span>
+                <span class="score">59709.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21205.html">Rowan County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,657</span>
+                <span class="score">59691.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21181.html">Nicholas County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,616</span>
+                <span class="score">59646.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21177.html">Muhlenberg County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,672</span>
+                <span class="score">58596.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21201.html">Robertson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,337</span>
+                <span class="score">58223.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21031.html">Butler County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,003</span>
+                <span class="score">57851.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21035.html">Calloway County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,854</span>
+                <span class="score">57686.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21161.html">Mason County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,473</span>
+                <span class="score">57262.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21199.html">Pulaski County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,943</span>
+                <span class="score">56672.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21137.html">Lincoln County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,862</span>
+                <span class="score">56582.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21083.html">Graves County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,576</span>
+                <span class="score">56264.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21207.html">Russell County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,520</span>
+                <span class="score">56202.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21043.html">Carter County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,389</span>
+                <span class="score">56056.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21001.html">Adair County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,316</span>
+                <span class="score">55975.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21085.html">Grayson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,893</span>
+                <span class="score">55504.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21069.html">Fleming County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,663</span>
+                <span class="score">55248.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21099.html">Hart County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,653</span>
+                <span class="score">55237.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21171.html">Monroe County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,430</span>
+                <span class="score">54989.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21009.html">Barren County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,171</span>
+                <span class="score">54701.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21169.html">Metcalfe County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,572</span>
+                <span class="score">54034.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21203.html">Rockcastle County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,367</span>
+                <span class="score">53806.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21175.html">Morgan County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,493</span>
+                <span class="score">52834.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21055.html">Crittenden County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,003</span>
+                <span class="score">52289.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21159.html">Martin County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,185</span>
+                <span class="score">51379.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21127.html">Lawrence County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,584</span>
+                <span class="score">50710.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21193.html">Perry County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,261</span>
+                <span class="score">50351.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21165.html">Menifee County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,672</span>
+                <span class="score">49696.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21065.html">Estill County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,905</span>
+                <span class="score">48843.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21115.html">Johnson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,014</span>
+                <span class="score">47851.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21195.html">Pike County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,179</span>
+                <span class="score">46922.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21053.html">Clinton County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,168</span>
+                <span class="score">46910.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21231.html">Wayne County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,933</span>
+                <span class="score">46649.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21235.html">Whitley County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,719</span>
+                <span class="score">46411.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21045.html">Casey County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,689</span>
+                <span class="score">46377.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21135.html">Lewis County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,632</span>
+                <span class="score">46314.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21071.html">Floyd County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,582</span>
+                <span class="score">46258.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21109.html">Jackson County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,410</span>
+                <span class="score">46067.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21025.html">Breathitt County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,101</span>
+                <span class="score">45723.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21087.html">Green County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,087</span>
+                <span class="score">45708.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21133.html">Letcher County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,501</span>
+                <span class="score">45056.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21131.html">Leslie County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,176</span>
+                <span class="score">44694.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21063.html">Elliott County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,074</span>
+                <span class="score">44581.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21197.html">Powell County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,811</span>
+                <span class="score">44288.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21057.html">Cumberland County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,662</span>
+                <span class="score">44122.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21051.html">Clay County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,607</span>
+                <span class="score">44061.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21119.html">Knott County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,736</span>
+                <span class="score">41980.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21147.html">McCreary County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,355</span>
+                <span class="score">41556.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21095.html">Harlan County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,198</span>
+                <span class="score">41381.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21075.html">Fulton County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,834</span>
+                <span class="score">40976.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21129.html">Lee County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $34,182</span>
+                <span class="score">38026.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21153.html">Magoffin County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,632</span>
+                <span class="score">37414.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21121.html">Knox County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,153</span>
+                <span class="score">36881.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21013.html">Bell County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $32,403</span>
+                <span class="score">36047.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21189.html">Owsley County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $31,064</span>
+                <span class="score">34557.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/21237.html">Wolfe County, Kentucky</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $29,052</span>
+                <span class="score">32319.5</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

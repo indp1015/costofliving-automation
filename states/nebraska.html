@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Nebraska</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Nebraska.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Nebraska</h1>
+<p>Below are the counties in Nebraska, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/31153.html">Sarpy County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $101,402</span>
+                <span class="score">112309.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31177.html">Washington County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,188</span>
+                <span class="score">99889.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31155.html">Saunders County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $89,395</span>
+                <span class="score">99010.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31025.html">Cass County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,255</span>
+                <span class="score">97748.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31023.html">Butler County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,603</span>
+                <span class="score">91488.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31131.html">Otoe County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,430</span>
+                <span class="score">90189.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31159.html">Seward County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,122</span>
+                <span class="score">89848.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31081.html">Hamilton County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,884</span>
+                <span class="score">88476.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31037.html">Colfax County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,720</span>
+                <span class="score">88295.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31099.html">Kearney County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,167</span>
+                <span class="score">87682.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31073.html">Gosper County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,145</span>
+                <span class="score">87658.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31055.html">Douglas County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,081</span>
+                <span class="score">87587.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31167.html">Stanton County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,275</span>
+                <span class="score">86694.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31151.html">Saline County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,027</span>
+                <span class="score">85312.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31059.html">Fillmore County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,354</span>
+                <span class="score">84567.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31035.html">Clay County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,938</span>
+                <span class="score">84106.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31139.html">Pierce County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,938</span>
+                <span class="score">84106.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31019.html">Buffalo County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,570</span>
+                <span class="score">82591.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31093.html">Howard County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,508</span>
+                <span class="score">82522.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31185.html">York County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,058</span>
+                <span class="score">82024.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31027.html">Cedar County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,977</span>
+                <span class="score">81934.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31171.html">Thomas County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,708</span>
+                <span class="score">80529.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31109.html">Lancaster County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,625</span>
+                <span class="score">80437.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31141.html">Platte County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,335</span>
+                <span class="score">80115.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31143.html">Polk County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,771</span>
+                <span class="score">79491.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31043.html">Dakota County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,655</span>
+                <span class="score">79362.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31113.html">Logan County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,650</span>
+                <span class="score">79357.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31011.html">Boone County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,367</span>
+                <span class="score">79043.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31053.html">Dodge County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,294</span>
+                <span class="score">78962.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31007.html">Banner County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,250</span>
+                <span class="score">78914.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31039.html">Cuming County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,708</span>
+                <span class="score">78313.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31083.html">Harlan County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,536</span>
+                <span class="score">78123.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31129.html">Nuckolls County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,201</span>
+                <span class="score">77752.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31051.html">Dixon County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,156</span>
+                <span class="score">76594.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31075.html">Grant County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,063</span>
+                <span class="score">76491.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31013.html">Box Butte County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,778</span>
+                <span class="score">76176.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31071.html">Garfield County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,611</span>
+                <span class="score">75991.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31063.html">Frontier County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,207</span>
+                <span class="score">75543.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31179.html">Wayne County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,687</span>
+                <span class="score">74967.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31079.html">Hall County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,549</span>
+                <span class="score">74815.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31005.html">Arthur County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,500</span>
+                <span class="score">74760.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31135.html">Perkins County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,500</span>
+                <span class="score">74760.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31089.html">Holt County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,225</span>
+                <span class="score">74456.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31041.html">Custer County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,310</span>
+                <span class="score">73442.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31137.html">Phelps County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,988</span>
+                <span class="score">73086.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31001.html">Adams County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,680</span>
+                <span class="score">72745.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31125.html">Nance County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,438</span>
+                <span class="score">72477.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31047.html">Dawson County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,383</span>
+                <span class="score">72416.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31181.html">Webster County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,197</span>
+                <span class="score">72210.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31173.html">Thurston County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,838</span>
+                <span class="score">71812.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31107.html">Knox County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,821</span>
+                <span class="score">71793.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31119.html">Madison County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,637</span>
+                <span class="score">71589.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31067.html">Gage County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,426</span>
+                <span class="score">71356.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31111.html">Lincoln County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,342</span>
+                <span class="score">71263.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31003.html">Antelope County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,750</span>
+                <span class="score">70607.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31031.html">Cherry County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,750</span>
+                <span class="score">70607.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31169.html">Thayer County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,095</span>
+                <span class="score">69881.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31121.html">Merrick County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,849</span>
+                <span class="score">69609.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31029.html">Chase County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,782</span>
+                <span class="score">69535.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31163.html">Sherman County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,935</span>
+                <span class="score">68597.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31049.html">Deuel County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,438</span>
+                <span class="score">68046.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31117.html">McPherson County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,316</span>
+                <span class="score">67911.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31009.html">Blaine County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,250</span>
+                <span class="score">67838.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31157.html">Scotts Bluff County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,960</span>
+                <span class="score">67517.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31065.html">Furnas County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,625</span>
+                <span class="score">67146.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31095.html">Jefferson County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,568</span>
+                <span class="score">67083.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31085.html">Hayes County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,313</span>
+                <span class="score">66800.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31103.html">Keya Paha County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,313</span>
+                <span class="score">66800.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31115.html">Loup County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,156</span>
+                <span class="score">66626.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31127.html">Nemaha County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,132</span>
+                <span class="score">66600.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31145.html">Red Willow County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,000</span>
+                <span class="score">66454.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31123.html">Morrill County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,773</span>
+                <span class="score">66202.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31097.html">Johnson County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,457</span>
+                <span class="score">65852.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31105.html">Kimball County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,438</span>
+                <span class="score">65831.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31015.html">Boyd County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,984</span>
+                <span class="score">65328.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31175.html">Valley County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,902</span>
+                <span class="score">65237.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31077.html">Greeley County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,894</span>
+                <span class="score">65229.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31101.html">Keith County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,132</span>
+                <span class="score">64385.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31061.html">Franklin County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,692</span>
+                <span class="score">63897.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31033.html">Cheyenne County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,594</span>
+                <span class="score">63789.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31149.html">Rock County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,500</span>
+                <span class="score">63685.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31021.html">Burt County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,303</span>
+                <span class="score">63466.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31161.html">Sheridan County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,900</span>
+                <span class="score">63020.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31057.html">Dundy County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,563</span>
+                <span class="score">62647.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31183.html">Wheeler County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,893</span>
+                <span class="score">61905.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31147.html">Richardson County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,578</span>
+                <span class="score">61556.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31133.html">Pawnee County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,926</span>
+                <span class="score">60834.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31045.html">Dawes County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,381</span>
+                <span class="score">60230.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31165.html">Sioux County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,076</span>
+                <span class="score">59892.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31087.html">Hitchcock County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,016</span>
+                <span class="score">57611.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31017.html">Brown County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,538</span>
+                <span class="score">57081.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31091.html">Hooker County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,854</span>
+                <span class="score">50786.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/31069.html">Garden County, Nebraska</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,777</span>
+                <span class="score">49593.5</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

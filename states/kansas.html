@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Kansas</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Kansas.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Kansas</h1>
+<p>Below are the counties in Kansas, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/20091.html">Johnson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $107,261</span>
+                <span class="score">119300.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20121.html">Miami County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,000</span>
+                <span class="score">97877.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20149.html">Pottawatomie County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,694</span>
+                <span class="score">97537.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20103.html">Leavenworth County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,906</span>
+                <span class="score">96661.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20015.html">Butler County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,375</span>
+                <span class="score">89396.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20071.html">Greeley County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,819</span>
+                <span class="score">87666.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20069.html">Gray County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,885</span>
+                <span class="score">86627.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20113.html">McPherson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,701</span>
+                <span class="score">86422.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20087.html">Jefferson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,393</span>
+                <span class="score">86080.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20131.html">Nemaha County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,375</span>
+                <span class="score">86060.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20143.html">Ottawa County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,755</span>
+                <span class="score">85370.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20119.html">Meade County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,868</span>
+                <span class="score">83271.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20093.html">Kearny County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,135</span>
+                <span class="score">82456.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20193.html">Thomas County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,575</span>
+                <span class="score">81833.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20195.html">Trego County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,375</span>
+                <span class="score">81611.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20079.html">Harvey County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,269</span>
+                <span class="score">81493.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20097.html">Kiowa County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,214</span>
+                <span class="score">81432.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20043.html">Doniphan County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,833</span>
+                <span class="score">81008.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20085.html">Jackson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,703</span>
+                <span class="score">80863.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20067.html">Grant County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,484</span>
+                <span class="score">80620.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20055.html">Finney County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,437</span>
+                <span class="score">80567.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20059.html">Franklin County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,142</span>
+                <span class="score">80239.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20109.html">Logan County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,389</span>
+                <span class="score">79402.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20203.html">Wichita County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,282</span>
+                <span class="score">79283.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20117.html">Marshall County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,828</span>
+                <span class="score">78778.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20197.html">Wabaunsee County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,536</span>
+                <span class="score">78453.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20057.html">Ford County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,495</span>
+                <span class="score">78407.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20187.html">Stanton County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,361</span>
+                <span class="score">78258.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20139.html">Osage County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,216</span>
+                <span class="score">78097.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20179.html">Sheridan County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,000</span>
+                <span class="score">77857.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20081.html">Haskell County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,138</span>
+                <span class="score">76898.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20045.html">Douglas County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,756</span>
+                <span class="score">76473.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20041.html">Dickinson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,982</span>
+                <span class="score">75612.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20171.html">Scott County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,788</span>
+                <span class="score">75397.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20173.html">Sedgwick County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,675</span>
+                <span class="score">75271.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20011.html">Bourbon County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,555</span>
+                <span class="score">75137.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20031.html">Coffey County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,377</span>
+                <span class="score">74939.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20053.html">Ellsworth County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,792</span>
+                <span class="score">74289.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20135.html">Ness County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,107</span>
+                <span class="score">73527.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20177.html">Shawnee County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,043</span>
+                <span class="score">73456.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20129.html">Morton County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,625</span>
+                <span class="score">72991.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20025.html">Clark County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,515</span>
+                <span class="score">72868.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20153.html">Rawlins County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,000</span>
+                <span class="score">72296.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20003.html">Anderson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,925</span>
+                <span class="score">72212.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20181.html">Sherman County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,444</span>
+                <span class="score">71677.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20151.html">Pratt County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,348</span>
+                <span class="score">71570.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20159.html">Rice County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,947</span>
+                <span class="score">71124.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20185.html">Stafford County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,786</span>
+                <span class="score">70945.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20145.html">Pawnee County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,625</span>
+                <span class="score">70766.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20115.html">Marion County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,438</span>
+                <span class="score">70558.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20169.html">Saline County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,316</span>
+                <span class="score">70423.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20063.html">Gove County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,203</span>
+                <span class="score">70297.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20027.html">Clay County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,136</span>
+                <span class="score">70222.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20083.html">Hodgeman County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,125</span>
+                <span class="score">70210.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20201.html">Washington County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,452</span>
+                <span class="score">69462.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20175.html">Seward County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,269</span>
+                <span class="score">69258.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20005.html">Atchison County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,164</span>
+                <span class="score">69141.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20075.html">Hamilton County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,929</span>
+                <span class="score">68880.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20189.html">Stevens County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,909</span>
+                <span class="score">68858.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20163.html">Rooks County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,596</span>
+                <span class="score">68510.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20147.html">Phillips County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,235</span>
+                <span class="score">68108.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20209.html">Wyandotte County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,582</span>
+                <span class="score">67382.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20155.html">Reno County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,498</span>
+                <span class="score">67288.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20191.html">Sumner County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,348</span>
+                <span class="score">67121.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20165.html">Rush County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,288</span>
+                <span class="score">67055.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20199.html">Wallace County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,263</span>
+                <span class="score">67027.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20051.html">Ellis County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,889</span>
+                <span class="score">66611.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20095.html">Kingman County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,819</span>
+                <span class="score">66533.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20161.html">Riley County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,560</span>
+                <span class="score">66245.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20141.html">Osborne County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,408</span>
+                <span class="score">66076.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20107.html">Linn County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,200</span>
+                <span class="score">65845.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20111.html">Lyon County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,078</span>
+                <span class="score">65709.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20013.html">Brown County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,886</span>
+                <span class="score">65495.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20073.html">Greenwood County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,276</span>
+                <span class="score">64817.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20021.html">Cherokee County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,274</span>
+                <span class="score">64815.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20035.html">Cowley County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,263</span>
+                <span class="score">64802.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20123.html">Mitchell County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,233</span>
+                <span class="score">64769.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20001.html">Allen County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,618</span>
+                <span class="score">64085.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20007.html">Barber County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,615</span>
+                <span class="score">64082.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20061.html">Geary County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,344</span>
+                <span class="score">63780.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20029.html">Cloud County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,333</span>
+                <span class="score">63768.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20205.html">Wilson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,056</span>
+                <span class="score">63460.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20183.html">Smith County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,024</span>
+                <span class="score">63424.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20009.html">Barton County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,733</span>
+                <span class="score">63101.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20127.html">Morris County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,716</span>
+                <span class="score">63082.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20049.html">Elk County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,087</span>
+                <span class="score">62382.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20023.html">Cheyenne County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,765</span>
+                <span class="score">62024.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20133.html">Neosho County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,704</span>
+                <span class="score">61956.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20099.html">Labette County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,439</span>
+                <span class="score">61661.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20077.html">Harper County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,417</span>
+                <span class="score">61637.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20019.html">Chautauqua County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,592</span>
+                <span class="score">60719.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20017.html">Chase County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,518</span>
+                <span class="score">60637.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20167.html">Russell County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,902</span>
+                <span class="score">59952.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20047.html">Edwards County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,792</span>
+                <span class="score">59830.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20157.html">Republic County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,611</span>
+                <span class="score">59628.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20105.html">Lincoln County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,546</span>
+                <span class="score">59556.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20125.html">Montgomery County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,242</span>
+                <span class="score">59218.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20101.html">Lane County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,042</span>
+                <span class="score">58995.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20065.html">Graham County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,909</span>
+                <span class="score">58847.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20089.html">Jewell County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,344</span>
+                <span class="score">58219.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20039.html">Decatur County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,030</span>
+                <span class="score">57870.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20037.html">Crawford County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,311</span>
+                <span class="score">55958.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20137.html">Norton County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,305</span>
+                <span class="score">55951.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20033.html">Comanche County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,417</span>
+                <span class="score">54964.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/20207.html">Woodson County, Kansas</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,152</span>
+                <span class="score">53557.0</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

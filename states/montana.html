@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Montana</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Montana.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Montana</h1>
+<p>Below are the counties in Montana, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/30031.html">Gallatin County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,454</span>
+                <span class="score">96088.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30095.html">Stillwater County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,503</span>
+                <span class="score">89550.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30043.html">Jefferson County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,576</span>
+                <span class="score">84136.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30049.html">Lewis and Clark County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,543</span>
+                <span class="score">81902.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30111.html">Yellowstone County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,400</span>
+                <span class="score">81745.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30103.html">Treasure County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,036</span>
+                <span class="score">80247.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30025.html">Fallon County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,284</span>
+                <span class="score">79420.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30055.html">McCone County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,842</span>
+                <span class="score">78935.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30029.html">Flathead County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,327</span>
+                <span class="score">78369.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30081.html">Ravalli County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,323</span>
+                <span class="score">78364.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30063.html">Missoula County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,246</span>
+                <span class="score">78280.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30009.html">Carbon County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,017</span>
+                <span class="score">78028.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30021.html">Dawson County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,953</span>
+                <span class="score">77958.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30083.html">Richland County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,578</span>
+                <span class="score">76447.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30097.html">Sweet Grass County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,426</span>
+                <span class="score">76280.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30075.html">Powder River County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,009</span>
+                <span class="score">74723.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30099.html">Teton County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,766</span>
+                <span class="score">74456.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30057.html">Madison County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,420</span>
+                <span class="score">74076.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30067.html">Park County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,607</span>
+                <span class="score">73183.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30013.html">Cascade County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,203</span>
+                <span class="score">72739.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30005.html">Blaine County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,050</span>
+                <span class="score">71472.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30109.html">Wibaux County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,792</span>
+                <span class="score">71189.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30105.html">Valley County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,515</span>
+                <span class="score">70884.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30091.html">Sheridan County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,654</span>
+                <span class="score">69938.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30007.html">Broadwater County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,636</span>
+                <span class="score">69918.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30017.html">Custer County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,585</span>
+                <span class="score">69862.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30077.html">Powell County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,432</span>
+                <span class="score">69694.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30047.html">Lake County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,965</span>
+                <span class="score">68082.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30033.html">Garfield County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,750</span>
+                <span class="score">67846.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30061.html">Mineral County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,117</span>
+                <span class="score">67151.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30027.html">Fergus County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,731</span>
+                <span class="score">65628.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30069.html">Petroleum County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,318</span>
+                <span class="score">65174.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30065.html">Musselshell County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,010</span>
+                <span class="score">64836.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30071.html">Phillips County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,156</span>
+                <span class="score">63897.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30001.html">Beaverhead County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,072</span>
+                <span class="score">63805.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30019.html">Daniels County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,000</span>
+                <span class="score">63726.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30093.html">Silver Bow County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,504</span>
+                <span class="score">63181.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30037.html">Golden Valley County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,353</span>
+                <span class="score">63015.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30015.html">Chouteau County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,927</span>
+                <span class="score">62547.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30003.html">Big Horn County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,680</span>
+                <span class="score">62276.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30087.html">Rosebud County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,430</span>
+                <span class="score">62001.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30059.html">Meagher County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,215</span>
+                <span class="score">61765.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30045.html">Judith Basin County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,417</span>
+                <span class="score">60888.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30041.html">Hill County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,313</span>
+                <span class="score">60774.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30039.html">Granite County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,646</span>
+                <span class="score">60041.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30089.html">Sanders County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,035</span>
+                <span class="score">59370.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30101.html">Toole County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,693</span>
+                <span class="score">58994.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30073.html">Pondera County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,500</span>
+                <span class="score">58782.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30051.html">Liberty County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,264</span>
+                <span class="score">58522.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30085.html">Roosevelt County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,125</span>
+                <span class="score">58370.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30011.html">Carter County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,171</span>
+                <span class="score">57322.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30023.html">Deer Lodge County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,533</span>
+                <span class="score">54423.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30107.html">Wheatland County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,054</span>
+                <span class="score">51699.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30053.html">Lincoln County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,018</span>
+                <span class="score">51660.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30079.html">Prairie County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,192</span>
+                <span class="score">49653.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/30035.html">Glacier County, Montana</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,129</span>
+                <span class="score">49584.7</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

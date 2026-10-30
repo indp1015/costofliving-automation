@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in South Dakota</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in South Dakota.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in South Dakota</h1>
+<p>Below are the counties in South Dakota, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/46083.html">Lincoln County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,552</span>
+                <span class="score">109532.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46061.html">Hanson County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,375</span>
+                <span class="score">97987.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46127.html">Union County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,137</span>
+                <span class="score">95448.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46057.html">Hamlin County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,194</span>
+                <span class="score">94378.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46033.html">Custer County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,958</span>
+                <span class="score">92976.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46087.html">McCook County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,847</span>
+                <span class="score">91716.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46039.html">Deuel County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $79,556</span>
+                <span class="score">90251.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46065.html">Hughes County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,981</span>
+                <span class="score">89599.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46043.html">Douglas County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,125</span>
+                <span class="score">88628.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46101.html">Moody County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,500</span>
+                <span class="score">87919.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46045.html">Edmunds County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,266</span>
+                <span class="score">87653.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46117.html">Stanley County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,000</span>
+                <span class="score">87352.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46099.html">Minnehaha County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,074</span>
+                <span class="score">86301.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46073.html">Jerauld County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,417</span>
+                <span class="score">85556.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46125.html">Turner County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,283</span>
+                <span class="score">85404.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46063.html">Harding County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,766</span>
+                <span class="score">84817.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46067.html">Hutchinson County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,459</span>
+                <span class="score">84469.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46069.html">Hyde County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,279</span>
+                <span class="score">84265.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46093.html">Meade County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,161</span>
+                <span class="score">84131.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46003.html">Aurora County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,130</span>
+                <span class="score">84096.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46015.html">Brule County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,043</span>
+                <span class="score">83997.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46135.html">Yankton County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,855</span>
+                <span class="score">83784.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46051.html">Grant County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,818</span>
+                <span class="score">83742.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46079.html">Lake County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,792</span>
+                <span class="score">83712.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46115.html">Spink County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,011</span>
+                <span class="score">82826.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46097.html">Miner County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,589</span>
+                <span class="score">82348.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46091.html">Marshall County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,500</span>
+                <span class="score">82247.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46059.html">Hand County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,054</span>
+                <span class="score">81741.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46107.html">Potter County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,726</span>
+                <span class="score">81369.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46103.html">Pennington County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,768</span>
+                <span class="score">80282.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46119.html">Sully County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,250</span>
+                <span class="score">79694.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46013.html">Brown County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,239</span>
+                <span class="score">79682.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46077.html">Kingsbury County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,221</span>
+                <span class="score">79661.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46111.html">Sanborn County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,870</span>
+                <span class="score">79263.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46019.html">Butte County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,692</span>
+                <span class="score">76792.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46011.html">Brookings County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,341</span>
+                <span class="score">76394.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46081.html">Lawrence County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,766</span>
+                <span class="score">75742.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46105.html">Perkins County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,455</span>
+                <span class="score">74255.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46029.html">Codington County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,080</span>
+                <span class="score">73829.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46021.html">Campbell County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,000</span>
+                <span class="score">73738.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46023.html">Charles Mix County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,850</span>
+                <span class="score">73568.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46075.html">Jones County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,688</span>
+                <span class="score">73384.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46109.html">Roberts County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,691</span>
+                <span class="score">72253.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46005.html">Beadle County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,082</span>
+                <span class="score">71562.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46025.html">Clark County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,885</span>
+                <span class="score">71339.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46129.html">Walworth County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,722</span>
+                <span class="score">71154.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46037.html">Day County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,270</span>
+                <span class="score">70641.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46089.html">McPherson County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,024</span>
+                <span class="score">70362.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46035.html">Davison County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,401</span>
+                <span class="score">69655.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46009.html">Bon Homme County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,275</span>
+                <span class="score">69513.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46085.html">Lyman County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,169</span>
+                <span class="score">69392.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46047.html">Fall River County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,056</span>
+                <span class="score">69264.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46055.html">Haakon County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,231</span>
+                <span class="score">67194.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46123.html">Tripp County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,854</span>
+                <span class="score">66766.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46027.html">Clay County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,794</span>
+                <span class="score">66698.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46049.html">Faulk County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,000</span>
+                <span class="score">65797.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46041.html">Dewey County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,928</span>
+                <span class="score">65716.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46053.html">Gregory County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,432</span>
+                <span class="score">59481.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46095.html">Mellette County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,364</span>
+                <span class="score">58269.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46137.html">Ziebach County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,333</span>
+                <span class="score">53696.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46017.html">Buffalo County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,000</span>
+                <span class="score">53318.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46007.html">Bennett County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $44,569</span>
+                <span class="score">50561.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46031.html">Corson County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,750</span>
+                <span class="score">49631.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46121.html">Todd County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,148</span>
+                <span class="score">44411.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46102.html">Oglala Lakota County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $34,769</span>
+                <span class="score">39443.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/46071.html">Jackson County, South Dakota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $26,686</span>
+                <span class="score">30273.7</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

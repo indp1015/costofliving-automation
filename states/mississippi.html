@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Mississippi</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Mississippi.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Mississippi</h1>
+<p>Below are the counties in Mississippi, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/28033.html">DeSoto County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,980</span>
+                <span class="score">95607.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28089.html">Madison County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,794</span>
+                <span class="score">90784.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28121.html">Rankin County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,454</span>
+                <span class="score">89240.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28073.html">Lamar County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,106</span>
+                <span class="score">79622.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28045.html">Hancock County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,728</span>
+                <span class="score">78034.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28081.html">Lee County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,144</span>
+                <span class="score">77362.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28059.html">Jackson County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,756</span>
+                <span class="score">74610.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28071.html">Lafayette County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,334</span>
+                <span class="score">74124.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28137.html">Tate County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,995</span>
+                <span class="score">73733.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28155.html">Webster County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,964</span>
+                <span class="score">69089.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28057.html">Itawamba County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,508</span>
+                <span class="score">68563.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28131.html">Stone County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,307</span>
+                <span class="score">68332.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28047.html">Harrison County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,233</span>
+                <span class="score">65942.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28145.html">Union County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,807</span>
+                <span class="score">65451.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28149.html">Warren County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,648</span>
+                <span class="score">65268.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28109.html">Pearl River County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,535</span>
+                <span class="score">65138.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28041.html">Greene County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,838</span>
+                <span class="score">64335.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28015.html">Carroll County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,275</span>
+                <span class="score">63686.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28039.html">George County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,822</span>
+                <span class="score">63164.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28087.html">Lowndes County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,460</span>
+                <span class="score">62747.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28127.html">Simpson County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,111</span>
+                <span class="score">62345.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28099.html">Neshoba County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,087</span>
+                <span class="score">61165.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28035.html">Forrest County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,821</span>
+                <span class="score">60859.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28115.html">Pontotoc County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,741</span>
+                <span class="score">60767.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28093.html">Marshall County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,875</span>
+                <span class="score">59769.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28117.html">Prentiss County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,466</span>
+                <span class="score">59298.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28129.html">Smith County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,396</span>
+                <span class="score">59217.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28095.html">Monroe County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,231</span>
+                <span class="score">59027.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28067.html">Jones County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,143</span>
+                <span class="score">58925.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28139.html">Tippah County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,141</span>
+                <span class="score">58923.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28111.html">Perry County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,435</span>
+                <span class="score">58110.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28101.html">Newton County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,426</span>
+                <span class="score">58099.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28075.html">Lauderdale County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,033</span>
+                <span class="score">57647.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28049.html">Hinds County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,966</span>
+                <span class="score">57569.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28003.html">Alcorn County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,404</span>
+                <span class="score">56922.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28161.html">Yalobusha County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,171</span>
+                <span class="score">56653.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28159.html">Winston County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,071</span>
+                <span class="score">56538.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28123.html">Scott County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,492</span>
+                <span class="score">55871.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28079.html">Leake County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,418</span>
+                <span class="score">55786.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28019.html">Choctaw County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,321</span>
+                <span class="score">55674.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28085.html">Lincoln County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,316</span>
+                <span class="score">55668.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28007.html">Attala County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $48,098</span>
+                <span class="score">55417.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28043.html">Grenada County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,998</span>
+                <span class="score">55302.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28029.html">Copiah County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,994</span>
+                <span class="score">55297.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28061.html">Jasper County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,157</span>
+                <span class="score">54333.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28031.html">Covington County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,001</span>
+                <span class="score">54153.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28141.html">Tishomingo County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,257</span>
+                <span class="score">53296.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28023.html">Clarke County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $46,054</span>
+                <span class="score">53062.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28037.html">Franklin County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,618</span>
+                <span class="score">52560.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28147.html">Walthall County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,444</span>
+                <span class="score">52359.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28097.html">Montgomery County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $45,057</span>
+                <span class="score">51913.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28107.html">Panola County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,990</span>
+                <span class="score">50684.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28013.html">Calhoun County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,942</span>
+                <span class="score">50629.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28069.html">Kemper County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,595</span>
+                <span class="score">50229.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28105.html">Oktibbeha County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,482</span>
+                <span class="score">50099.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28077.html">Lawrence County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,368</span>
+                <span class="score">49967.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28017.html">Chickasaw County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $43,041</span>
+                <span class="score">49591.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28091.html">Marion County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,320</span>
+                <span class="score">48760.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28009.html">Benton County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $42,139</span>
+                <span class="score">48551.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28113.html">Pike County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,578</span>
+                <span class="score">47905.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28163.html">Yazoo County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,974</span>
+                <span class="score">47209.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28133.html">Sunflower County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,265</span>
+                <span class="score">46392.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28001.html">Adams County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,250</span>
+                <span class="score">46375.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28151.html">Washington County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,117</span>
+                <span class="score">46222.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28025.html">Clay County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $39,904</span>
+                <span class="score">45976.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28103.html">Noxubee County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,814</span>
+                <span class="score">44720.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28143.html">Tunica County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $38,402</span>
+                <span class="score">44246.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28135.html">Tallahatchie County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,383</span>
+                <span class="score">43071.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28011.html">Bolivar County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,315</span>
+                <span class="score">42993.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28065.html">Jefferson Davis County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $37,183</span>
+                <span class="score">42841.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28153.html">Wayne County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,791</span>
+                <span class="score">42389.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28027.html">Coahoma County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,259</span>
+                <span class="score">41776.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28063.html">Jefferson County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,207</span>
+                <span class="score">41717.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28157.html">Wilkinson County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,930</span>
+                <span class="score">41397.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28125.html">Sharkey County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,741</span>
+                <span class="score">41180.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28005.html">Amite County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $35,385</span>
+                <span class="score">40769.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28021.html">Claiborne County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $34,371</span>
+                <span class="score">39601.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28083.html">Leflore County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $33,188</span>
+                <span class="score">38238.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28053.html">Humphreys County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $32,976</span>
+                <span class="score">37994.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28119.html">Quitman County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $32,131</span>
+                <span class="score">37020.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28051.html">Holmes County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $29,434</span>
+                <span class="score">33913.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/28055.html">Issaquena County, Mississippi</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $29,271</span>
+                <span class="score">33725.5</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

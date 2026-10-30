@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Minnesota</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Minnesota.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Minnesota</h1>
+<p>Below are the counties in Minnesota, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/27019.html">Carver County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $123,144</span>
+                <span class="score">125271.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27139.html">Scott County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $120,247</span>
+                <span class="score">122324.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27163.html">Washington County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $114,457</span>
+                <span class="score">116434.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27171.html">Wright County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $106,666</span>
+                <span class="score">108508.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27037.html">Dakota County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $105,212</span>
+                <span class="score">107029.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27141.html">Sherburne County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,965</span>
+                <span class="score">104743.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27003.html">Anoka County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,764</span>
+                <span class="score">100470.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27025.html">Chisago County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $98,260</span>
+                <span class="score">99957.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27053.html">Hennepin County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,339</span>
+                <span class="score">98003.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27109.html">Olmsted County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,494</span>
+                <span class="score">95108.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27039.html">Dodge County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $92,943</span>
+                <span class="score">94548.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27079.html">Le Sueur County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $90,218</span>
+                <span class="score">91776.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27059.html">Isanti County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,573</span>
+                <span class="score">88068.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27147.html">Steele County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $83,448</span>
+                <span class="score">84889.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27131.html">Rice County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,792</span>
+                <span class="score">84222.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27049.html">Goodhue County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $82,749</span>
+                <span class="score">84178.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27123.html">Ramsey County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $81,004</span>
+                <span class="score">82403.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27103.html">Nicollet County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,362</span>
+                <span class="score">81750.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27157.html">Wabasha County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,133</span>
+                <span class="score">81517.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27017.html">Carlton County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,042</span>
+                <span class="score">81424.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27085.html">McLeod County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $78,468</span>
+                <span class="score">79823.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27027.html">Clay County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,664</span>
+                <span class="score">79005.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27125.html">Red Lake County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,500</span>
+                <span class="score">78838.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27041.html">Douglas County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,264</span>
+                <span class="score">78598.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27055.html">Houston County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,087</span>
+                <span class="score">78418.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27145.html">Stearns County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,447</span>
+                <span class="score">77767.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27143.html">Sibley County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,082</span>
+                <span class="score">77396.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27075.html">Lake County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,621</span>
+                <span class="score">76927.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27045.html">Fillmore County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,225</span>
+                <span class="score">76524.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27067.html">Kandiyohi County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,097</span>
+                <span class="score">76394.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27161.html">Waseca County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,052</span>
+                <span class="score">76348.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27093.html">Meeker County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,037</span>
+                <span class="score">76333.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27101.html">Murray County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $74,475</span>
+                <span class="score">75761.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27135.html">Roseau County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,611</span>
+                <span class="score">74882.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27051.html">Grant County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,957</span>
+                <span class="score">74217.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27083.html">Lyon County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,761</span>
+                <span class="score">74017.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27013.html">Blue Earth County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,623</span>
+                <span class="score">73877.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27113.html">Pennington County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,561</span>
+                <span class="score">73814.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27121.html">Pope County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,205</span>
+                <span class="score">73452.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27065.html">Kanabec County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,915</span>
+                <span class="score">73157.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27089.html">Marshall County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,701</span>
+                <span class="score">72939.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27031.html">Cook County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,643</span>
+                <span class="score">72880.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27073.html">Lac qui Parle County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,639</span>
+                <span class="score">72876.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27173.html">Yellow Medicine County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,573</span>
+                <span class="score">72809.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27099.html">Mower County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,495</span>
+                <span class="score">72730.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27009.html">Benton County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,480</span>
+                <span class="score">72714.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27095.html">Mille Lacs County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,455</span>
+                <span class="score">72689.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27035.html">Crow Wing County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,343</span>
+                <span class="score">72575.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27005.html">Becker County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,117</span>
+                <span class="score">72345.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27149.html">Stevens County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,060</span>
+                <span class="score">72287.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27111.html">Otter Tail County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,912</span>
+                <span class="score">72136.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27133.html">Rock County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,698</span>
+                <span class="score">71919.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27057.html">Hubbard County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,622</span>
+                <span class="score">71841.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27165.html">Watonwan County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,593</span>
+                <span class="score">71812.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27169.html">Winona County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,198</span>
+                <span class="score">71410.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27077.html">Lake of the Woods County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,091</span>
+                <span class="score">71301.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27063.html">Jackson County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,955</span>
+                <span class="score">71163.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27107.html">Norman County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,833</span>
+                <span class="score">71039.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27115.html">Pine County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,666</span>
+                <span class="score">70869.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27167.html">Wilkin County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,635</span>
+                <span class="score">70837.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27069.html">Kittson County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,615</span>
+                <span class="score">70817.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27137.html">St. Louis County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,455</span>
+                <span class="score">70654.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27023.html">Chippewa County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,192</span>
+                <span class="score">70387.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27119.html">Polk County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,136</span>
+                <span class="score">70330.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27071.html">Koochiching County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,115</span>
+                <span class="score">70308.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27129.html">Renville County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,086</span>
+                <span class="score">70279.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27047.html">Freeborn County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $69,012</span>
+                <span class="score">70204.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27015.html">Brown County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,690</span>
+                <span class="score">69876.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27097.html">Morrison County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,640</span>
+                <span class="score">69825.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27033.html">Cottonwood County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $68,239</span>
+                <span class="score">69417.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27081.html">Lincoln County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,715</span>
+                <span class="score">68884.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27007.html">Beltrami County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,257</span>
+                <span class="score">68418.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27127.html">Redwood County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,024</span>
+                <span class="score">68181.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27061.html">Itasca County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,380</span>
+                <span class="score">67526.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27117.html">Pipestone County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,073</span>
+                <span class="score">67214.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27155.html">Traverse County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,931</span>
+                <span class="score">67069.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27105.html">Nobles County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,509</span>
+                <span class="score">66640.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27011.html">Big Stone County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,475</span>
+                <span class="score">66606.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27021.html">Cass County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,937</span>
+                <span class="score">66058.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27029.html">Clearwater County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,934</span>
+                <span class="score">66055.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27043.html">Faribault County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,391</span>
+                <span class="score">65503.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27153.html">Todd County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,039</span>
+                <span class="score">64127.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27091.html">Martin County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,969</span>
+                <span class="score">64056.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27151.html">Swift County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,601</span>
+                <span class="score">63682.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27001.html">Aitkin County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,498</span>
+                <span class="score">60525.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27159.html">Wadena County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,882</span>
+                <span class="score">57864.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/27087.html">Mahnomen County, Minnesota</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $53,925</span>
+                <span class="score">54856.5</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>

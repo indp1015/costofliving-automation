@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Living in Colorado</title>
+    <meta name="description" content="Compare cost of living, purchasing power, and housing costs for counties in Colorado.">
+    
+    <!-- 🆕 Google AdSense 스크립트 추가 (발급받은 pub-id 입력) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js 추가 (상세 페이지용) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
+        
+        /* Navigation */
+        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+        nav .links a { color: #ccc; text-decoration: none; margin-left: 15px; font-size: 0.95em; }
+        nav .links a:hover { color: white; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
+        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        
+        /* 공통 스타일 */
+        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
+        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card.bad { border-top-color: #e74c3c; }
+        .card.bad h2 { color: #e74c3c; }
+        .county-list { list-style: none; padding: 0; margin: 0; }
+        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
+        .county-list li a:hover { text-decoration: underline; }
+        .score { font-weight: bold; color: #27ae60; }
+        .card.bad .score { color: #e74c3c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Cost of Living Data</a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="https://dataindp.com" target="_blank">Data in DP ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<a href="/" class="back-link">← Back to All States</a>
+<h1>Cost of Living in Colorado</h1>
+<p>Below are the counties in Colorado, ranked by <strong>Purchasing Power Index</strong> (higher is better). A score above 100 means residents have more disposable income relative to local costs.</p>
+
+<div class="card" style="margin-top: 30px;">
+    <ul class="county-list">
+        
+        <li>
+            <a href="/county/08035.html">Douglas County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $145,737</span>
+                <span class="score">143081.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08039.html">Elbert County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $129,477</span>
+                <span class="score">127117.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08014.html">Broomfield County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $121,025</span>
+                <span class="score">118819.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08059.html">Jefferson County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $107,800</span>
+                <span class="score">105835.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08117.html">Summit County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $106,255</span>
+                <span class="score">104318.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08107.html">Routt County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $104,803</span>
+                <span class="score">102893.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08037.html">Eagle County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $103,174</span>
+                <span class="score">101294.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08013.html">Boulder County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $102,772</span>
+                <span class="score">100899.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08097.html">Pitkin County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $100,318</span>
+                <span class="score">98490.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08005.html">Arapahoe County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $97,215</span>
+                <span class="score">95443.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08019.html">Clear Creek County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $96,667</span>
+                <span class="score">94905.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08093.html">Park County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $95,450</span>
+                <span class="score">93710.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08065.html">Lake County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,655</span>
+                <span class="score">91948.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08123.html">Weld County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $93,287</span>
+                <span class="score">91587.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08031.html">Denver County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,681</span>
+                <span class="score">90010.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08001.html">Adams County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,387</span>
+                <span class="score">89721.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08069.html">Larimer County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $91,364</span>
+                <span class="score">89699.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08047.html">Gilpin County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $88,654</span>
+                <span class="score">87038.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08041.html">El Paso County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $87,470</span>
+                <span class="score">85876.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08045.html">Garfield County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $86,172</span>
+                <span class="score">84601.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08067.html">La Plata County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $85,296</span>
+                <span class="score">83741.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08049.html">Grand County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,558</span>
+                <span class="score">83017.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08091.html">Ouray County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $84,556</span>
+                <span class="score">83015.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08119.html">Teller County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,666</span>
+                <span class="score">79196.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08113.html">San Miguel County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $80,117</span>
+                <span class="score">78657.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08051.html">Gunnison County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $77,358</span>
+                <span class="score">75948.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08007.html">Archuleta County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $76,524</span>
+                <span class="score">75129.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08087.html">Morgan County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $75,407</span>
+                <span class="score">74032.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08111.html">San Juan County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $73,889</span>
+                <span class="score">72542.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08027.html">Custer County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,700</span>
+                <span class="score">71375.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08103.html">Rio Blanco County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $72,620</span>
+                <span class="score">71296.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08077.html">Mesa County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $71,485</span>
+                <span class="score">70182.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08081.html">Moffat County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,975</span>
+                <span class="score">69681.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08015.html">Chaffee County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,909</span>
+                <span class="score">69616.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08033.html">Dolores County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $70,490</span>
+                <span class="score">69205.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08017.html">Cheyenne County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $67,768</span>
+                <span class="score">66533.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08085.html">Montrose County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $66,072</span>
+                <span class="score">64868.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08121.html">Washington County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $65,164</span>
+                <span class="score">63976.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08053.html">Hinsdale County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $64,327</span>
+                <span class="score">63154.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08083.html">Montezuma County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $63,005</span>
+                <span class="score">61856.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08101.html">Pueblo County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,250</span>
+                <span class="score">61115.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08105.html">Rio Grande County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $62,166</span>
+                <span class="score">61033.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08043.html">Fremont County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $61,027</span>
+                <span class="score">59915.0</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08095.html">Phillips County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,372</span>
+                <span class="score">59271.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08125.html">Yuma County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $60,051</span>
+                <span class="score">58956.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08063.html">Kit Carson County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $59,810</span>
+                <span class="score">58720.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08029.html">Delta County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $58,330</span>
+                <span class="score">57267.1</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08099.html">Prowers County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $57,601</span>
+                <span class="score">56551.4</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08061.html">Kiowa County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $56,389</span>
+                <span class="score">55361.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08075.html">Logan County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $55,074</span>
+                <span class="score">54070.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08089.html">Otero County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,897</span>
+                <span class="score">53896.7</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08109.html">Saguache County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,283</span>
+                <span class="score">53293.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08073.html">Lincoln County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $54,257</span>
+                <span class="score">53268.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08115.html">Sedgwick County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,833</span>
+                <span class="score">51870.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08079.html">Mineral County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,455</span>
+                <span class="score">51499.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08055.html">Huerfano County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $52,139</span>
+                <span class="score">51188.9</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08003.html">Alamosa County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $51,445</span>
+                <span class="score">50507.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08071.html">Las Animas County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $50,408</span>
+                <span class="score">49489.5</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08011.html">Bent County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $49,194</span>
+                <span class="score">48297.6</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08025.html">Crowley County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,563</span>
+                <span class="score">46696.3</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08021.html">Conejos County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $47,209</span>
+                <span class="score">46348.8</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08057.html">Jackson County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $41,809</span>
+                <span class="score">41047.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08009.html">Baca County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $40,380</span>
+                <span class="score">39644.2</span>
+            </div>
+        </li>
+        
+        <li>
+            <a href="/county/08023.html">Costilla County, Colorado</a>
+            <div>
+                <span style="font-size: 0.85em; color: #666; margin-right: 15px;">Income: $36,519</span>
+                <span class="score">35853.6</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cost of Living Data Hub. All rights reserved.</p>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/contact.html">Contact</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 15px;">Data sources: BEA (Regional Price Parities) & U.S. Census Bureau (ACS 5-Year Estimates).</p>
+    </footer>
+</body>
+</html>
