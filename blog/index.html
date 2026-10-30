@@ -3,56 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - U.S. Cost of Living Data</title>
+    <title>U.S. Cost of Living Data Hub</title>
     <meta name="description" content="Explore county-level cost of living, housing rents, goods, and services indices across the U.S.">
     
+    <!-- 🆕 외부 CSS 로드 -->
+    <link rel="stylesheet" href="/static/style.css">
+
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js (상세 페이지용) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
-        
-        /* 🆕 Navigation Bar (하우징 사이트 스타일 적용) */
-        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
-        .nav-left { display: flex; align-items: center; gap: 15px; }
-        .nav-left .logo { color: white; font-size: 1.4em; font-weight: bold; text-decoration: none; }
-        .nav-btn { background: #e67e22; color: white !important; padding: 6px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: bold; display: inline-flex; align-items: center; transition: background 0.2s; }
-        .nav-btn:hover { background: #d35400; }
-        .nav-links { display: flex; gap: 15px; }
-        .nav-links a { color: #ccc; text-decoration: none; font-size: 0.95em; }
-        .nav-links a:hover { color: white; }
-        
-        /* Footer */
-        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
-        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
-        footer a:hover { text-decoration: underline; }
-        
-        /* 공통 스타일 */
-        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
-        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
-        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .card.bad { border-top-color: #e74c3c; }
-        .card.bad h2 { color: #e74c3c; }
-        .county-list { list-style: none; padding: 0; margin: 0; }
-        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
-        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
-        .county-list li a:hover { text-decoration: underline; }
-        .score { font-weight: bold; color: #27ae60; }
-        .card.bad .score { color: #e74c3c; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
-        
-        /* 🆕 텍스트 콘텐츠 스타일 */
-        .text-section { background: white; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .text-section h2 { color: #1a3d5c; margin-top: 0; }
-        .text-section p { font-size: 1.05em; color: #444; margin-bottom: 15px; }
-    </style>
 </head>
 <body>
-    <!-- 🆕 수정된 네비게이션 바 -->
+    <!-- Navigation -->
     <nav>
         <div class="nav-left">
             <a href="/" class="logo">U.S. Cost of Living Data</a>
@@ -67,29 +31,165 @@
 
     <div class="container">
         
-<h1>Data Insights & Articles</h1>
-<p>In-depth analysis of cost of living trends, purchasing power, and regional economics.</p>
+<header style="text-align: center; margin-bottom: 20px;">
+    <h1>U.S. Cost of Living Data Hub</h1>
+    <p style="font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto;">Explore <strong></strong> U.S. counties. Discover where your income goes further based on local housing, goods, and services costs.</p>
+</header>
 
-<div style="margin-top: 30px;">
-    
-    <div style="background: white; padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <h2 style="margin-top: 0;"><a href="/blog/the-hidden-cost-of-housing-in-coastal-cities.html" style="color: #1a3d5c; text-decoration: none;">The Hidden Cost of Housing in Coastal Cities</a></h2>
-        <p style="font-size: 0.85em; color: #888;">Published on 2026-10-20 by Data Analysis Team</p>
-        <p style="color: #555;">Why is the cost of living so high in California and New York? It's not the groceries—it's the rent. We break down the BEA Cost Structure.</p>
-        <a href="/blog/the-hidden-cost-of-housing-in-coastal-cities.html" style="color: #e67e22; font-weight: bold; text-decoration: none;">Read full article →</a>
+<!-- 🆕 검색 섹션 추가 -->
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" id="countySearch" placeholder="Search county or state (e.g., Los Angeles, Texas)..." autocomplete="off">
+        <button id="searchBtn">Find</button>
     </div>
+    <ul id="searchResults" class="autocomplete-dropdown"></ul>
     
-    <div style="background: white; padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <h2 style="margin-top: 0;"><a href="/blog/why-purchasing-power-matters-more-than-salary.html" style="color: #1a3d5c; text-decoration: none;">Why Purchasing Power Matters More Than Your Salary</a></h2>
-        <p style="font-size: 0.85em; color: #888;">Published on 2026-10-15 by Data Analysis Team</p>
-        <p style="color: #555;">A $100,000 salary sounds great, but what if a gallon of milk costs $10? Discover why real purchasing power is the only metric that matters.</p>
-        <a href="/blog/why-purchasing-power-matters-more-than-salary.html" style="color: #e67e22; font-weight: bold; text-decoration: none;">Read full article →</a>
+    <div class="search-helpers">
+        <a href="#" id="useLocationBtn">📍 Use my location</a>
+        <span>|</span>
+        <div class="popular-links">
+            <span>Popular:</span>
+            <!-- 🆕 인기 카운티 FIPS 코드 직접 링크 (LA, Houston, Phoenix, NYC) -->
+            <a href="/county/06037.html">Los Angeles</a>
+            <a href="/county/48201.html">Houston</a>
+            <a href="/county/04013.html">Phoenix</a>
+            <a href="/county/36061.html">NYC</a>
+        </div>
     </div>
-    
 </div>
 
+<!-- 텍스트 보강 섹션 1 -->
+<div class="text-section">
+    <h2>What is the Purchasing Power Index?</h2>
+    <p>The <strong>Purchasing Power Index</strong> is a unique metric that goes beyond a simple cost of living calculation. While traditional indices only show you how expensive a place is, our index tells you how far your money actually goes. It is calculated by taking the median household income in a county and dividing it by the overall Regional Price Parity (RPP).</p>
+    <p>A score above 100 means that residents in that county have a higher real purchasing power than the national average. In other words, their income is more than enough to cover the local cost of goods, services, and housing. Conversely, a score below 100 indicates that the local cost of living consumes a larger portion of the median income, leaving less disposable income for savings or leisure.</p>
+</div>
+
+<div class="card-grid">
+    <!-- Highest Purchasing Power -->
+    <div class="card">
+        <h2>🏆 Top 10 Counties by Purchasing Power</h2>
+        <p style="font-size: 0.9em; color: #666;">Where your dollar goes the furthest relative to local income.</p>
+        <ul class="county-list">
+            
+        </ul>
     </div>
 
+    <!-- Lowest Purchasing Power -->
+    <div class="card bad">
+        <h2>📉 Lowest 10 Counties by Purchasing Power</h2>
+        <p style="font-size: 0.9em; color: #666;">Where the cost of living heavily outpaces local median incomes.</p>
+        <ul class="county-list">
+            
+        </ul>
+    </div>
+</div>
+
+<!-- 텍스트 보강 섹션 2 -->
+<div class="text-section">
+    <h2>Why Cost Structure Matters</h2>
+    <p>Understanding the overall cost of living is only half the battle. The <strong>Cost Structure Breakdown</strong> provided on our county detail pages reveals <em>why</em> a region is expensive or affordable. We break down the BEA RPP into four distinct categories: <strong>Overall, Goods, Services, and Housing (Rents)</strong>.</p>
+    <p>For example, a tech hub like Santa Clara County, California, has an extremely high overall cost of living. However, our breakdown shows that this is primarily driven by a massive spike in Housing (Rents), while Goods (like groceries and clothing) might be closer to the national average. In contrast, some rural counties might have affordable housing but suffer from high Service costs (like healthcare or auto repair) due to a lack of competition. This structural analysis empowers you to align your lifestyle with the local economy.</p>
+</div>
+
+<!-- Browse by State 섹션 -->
+<div style="margin-top: 50px;">
+    <h2 style="color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px;">Browse Cost of Living by State</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+        
+    </div>
+</div>
+
+<!-- 🆕 자바스크립트 (검색 및 위치 기능) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('countySearch');
+    const resultsList = document.getElementById('searchResults');
+    let searchData = [];
+
+    // 1. 검색 데이터 로드
+    fetch('/data/search_index.json')
+        .then(res => res.json())
+        .then(data => { searchData = data; })
+        .catch(err => console.error('Search data load failed', err));
+
+    // 2. 자동완성 검색 로직
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (query.length < 2) { resultsList.style.display = 'none'; return; }
+
+        const matches = searchData.filter(item => 
+            item.n.toLowerCase().includes(query) || item.s.toLowerCase().includes(query)
+        ).slice(0, 8); // 최대 8개만 표시
+
+        if (matches.length > 0) {
+            resultsList.innerHTML = matches.map(m => 
+                `<li><a href="/county/${m.f}.html">${m.n}, ${m.s}</a></li>`
+            ).join('');
+            resultsList.style.display = 'block';
+        } else {
+            resultsList.style.display = 'none';
+        }
+    });
+
+    // 검색 결과 외부 클릭 시 닫기
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-container')) {
+            resultsList.style.display = 'none';
+        }
+    });
+
+    // 3. 내 위치로 찾기 (Geolocation + FCC API)
+    document.getElementById('useLocationBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!navigator.geolocation) {
+            alert('Geolocation is not supported by your browser.');
+            return;
+        }
+        
+        const originalText = e.target.textContent;
+        e.target.textContent = '📍 Locating...';
+
+        navigator.geolocation.getCurrentPosition(async (position) => {
+            try {
+                const { latitude, longitude } = position.coords;
+                const res = await fetch(`https://geo.fcc.gov/api/census/area?lat=${latitude}&lon=${longitude}&format=json`);
+                const data = await res.json();
+                
+                if (data.results && data.results.length > 0) {
+                    const fips = data.results[0].county_fips;
+                    window.location.href = `/county/${fips}.html`;
+                } else {
+                    alert('Could not determine your county. You may be outside the U.S.');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Failed to lookup location.');
+            } finally {
+                e.target.textContent = originalText;
+            }
+        }, (error) => {
+            alert('Unable to retrieve your location. Please check permissions.');
+            e.target.textContent = originalText;
+        });
+    });
+
+    // 4. 검색 버튼 클릭 (엔터 대체)
+    document.getElementById('searchBtn').addEventListener('click', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        const match = searchData.find(item => item.n.toLowerCase().includes(query) || item.s.toLowerCase().includes(query));
+        if (match) {
+            window.location.href = `/county/${match.f}.html`;
+        } else if (query) {
+            alert('County not found. Please try another search.');
+        }
+    });
+});
+</script>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 U.S. Cost of Living Data Hub. All rights reserved.</p>
         <p>

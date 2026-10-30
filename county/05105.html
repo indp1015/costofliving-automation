@@ -6,53 +6,17 @@
     <title>Perry County, Arkansas Cost of Living & Purchasing Power</title>
     <meta name="description" content="Detailed cost of living breakdown for Perry County, Arkansas, including housing, goods, services, and purchasing power.">
     
+    <!-- 🆕 외부 CSS 로드 -->
+    <link rel="stylesheet" href="/static/style.css">
+
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850461542641038" crossorigin="anonymous"></script>
+    
+    <!-- Chart.js (상세 페이지용) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; min-height: 80vh; }
-        
-        /* 🆕 Navigation Bar (하우징 사이트 스타일 적용) */
-        nav { background: #1a3d5c; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
-        .nav-left { display: flex; align-items: center; gap: 15px; }
-        .nav-left .logo { color: white; font-size: 1.4em; font-weight: bold; text-decoration: none; }
-        .nav-btn { background: #e67e22; color: white !important; padding: 6px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: bold; display: inline-flex; align-items: center; transition: background 0.2s; }
-        .nav-btn:hover { background: #d35400; }
-        .nav-links { display: flex; gap: 15px; }
-        .nav-links a { color: #ccc; text-decoration: none; font-size: 0.95em; }
-        .nav-links a:hover { color: white; }
-        
-        /* Footer */
-        footer { text-align: center; padding: 40px 20px; background: #1a3d5c; color: #aaa; font-size: 0.9em; margin-top: 40px; }
-        footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
-        footer a:hover { text-decoration: underline; }
-        
-        /* 공통 스타일 */
-        h1 { color: #1a3d5c; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
-        @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1a3d5c; }
-        .card h2 { color: #1a3d5c; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .card.bad { border-top-color: #e74c3c; }
-        .card.bad h2 { color: #e74c3c; }
-        .county-list { list-style: none; padding: 0; margin: 0; }
-        .county-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
-        .county-list li a { color: #1a3d5c; text-decoration: none; font-weight: bold; }
-        .county-list li a:hover { text-decoration: underline; }
-        .score { font-weight: bold; color: #27ae60; }
-        .card.bad .score { color: #e74c3c; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #1a3d5c; text-decoration: none; font-weight: bold; }
-        
-        /* 🆕 텍스트 콘텐츠 스타일 */
-        .text-section { background: white; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .text-section h2 { color: #1a3d5c; margin-top: 0; }
-        .text-section p { font-size: 1.05em; color: #444; margin-bottom: 15px; }
-    </style>
 </head>
 <body>
-    <!-- 🆕 수정된 네비게이션 바 -->
+    <!-- Navigation -->
     <nav>
         <div class="nav-left">
             <a href="/" class="logo">U.S. Cost of Living Data</a>
@@ -134,6 +98,7 @@
 
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 U.S. Cost of Living Data Hub. All rights reserved.</p>
         <p>
