@@ -31,12 +31,34 @@
 
     <div class="container">
         
-<header style="text-align: center; margin-bottom: 40px;">
+<header style="text-align: center; margin-bottom: 20px;">
     <h1>U.S. Cost of Living Data Hub</h1>
     <p style="font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto;">Explore <strong>3220</strong> U.S. counties. Discover where your income goes further based on local housing, goods, and services costs.</p>
 </header>
 
-<!-- 🆕 텍스트 보강 섹션 1 -->
+<!-- 🆕 검색 섹션 추가 -->
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" id="countySearch" placeholder="Search county or state (e.g., Los Angeles, Texas)..." autocomplete="off">
+        <button id="searchBtn">Find</button>
+    </div>
+    <ul id="searchResults" class="autocomplete-dropdown"></ul>
+    
+    <div class="search-helpers">
+        <a href="#" id="useLocationBtn">📍 Use my location</a>
+        <span>|</span>
+        <div class="popular-links">
+            <span>Popular:</span>
+            <!-- 🆕 인기 카운티 FIPS 코드 직접 링크 (LA, Houston, Phoenix, NYC) -->
+            <a href="/county/06037.html">Los Angeles</a>
+            <a href="/county/48201.html">Houston</a>
+            <a href="/county/04013.html">Phoenix</a>
+            <a href="/county/36061.html">NYC</a>
+        </div>
+    </div>
+</div>
+
+<!-- 텍스트 보강 섹션 1 -->
 <div class="text-section">
     <h2>What is the Purchasing Power Index?</h2>
     <p>The <strong>Purchasing Power Index</strong> is a unique metric that goes beyond a simple cost of living calculation. While traditional indices only show you how expensive a place is, our index tells you how far your money actually goes. It is calculated by taking the median household income in a county and dividing it by the overall Regional Price Parity (RPP).</p>
@@ -163,7 +185,7 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 보강 섹션 2 -->
+<!-- 텍스트 보강 섹션 2 -->
 <div class="text-section">
     <h2>Why Cost Structure Matters</h2>
     <p>Understanding the overall cost of living is only half the battle. The <strong>Cost Structure Breakdown</strong> provided on our county detail pages reveals <em>why</em> a region is expensive or affordable. We break down the BEA RPP into four distinct categories: <strong>Overall, Goods, Services, and Housing (Rents)</strong>.</p>
@@ -385,6 +407,93 @@
         
     </div>
 </div>
+
+<!-- 🆕 자바스크립트 (검색 및 위치 기능) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('countySearch');
+    const resultsList = document.getElementById('searchResults');
+    let searchData = [];
+
+    // 1. 검색 데이터 로드
+    fetch('/data/search_index.json')
+        .then(res => res.json())
+        .then(data => { searchData = data; })
+        .catch(err => console.error('Search data load failed', err));
+
+    // 2. 자동완성 검색 로직
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (query.length < 2) { resultsList.style.display = 'none'; return; }
+
+        const matches = searchData.filter(item => 
+            item.n.toLowerCase().includes(query) || item.s.toLowerCase().includes(query)
+        ).slice(0, 8); // 최대 8개만 표시
+
+        if (matches.length > 0) {
+            resultsList.innerHTML = matches.map(m => 
+                `<li><a href="/county/${m.f}.html">${m.n}, ${m.s}</a></li>`
+            ).join('');
+            resultsList.style.display = 'block';
+        } else {
+            resultsList.style.display = 'none';
+        }
+    });
+
+    // 검색 결과 외부 클릭 시 닫기
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-container')) {
+            resultsList.style.display = 'none';
+        }
+    });
+
+    // 3. 내 위치로 찾기 (Geolocation + FCC API)
+    document.getElementById('useLocationBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!navigator.geolocation) {
+            alert('Geolocation is not supported by your browser.');
+            return;
+        }
+        
+        const originalText = e.target.textContent;
+        e.target.textContent = '📍 Locating...';
+
+        navigator.geolocation.getCurrentPosition(async (position) => {
+            try {
+                const { latitude, longitude } = position.coords;
+                const res = await fetch(`https://geo.fcc.gov/api/census/area?lat=${latitude}&lon=${longitude}&format=json`);
+                const data = await res.json();
+                
+                if (data.results && data.results.length > 0) {
+                    const fips = data.results[0].county_fips;
+                    window.location.href = `/county/${fips}.html`;
+                } else {
+                    alert('Could not determine your county. You may be outside the U.S.');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Failed to lookup location.');
+            } finally {
+                e.target.textContent = originalText;
+            }
+        }, (error) => {
+            alert('Unable to retrieve your location. Please check permissions.');
+            e.target.textContent = originalText;
+        });
+    });
+
+    // 4. 검색 버튼 클릭 (엔터 대체)
+    document.getElementById('searchBtn').addEventListener('click', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        const match = searchData.find(item => item.n.toLowerCase().includes(query) || item.s.toLowerCase().includes(query));
+        if (match) {
+            window.location.href = `/county/${match.f}.html`;
+        } else if (query) {
+            alert('County not found. Please try another search.');
+        }
+    });
+});
+</script>
 
     </div>
 
