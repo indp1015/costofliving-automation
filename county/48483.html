@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheeler County, Texas Cost of Living & Purchasing Power</title>
-    <meta name="description" content="Detailed cost of living breakdown for Wheeler County, Texas, including housing, goods, services, and purchasing power.">
+    <meta name="description" content="Detailed cost of living breakdown for Wheeler County, Texas, including housing, goods, services, purchasing power, and historical trends.">
     
     <!-- 🆕 외부 CSS 로드 -->
     <link rel="stylesheet" href="/static/style.css">
@@ -49,17 +49,51 @@
     </div>
 </div>
 
-<h2 style="color: #1a3d5c; margin-top: 40px;">Cost Structure Breakdown vs. National Average (100)</h2>
+<!-- 🆕 텍스트 분석 블록 -->
+<div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
+    <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Wheeler County, Texas</h3>
+    <p style="font-size: 1.05em; line-height: 1.7;">
+        With a Purchasing Power Index of <strong>69965.0</strong>, a median household income of <strong>$67,964</strong> in Wheeler County, Texas has the equivalent buying power of 
+        <strong>$47,551,013</strong> in an average U.S. county.
+    </p>
+    <p style="font-size: 1.05em; line-height: 1.7;">
+        Because the Housing Rent index is <strong>92.4</strong> (vs. the national average of 100), housing is the primary driver of the local cost of living. 
+        Prospective residents should budget carefully for rent or mortgage payments, even if everyday goods and services feel relatively affordable.
+    </p>
+</div>
+
+<!-- 🆕 비용 구조 방사형 차트 -->
+<h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
 </div>
-
-<p style="font-size: 0.9em; color: #666; text-align: center;">
-    *A score above 100 means costs are higher than the national average. 
-    Notice how housing (Rents) drives the overall cost in this county.
+<p style="font-size: 0.9em; color: #666; text-align: center; margin-top: 10px;">
+    *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
+<!-- 🆕 과거 시계열 차트 2개 -->
+<h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
+    
+    <!-- RPP Trend Chart -->
+    <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h3 style="color: #1a3d5c; text-align: center; margin-top: 0;">Regional Price Parity (RPP) Trend</h3>
+        <div style="position: relative; height: 300px; width: 100%;">
+            <canvas id="rppTrendChart"></canvas>
+        </div>
+    </div>
+    
+    <!-- Income & Rent Trend Chart -->
+    <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h3 style="color: #1a3d5c; text-align: center; margin-top: 0;">Income & Rent Trend</h3>
+        <div style="position: relative; height: 300px; width: 100%;">
+            <canvas id="incomeRentChart"></canvas>
+        </div>
+    </div>
+</div>
+
 <script>
+    // 1. Cost Structure Radar Chart
     const ctx = document.getElementById('radarChart').getContext('2d');
     new Chart(ctx, {
         type: 'radar',
@@ -83,17 +117,81 @@
             }]
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                r: {
-                    angleLines: { display: true },
-                    suggestedMin: 50,
-                    suggestedMax: 150
-                }
-            }
+            responsive: true, maintainAspectRatio: false,
+            scales: { r: { angleLines: { display: true }, suggestedMin: 50, suggestedMax: 150 } }
         }
     });
+
+    // 2. RPP Trend Chart
+    const rppTrendData = {"2010": 97.665, "2011": 96.986, "2012": 97.714, "2013": 98.134, "2014": 98.437, "2015": 98.291, "2016": 98.078, "2017": 97.435, "2018": 97.805, "2019": 98.507, "2020": 98.759, "2021": 98.402, "2022": 97.411, "2023": 97.14};
+    const rppYears = Object.keys(rppTrendData).sort();
+    const rppValues = rppYears.map(y => rppTrendData[y]);
+    
+    if (rppYears.length > 0) {
+        new Chart(document.getElementById('rppTrendChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: rppYears,
+                datasets: [{
+                    label: 'RPP (Overall)',
+                    data: rppValues,
+                    borderColor: '#e67e22',
+                    backgroundColor: 'rgba(230, 126, 34, 0.1)',
+                    borderWidth: 2, fill: true, tension: 0.3, pointRadius: 3
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: { y: { title: { display: true, text: 'RPP (National = 100)' }, suggestedMin: 80, suggestedMax: 150 } }
+            }
+        });
+    } else {
+        document.getElementById('rppTrendChart').parentElement.innerHTML = '<p style="text-align:center; color:#888;">Historical RPP data not available.</p>';
+    }
+
+    // 3. Income & Rent Trend Chart
+    const incomeTrend = {"2015": 52221.0, "2016": 51082.0, "2018": 49352.0, "2019": 49315.0, "2020": 49036.0, "2021": 52138.0, "2023": 67964.0};
+    const rentTrend = {"2015": 618.0, "2016": 628.0, "2018": 655.0, "2019": 705.0, "2020": 800.0, "2021": 841.0, "2023": 995.0};
+    const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
+    const incValues = irYears.map(y => incomeTrend[y] || null);
+    const rentValues = irYears.map(y => rentTrend[y] || null);
+
+    if (irYears.length > 0) {
+        new Chart(document.getElementById('incomeRentChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: irYears,
+                datasets: [
+                    {
+                        label: 'Median Income ($)',
+                        data: incValues,
+                        borderColor: '#27ae60',
+                        backgroundColor: 'rgba(39, 174, 96, 0.1)',
+                        borderWidth: 2, tension: 0.3, yAxisID: 'y'
+                    },
+                    {
+                        label: 'Median Rent ($)',
+                        data: rentValues,
+                        borderColor: '#e74c3c',
+                        backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                        borderWidth: 2, tension: 0.3, yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: { legend: { position: 'top' } },
+                scales: {
+                    y: { type: 'linear', display: true, position: 'left', title: { display: true, text: 'Income ($)' } },
+                    y1: { type: 'linear', display: true, position: 'right', title: { display: true, text: 'Rent ($)' }, grid: { drawOnChartArea: false } }
+                }
+            }
+        });
+    } else {
+        document.getElementById('incomeRentChart').parentElement.innerHTML = '<p style="text-align:center; color:#888;">Historical income/rent data not available.</p>';
+    }
 </script>
 
     </div>
