@@ -49,7 +49,22 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e67e22;">
+    <h2 style="color: #1a3d5c; margin-top: 0;">📊 Local Market Analysis</h2>
+    <p style="font-size: 1.05em; line-height: 1.8; color: #333;">Bibb County, Alabama, presents a consumer price environment that is structurally bifurcated, with an overall cost of living index at 89.1, indicating prices are roughly 11% below the national average. This aggregate figure masks a significant divergence in daily consumption patterns. Goods, encompassing groceries, apparel, and fuel, register at 94.6, nearly matching national prices and representing the highest cost component in the local structure. Conversely, services, which include healthcare, utilities, and dining out, are substantially cheaper at 61.6, more than 38% below the national benchmark. Rental costs sit at 89.9, slightly below the national average. For the median household, this dynamic means that while basic necessities like food and fuel do not offer significant savings compared to the national norm, the cost of maintaining a home and accessing essential services is markedly lower. The median monthly rent of $802 consumes just 18.8% of the median household income of $51,215, a rent burden far below the typical 30% threshold often cited as a financial stress indicator.
+
+The purchasing power in Bibb County is constrained by income levels that lag behind the national median of $65,047. With a median household income of $51,215, residents face a Purchasing Power Index of 57,482.3, reflecting the combined effect of lower local wages and the mixed price environment. The local economic context complicates this picture further. An unemployment rate of 10.0% and a bachelor’s degree attainment rate of only 7.0% suggest a labor market where wage growth is limited by skill availability and economic volatility. The median age of 41.3 years indicates a working-age population that is likely balancing family expenses with limited professional advancement opportunities. These demographic factors mean that while the low cost of services provides a buffer, the near-national cost of goods and the below-average income create a tight household budget.
+
+Over the past decade, the economic landscape has shifted in favor of income growth over price stability. The Regional Price Parity index has remained relatively flat, dipping slightly from 89.783 in 2010 to 89.097 in 2023, a change of merely -0.8%. In stark contrast, median household income has surged by 32.4%, rising from $38,678 to $51,215. Median rent has also increased by 23.2%, from $651 to $802. This trend suggests that the local cost of living has not eroded purchasing power through inflation; rather, nominal income gains have outpaced the modest rise in housing costs. For a prospective resident, the primary financial consideration is not the absolute price of living, which remains below the national average, but the limited upside in earnings potential. The budgetary reality is one of manageable fixed costs, particularly in housing and services, offset by the necessity of stretching income to cover goods that are priced similarly to the rest of the country.</p>
+    <p style="font-size: 0.85em; color: #888; margin-top: 20px; margin-bottom: 0; border-top: 1px solid #eee; padding-top: 10px;">
+        <em>Analysis prepared by the Data in DP Research Team. Based on BEA RPP and Census ACS data.</em>
+    </p>
+</div>
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Bibb County, Alabama</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +77,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +86,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +166,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 38678.0, "2016": 39776.0, "2018": 45340.0, "2019": 47542.0, "2020": 51721.0, "2021": 54277.0, "2023": 51215.0};
-    const rentTrend = {"2015": 651.0, "2016": 654.0, "2018": 714.0, "2019": 734.0, "2020": 693.0, "2021": 744.0, "2023": 802.0};
+    const incomeTrend = {"2015": 38678.0, "2016": 39776.0, "2017": 43404.0, "2018": 45340.0, "2019": 47542.0, "2020": 51721.0, "2021": 54277.0, "2022": 50669.0, "2023": 51215.0};
+    const rentTrend = {"2015": 651.0, "2016": 654.0, "2017": 710.0, "2018": 714.0, "2019": 734.0, "2020": 693.0, "2021": 744.0, "2022": 765.0, "2023": 802.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);

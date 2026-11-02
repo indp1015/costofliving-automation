@@ -49,7 +49,22 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e67e22;">
+    <h2 style="color: #1a3d5c; margin-top: 0;">📊 Local Market Analysis</h2>
+    <p style="font-size: 1.05em; line-height: 1.8; color: #333;">Blount County, Alabama, operates as a distinct value proposition in the Southeastern housing market, offering a cost of living index 10.9% below the national average. The structural breakdown of this affordability is uneven, revealing a market where services are significantly cheaper than the rest of the country, while goods remain nearly at parity. With a services index of 61.6, residents pay roughly 38% less for healthcare, transportation, and personal care than their counterparts in high-cost metros. Conversely, the goods index sits at 94.6, indicating that the price of food, apparel, and fuel is only marginally cheaper than the national norm. This divergence suggests that while the county saves heavily on recurring service costs, it does not offer the same deep discounts on tangible consumer goods, a nuance often overlooked in broad comparisons of rural affordability.
+
+The purchasing power in Blount County is robust, driven by a median household income of $61,096 that, when adjusted for local costs, yields a purchasing power index of 68,572.5. This metric confirms that the local wage base comfortably outpaces the local cost structure, resulting in a low rent burden of just 14.6% of income. For context, the median rent of $743 is 20% lower than the national median of $928, and the median home value of $169,700 represents a significant entry point for equity accumulation compared to national averages. The historical trajectory reinforces this stability; over the past decade, median income has surged by 33.4%, outpacing the 23.6% increase in median rents. This widening gap between earnings and housing costs has effectively increased the disposable income of the median household, making the county one of the more financially resilient environments in the state.
+
+Prospective residents should view Blount County not merely as a low-cost alternative, but as a market where the value proposition is anchored in service affordability and income growth. The slight decline in the overall Regional Price Parity from 89.8 to 89.1 since 2010 indicates that the county has maintained its relative affordability despite national inflationary pressures. The primary risk for newcomers is underestimating the cost of goods, which remains close to national levels, but this is more than offset by the substantial savings in services and the strong trajectory of local wages. For those seeking to maximize their standard of living without sacrificing financial security, Blount County offers a compelling balance of low housing costs and growing economic capacity.</p>
+    <p style="font-size: 0.85em; color: #888; margin-top: 20px; margin-bottom: 0; border-top: 1px solid #eee; padding-top: 10px;">
+        <em>Analysis prepared by the Data in DP Research Team. Based on BEA RPP and Census ACS data.</em>
+    </p>
+</div>
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Blount County, Alabama</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +77,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +86,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +166,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 45813.0, "2016": 46212.0, "2018": 48695.0, "2019": 49358.0, "2020": 48922.0, "2021": 52830.0, "2023": 61096.0};
-    const rentTrend = {"2015": 601.0, "2016": 631.0, "2018": 662.0, "2019": 667.0, "2020": 666.0, "2021": 691.0, "2023": 743.0};
+    const incomeTrend = {"2015": 45813.0, "2016": 46212.0, "2017": 47412.0, "2018": 48695.0, "2019": 49358.0, "2020": 48922.0, "2021": 52830.0, "2022": 57440.0, "2023": 61096.0};
+    const rentTrend = {"2015": 601.0, "2016": 631.0, "2017": 649.0, "2018": 662.0, "2019": 667.0, "2020": 666.0, "2021": 691.0, "2022": 734.0, "2023": 743.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);

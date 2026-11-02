@@ -49,7 +49,22 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e67e22;">
+    <h2 style="color: #1a3d5c; margin-top: 0;">📊 Local Market Analysis</h2>
+    <p style="font-size: 1.05em; line-height: 1.8; color: #333;">Barbour County, Alabama, presents a distinct economic paradox where low service costs mask a broader affordability challenge driven by stagnant wages relative to national benchmarks. The region’s overall cost of living index sits at 89.1, indicating that the general basket of goods and services is roughly 11% cheaper than the national average. However, this aggregate figure obscures a critical structural imbalance. While services, including healthcare and dining, are significantly undervalued at an index of 61.6, goods—encompassing groceries, apparel, and fuel—are priced at 94.6, nearly at par with national levels. This suggests that while a resident might save substantially on a doctor’s visit or a restaurant meal, the recurring costs of feeding a family or refueling a vehicle offer little to no discount. Rental costs, indexed at 89.9, further align with national trends, reinforcing that the primary savings in this market are not found in the basic necessities of shelter or sustenance, but rather in discretionary and professional services.
+
+The purchasing power of the median household in Barbour County is constrained by an income level of $44,290, which trails the national median of $65,047 by a wide margin. Despite the lower cost of living, the Purchasing Power Index of 49,709.9 indicates that the real value of local earnings is significantly diluted when compared to higher-income regions. The rent burden is a notable bright spot, standing at just 17.4% of income, well below the standard 30% threshold, which provides a buffer for other expenses. Yet, this relief is offset by a demographic profile that limits earning potential; with only 6.7% of the population holding a bachelor’s degree or higher and an unemployment rate of 5.7%, the labor market offers limited avenues for high-wage employment. The median age of 40.7 years suggests a workforce in its prime earning years, yet the low educational attainment caps the ceiling for income growth.
+
+Over the past decade, the region has seen a modest 34.4% increase in median income, rising from $32,964 to $44,290, while the Real Price Parity index has remained relatively static, dipping slightly from 89.783 to 89.097. This stability in consumer prices contrasts with the slow but steady growth in wages, suggesting that residents have gained slightly more purchasing power over time, though not enough to close the gap with national averages. For a prospective resident, the daily budget experience is characterized by cheap access to professional services and low rental obligations, but it is tempered by the reality that essential goods cost nearly as much as anywhere else in the country. The financial landscape here rewards those who can maximize the low cost of services while managing the near-national price tag of daily consumables, all within the constraints of a labor market that offers limited high-skill opportunities.</p>
+    <p style="font-size: 0.85em; color: #888; margin-top: 20px; margin-bottom: 0; border-top: 1px solid #eee; padding-top: 10px;">
+        <em>Analysis prepared by the Data in DP Research Team. Based on BEA RPP and Census ACS data.</em>
+    </p>
+</div>
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Barbour County, Alabama</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +77,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +86,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +166,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 32964.0, "2016": 33956.0, "2018": 34186.0, "2019": 32525.0, "2020": 34990.0, "2021": 36422.0, "2023": 44290.0};
-    const rentTrend = {"2015": 579.0, "2016": 588.0, "2018": 590.0, "2019": 576.0, "2020": 587.0, "2021": 605.0, "2023": 644.0};
+    const incomeTrend = {"2015": 32964.0, "2016": 33956.0, "2017": 33368.0, "2018": 34186.0, "2019": 32525.0, "2020": 34990.0, "2021": 36422.0, "2022": 39712.0, "2023": 44290.0};
+    const rentTrend = {"2015": 579.0, "2016": 588.0, "2017": 569.0, "2018": 590.0, "2019": 576.0, "2020": 587.0, "2021": 605.0, "2022": 627.0, "2023": 644.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);

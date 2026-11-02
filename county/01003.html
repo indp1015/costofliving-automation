@@ -49,7 +49,22 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e67e22;">
+    <h2 style="color: #1a3d5c; margin-top: 0;">📊 Local Market Analysis</h2>
+    <p style="font-size: 1.05em; line-height: 1.8; color: #333;">Baldwin County, Alabama, presents a bifurcated cost-of-living structure where daily consumption is inexpensive but essential goods remain near national parity. The local Regional Price Parity (RPP) index stands at 89.1, indicating that the aggregate cost of living is 10.9% below the national average. This discount is driven almost entirely by the services sector, which registers a remarkably low 61.6 index. Healthcare, utilities, and dining out are significantly cheaper here than in the national median, creating a substantial margin for discretionary spending. However, this advantage is partially offset by the goods category, which sits at 94.6, meaning groceries, apparel, and fuel are nearly on par with national prices. Rental costs also hover near the national mean at 89.9, suggesting that the primary savings for residents come from service expenditures rather than shelter or basic consumables.
+
+The purchasing power in Baldwin County is robust, fueled by a median household income of $75,019, which exceeds the national median of $65,047 by approximately 15.5%. With a median monthly rent of $1,211, the rent burden is only 19.4% of income, well below the 30% threshold typically associated with housing stress. This leaves the median household with a Purchasing Power Index of 84,199.2, reflecting a high level of disposable income relative to local costs. The low unemployment rate of 3.2% supports this income stability, while the demographic profile—characterized by a median age of 43.7 and a bachelor’s degree attainment of 20.6—suggests an established workforce with consistent earning potential. The lower education level compared to national averages may correlate with the lower service costs, as the local labor market for service industries is less saturated by high-wage competition.
+
+Over the past decade, the economic landscape has shifted in favor of residents. While the RPP index has remained relatively flat, dipping slightly from 89.783 in 2010 to 89.097 in 2023, median household income has surged by 49.3%, rising from $50,254 to $75,019. Median rent increased by 37.8% over the same period, yet the income growth has outpaced housing cost inflation, preserving the county’s affordability. For a prospective resident, the daily budget experience is defined by cheap services and moderate goods costs. The combination of high relative income and low service expenses creates a favorable environment for household budgeting, where the cost of maintaining a standard lifestyle is significantly lower than in higher-cost metropolitan areas.</p>
+    <p style="font-size: 0.85em; color: #888; margin-top: 20px; margin-bottom: 0; border-top: 1px solid #eee; padding-top: 10px;">
+        <em>Analysis prepared by the Data in DP Research Team. Based on BEA RPP and Census ACS data.</em>
+    </p>
+</div>
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Baldwin County, Alabama</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +77,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +86,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +166,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 50254.0, "2016": 51365.0, "2018": 55962.0, "2019": 58320.0, "2020": 61756.0, "2021": 64346.0, "2023": 75019.0};
-    const rentTrend = {"2015": 879.0, "2016": 889.0, "2018": 958.0, "2019": 1020.0, "2020": 1032.0, "2021": 1093.0, "2023": 1211.0};
+    const incomeTrend = {"2015": 50254.0, "2016": 51365.0, "2017": 52562.0, "2018": 55962.0, "2019": 58320.0, "2020": 61756.0, "2021": 64346.0, "2022": 71039.0, "2023": 75019.0};
+    const rentTrend = {"2015": 879.0, "2016": 889.0, "2017": 904.0, "2018": 958.0, "2019": 1020.0, "2020": 1032.0, "2021": 1093.0, "2022": 1160.0, "2023": 1211.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);

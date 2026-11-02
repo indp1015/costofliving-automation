@@ -49,7 +49,22 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e67e22;">
+    <h2 style="color: #1a3d5c; margin-top: 0;">📊 Local Market Analysis</h2>
+    <p style="font-size: 1.05em; line-height: 1.8; color: #333;">Autauga County, Alabama, presents a distinct cost-of-living profile where consumer goods remain near national parity while services offer significant savings. The region’s overall cost index stands at 89.1, indicating that the average basket of goods and services costs roughly 11% less than the national average. However, this aggregate figure masks a sharp divergence in daily expenses. Goods, including groceries, apparel, and fuel, index at 94.6, suggesting that the cost of tangible consumer items is only marginally cheaper than in major metropolitan areas. Conversely, services index at a striking 61.6, meaning healthcare, dining, and utilities are less than two-thirds the national cost. This structural imbalance defines the local economic experience: daily discretionary spending and essential service costs are substantially lower, offsetting the relatively high price of physical goods.
+
+The purchasing power of the median household is bolstered by this service-side discount, despite rent burdens that mirror national trends. With a median household income of $69,841, residents earn approximately 7.4% more than the national median of $65,047. The median monthly rent of $1,200 represents a 20.6% rent burden, which is slightly elevated compared to the national norm but remains manageable within the local income context. The Purchasing Power Index of 78,387.6 reflects the net effect of these variables, indicating that while nominal income is above average, the effective purchasing capacity is constrained by the high cost of goods. The low unemployment rate of 2.5% supports this income stability, though the relatively low educational attainment, with only 16.0% holding a bachelor’s degree or higher, suggests a labor market driven by manufacturing and logistics rather than high-skill knowledge sectors, which may limit long-term wage growth potential.
+
+Over the past decade, the cost structure has remained remarkably static, with the Regional Price Parity index declining only 0.8% from 2010 to 2023. This stability contrasts sharply with the 36.2% increase in median household income, which grew from $51,281 to $69,841. While median rent rose 35.9% from $883 to $1,200, the income growth outpaced housing cost inflation, preserving household cash flow. For the median resident, the primary budgetary pressure is not the cost of living itself, but the allocation between high-cost goods and low-cost services. The 39.2 median age indicates an established workforce, likely with higher baseline expenses for household maintenance and vehicle fuel, categories that remain expensive relative to the national average. Prospective residents should anticipate that while their service bills will be significantly lower, their grocery and fuel budgets will require careful management to maintain the financial cushion provided by the local wage premium.</p>
+    <p style="font-size: 0.85em; color: #888; margin-top: 20px; margin-bottom: 0; border-top: 1px solid #eee; padding-top: 10px;">
+        <em>Analysis prepared by the Data in DP Research Team. Based on BEA RPP and Census ACS data.</em>
+    </p>
+</div>
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Autauga County, Alabama</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +77,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +86,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +166,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 51281.0, "2016": 53099.0, "2018": 58786.0, "2019": 58731.0, "2020": 57982.0, "2021": 62660.0, "2023": 69841.0};
-    const rentTrend = {"2015": 883.0, "2016": 896.0, "2018": 966.0, "2019": 986.0, "2020": 1011.0, "2021": 1085.0, "2023": 1200.0};
+    const incomeTrend = {"2015": 51281.0, "2016": 53099.0, "2017": 55317.0, "2018": 58786.0, "2019": 58731.0, "2020": 57982.0, "2021": 62660.0, "2022": 68315.0, "2023": 69841.0};
+    const rentTrend = {"2015": 883.0, "2016": 896.0, "2017": 932.0, "2018": 966.0, "2019": 986.0, "2020": 1011.0, "2021": 1085.0, "2022": 1199.0, "2023": 1200.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);

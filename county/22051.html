@@ -49,7 +49,10 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Jefferson Parish, Louisiana</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +65,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +74,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +154,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 47947.0, "2016": 49457.0, "2018": 52558.0, "2019": 54032.0, "2020": 54825.0, "2021": 58638.0, "2023": 65246.0};
-    const rentTrend = {"2015": 900.0, "2016": 916.0, "2018": 961.0, "2019": 972.0, "2020": 986.0, "2021": 1026.0, "2023": 1162.0};
+    const incomeTrend = {"2015": 47947.0, "2016": 49457.0, "2017": 50868.0, "2018": 52558.0, "2019": 54032.0, "2020": 54825.0, "2021": 58638.0, "2022": 63257.0, "2023": 65246.0};
+    const rentTrend = {"2015": 900.0, "2016": 916.0, "2017": 936.0, "2018": 961.0, "2019": 972.0, "2020": 986.0, "2021": 1026.0, "2022": 1121.0, "2023": 1162.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);

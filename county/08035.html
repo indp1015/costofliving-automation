@@ -49,7 +49,10 @@
     </div>
 </div>
 
-<!-- 🆕 텍스트 분석 블록 -->
+<!-- 🆕 AI 인사이트 (인간 전문가 톤) -->
+
+
+<!-- 기존 텍스트 분석 블록 -->
 <div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #1a3d5c; margin-top: 30px; border-radius: 4px;">
     <h3 style="margin-top: 0; color: #1a3d5c;">What this means for residents of Douglas County, Colorado</h3>
     <p style="font-size: 1.05em; line-height: 1.7;">
@@ -62,7 +65,7 @@
     </p>
 </div>
 
-<!-- 🆕 비용 구조 방사형 차트 -->
+<!-- 비용 구조 방사형 차트 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Cost Structure Breakdown vs. National Average (100)</h2>
 <div style="position: relative; height: 400px; width: 100%; max-width: 500px; margin: 40px auto;">
     <canvas id="radarChart"></canvas>
@@ -71,7 +74,7 @@
     *A score above 100 means costs are higher than the national average. Notice how housing (Rents) drives the overall cost.
 </p>
 
-<!-- 🆕 과거 시계열 차트 2개 -->
+<!-- 과거 시계열 차트 2개 -->
 <h2 style="color: #1a3d5c; margin-top: 50px;">Historical Data Trends</h2>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
     
@@ -151,8 +154,8 @@
     }
 
     // 3. Income & Rent Trend Chart
-    const incomeTrend = {"2015": 102964.0, "2016": 105759.0, "2018": 115314.0, "2019": 119730.0, "2020": 121393.0, "2021": 127443.0, "2023": 145737.0};
-    const rentTrend = {"2015": 1399.0, "2016": 1459.0, "2018": 1655.0, "2019": 1725.0, "2020": 1749.0, "2021": 1838.0, "2023": 2095.0};
+    const incomeTrend = {"2015": 102964.0, "2016": 105759.0, "2017": 111154.0, "2018": 115314.0, "2019": 119730.0, "2020": 121393.0, "2021": 127443.0, "2022": 139010.0, "2023": 145737.0};
+    const rentTrend = {"2015": 1399.0, "2016": 1459.0, "2017": 1574.0, "2018": 1655.0, "2019": 1725.0, "2020": 1749.0, "2021": 1838.0, "2022": 1953.0, "2023": 2095.0};
     const irYears = Array.from(new Set([...Object.keys(incomeTrend), ...Object.keys(rentTrend)])).sort();
     const incValues = irYears.map(y => incomeTrend[y] || null);
     const rentValues = irYears.map(y => rentTrend[y] || null);
